@@ -16,14 +16,14 @@
 | [Playwright](docs/playwright/index.md) | 22 章 | Playwright 1.62 (Python) | 定位器/自动等待/网络 Mock/POM/Sharding/无障碍 |
 | [Locust](docs/locust/index.md) | 20 章 | Locust 2.46 | HttpUser/TaskSet/分布式/Docker/K8s/asyncio 压测 |
 | [FastAPI](docs/fastapi/index.md) | 22 章 | FastAPI 0.141+ | 依赖注入/OAuth2/数据库/WebSocket/部署 |
-| [Agno](docs/agno/index.md) | 27 章 | Agno 2.9 | Agent/工具/RAG/Team/Workflow/AgentOS |
-| [CrewAI](docs/crewai/index.md) | 26 章 | CrewAI 1.15 | Agent/Task/Crew/Flow/记忆/MCP/评估 |
+| [Agno](docs/agno/index.md) | 27 章 | Agno 2.9 | Agent/工具/RAG/Team/Workflow/AgentOS · **三实战：数据分析助手 / 多源研究 Team / 客服知识库上线** |
+| [CrewAI](docs/crewai/index.md) | 26 章 | CrewAI 1.15 | Agent/Task/Crew/Flow/记忆/MCP/评估 · **三实战：内容营销 / 数据分析 / 竞品监控** |
 | [Agent 工程](docs/agent/index.md) | 32 章 | — | PromptingGuide/Harness/MCP/Skills/AGENTS.md/Loop 六大基石 |
 | [Claude Code](docs/claude-code/index.md) | 21 章 | Claude Code 2.1.x | CLAUDE.md/MCP/Skills/Hooks/SDK + 近期新特性 |
 | [Pi](docs/pi/index.md) | 21 章 | pi 0.84.x | 会话管理/技能扩展/SDK/RPC/pi-intercom 与 pi-messenger 多会话协作 |
-| [Pi Agent 开发](docs/pi-agent/index.md) | 21 章 | pi-agent-core / pi-ai | 统一 LLM API/工具调用/事件流/Provider/会话持久化 |
-| [Flue](docs/flue/index.md) | 19 章 | @flue/runtime | 函数式 Harness/Tools/Skills/Sandboxes/Durability/Channels |
-| [Mastra](docs/mastra/index.md) | 21 章 | @mastra/core (TS) | Workflow 图引擎/Memory/RAG/MCP/Evals/部署 |
+| [Pi Agent 开发](docs/pi-agent/index.md) | 21 章 | pi-agent-core / pi-ai | 统一 LLM API/工具调用/事件流/Provider/会话持久化 · **三实战：测试智能体全流程 / CI 集成 / 报告** |
+| [Flue](docs/flue/index.md) | 19 章 | @flue/runtime | 函数式 Harness/Tools/Skills/Sandboxes/Durability/Channels · **三实战：GitHub 分诊 / Slack 值班 / 代码审查** |
+| [Mastra](docs/mastra/index.md) | 21 章 | @mastra/core (TS) | Workflow 图引擎/Memory/RAG/MCP/Evals/部署 · **三实战：智能客服 / 全栈 AI 应用 / 数据问答 BI** |
 
 **共 292 章。**
 
@@ -42,13 +42,15 @@
 
 ## 实战项目
 
-| 课程 | 实战项目 |
-|---|---|
-| [Pi Agent 开发](docs/pi-agent/index.md) | 测试智能体全流程：需求解析 → 需求评审 → 测试方案 → 用例生成（支持交互稿设计图）→ 接口/Web 自动化执行 → 报告 |
-| [Mastra](docs/mastra/index.md) | 生产级智能客服 Agent（意图分流/RAG/人工转接）+ 全栈 AI 应用 |
-| [Flue](docs/flue/index.md) | GitHub 自动分诊 Agent + Slack 值班助手 |
-| [CrewAI](docs/crewai/index.md) | 内容营销流水线 + 数据分析流水线 |
-| [Agno](docs/agno/index.md) | 智能数据分析助手（CSV 工具调用 → 图表生成 → Workflow 报告） |
+五门智能体框架课程均配备 **三章贯穿式实战**，覆盖不同场景与复杂度：
+
+| 课程 | 实战一 | 实战二 | 实战三 |
+|---|---|---|---|
+| [Pi Agent 开发](docs/pi-agent/index.md) | 测试智能体——需求到用例 | 测试智能体——自动化执行与报告 | 测试智能体——CI 集成与定时回归巡检 |
+| [Mastra](docs/mastra/index.md) | 生产级智能客服 Agent | 全栈 AI 应用 | 数据问答 BI Agent |
+| [Flue](docs/flue/index.md) | GitHub 自动分诊 Agent | Slack 值班助手 | 代码审查 Agent |
+| [CrewAI](docs/crewai/index.md) | 内容营销流水线 | 数据分析流水线 | 竞品监控情报 Crew |
+| [Agno](docs/agno/index.md) | 智能数据分析助手 | 多源研究助手 Team | 客服知识库 Agent 上线 AgentOS |
 
 ## 本地开发
 
