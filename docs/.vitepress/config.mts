@@ -232,8 +232,8 @@ const piAgent = [
   { text: '16 跨提供商切换 Handoffs', link: '/pi-agent/ch16' },
   { text: '17 会话持久化与 SQLite 后端', link: '/pi-agent/ch17' },
   { text: '18 上下文序列化与浏览器使用', link: '/pi-agent/ch18' },
-  { text: '19 实战：构建编码助手 CLI', link: '/pi-agent/ch19' },
-  { text: '20 综合实战：生产级 Agent 服务', link: '/pi-agent/ch20' }
+  { text: '19 实战：测试智能体（上）——需求到用例', link: '/pi-agent/ch19' },
+  { text: '20 实战：测试智能体（下）——执行与报告', link: '/pi-agent/ch20' }
 ]
 
 
