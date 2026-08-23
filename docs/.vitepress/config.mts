@@ -420,19 +420,34 @@ export default defineConfig({
     siteTitle: '📚 编程进阶教程站',
     nav: [
       { text: '首页', link: '/' },
-      { text: 'HTTP 请求', link: '/http/' },
-      { text: 'pytest', link: '/pytest/' },
-      { text: 'Playwright', link: '/playwright/' },
-      { text: 'Locust', link: '/locust/' },
-      { text: 'FastAPI', link: '/fastapi/' },
-      { text: 'Agno', link: '/agno/' },
-      { text: 'CrewAI', link: '/crewai/' },
-      { text: 'Agent 工程', link: '/agent/' },
-      { text: 'Claude Code', link: '/claude-code/' },
-      { text: 'Pi', link: '/pi/' },
-      { text: 'Pi Agent 开发', link: '/pi-agent/' },
-      { text: 'Flue', link: '/flue/' },
-      { text: 'Mastra', link: '/mastra/' }
+      {
+        text: '🌐 Web 与测试基础',
+        items: [
+          { text: 'HTTP 请求', link: '/http/' },
+          { text: 'pytest', link: '/pytest/' },
+          { text: 'Playwright', link: '/playwright/' },
+          { text: 'Locust', link: '/locust/' },
+          { text: 'FastAPI', link: '/fastapi/' }
+        ]
+      },
+      {
+        text: '🤖 智能体框架',
+        items: [
+          { text: 'Agno（Python）', link: '/agno/' },
+          { text: 'CrewAI（Python）', link: '/crewai/' },
+          { text: 'Mastra（TypeScript）', link: '/mastra/' },
+          { text: 'Flue（TypeScript）', link: '/flue/' },
+          { text: 'Pi Agent 开发（TypeScript）', link: '/pi-agent/' }
+        ]
+      },
+      {
+        text: '🧠 AI 助手与工程',
+        items: [
+          { text: 'Agent 工程', link: '/agent/' },
+          { text: 'Claude Code', link: '/claude-code/' },
+          { text: 'Pi 编码智能体', link: '/pi/' }
+        ]
+      }
     ],
     sidebar: {
       '/http/': [{
