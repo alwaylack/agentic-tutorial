@@ -415,7 +415,7 @@ export default defineConfig({
       '/agent/': [{ text: 'Agent 工程基础教程（32 章）', items: agent }],
       '/pi/': [{ text: 'Pi 编码智能体教程（21 章）', items: pi }]
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/alwaylack/agentic-tutorial' }],
     outline: { level: [2, 3], label: '本页目录' },
     docFooter: { prev: '上一章', next: '下一章' },
     lastUpdated: { text: '最后更新于' }
