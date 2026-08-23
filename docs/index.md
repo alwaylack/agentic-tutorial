@@ -5,6 +5,16 @@ hero:
   name: 编程进阶教程站
   text: HTTP · 测试 · 压测 · Web · 智能体 · AI 助手
   tagline: 从 0 基础到生产实践的十三套系统教程，每章配有随堂测验与动手实践
+  actions:
+    - theme: brand
+      text: 开始学习 →
+      link: /http/
+    - theme: alt
+      text: ☁️ Cloudflare 镜像
+      link: https://agentic-tutorial.pages.dev
+    - theme: alt
+      text: ▲ Vercel 镜像
+      link: https://agentic-tutorial.vercel.app
 ---
 
 <CourseCards />

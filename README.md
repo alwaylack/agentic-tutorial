@@ -48,16 +48,25 @@ npm run build    # 产物在 docs/.vitepress/dist
 npm run preview
 ```
 
+## 在线访问
+
+| 平台 | 地址 | 状态徽章 |
+|---|---|---|
+| ☁️ Cloudflare Pages | [https://agentic-tutorial.pages.dev](https://agentic-tutorial.pages.dev) | [![Cloudflare Pages](https://img.shields.io/website?url=https%3A%2F%2Fagentic-tutorial.pages.dev&label=pages.dev)](https://agentic-tutorial.pages.dev) |
+| ▲ Vercel | [https://agentic-tutorial.vercel.app](https://agentic-tutorial.vercel.app) | [![Vercel](https://img.shields.io/website?url=https%3A%2F%2Fagentic-tutorial.vercel.app&label=vercel.app)](https://agentic-tutorial.vercel.app) |
+
+两个地址内容完全一致，任选其一访问。
+
 ## 部署
 
 详细步骤见 [DEPLOY.md](DEPLOY.md)。支持 Vercel 与 Cloudflare Pages 双平台：
 
-### Vercel
+### Vercel（线上：https://agentic-tutorial.vercel.app）
 
 1. 在 [vercel.com](https://vercel.com) 导入本仓库，自动读取 `vercel.json` 直接 Deploy；
 2. 或 CLI：`npx vercel --prod`
 
-### Cloudflare Pages
+### Cloudflare Pages（线上：https://agentic-tutorial.pages.dev）
 
 1. 在 [dash.cloudflare.com](https://dash.cloudflare.com) → Workers & Pages → Pages → Connect to Git；
    Framework preset 选 **VitePress**（或 None 并手动填写 Build command `npm run build`、Output directory `docs/.vitepress/dist`）
