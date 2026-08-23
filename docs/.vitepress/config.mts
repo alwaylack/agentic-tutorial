@@ -76,7 +76,9 @@ const agno = [
   { text: '22 AgentOS：把 Agent 发布成服务', link: '/agno/ch22' },
   { text: '23 可观测性与调试', link: '/agno/ch23' },
   { text: '24 性能优化与生产实践', link: '/agno/ch24' },
-  { text: '25 综合实战：智能数据分析助手', link: '/agno/ch25' }
+  { text: '25 综合实战：智能数据分析助手', link: '/agno/ch25' },
+  { text: '26 综合实战二：多源研究助手 Team', link: '/agno/ch26' },
+  { text: '27 综合实战三：客服知识库 Agent 上线 AgentOS', link: '/agno/ch27' }
 ]
 
 const crewai = [
@@ -105,7 +107,8 @@ const crewai = [
   { text: '22 部署与服务化', link: '/crewai/ch22' },
   { text: '23 综合实战一：内容营销流水线', link: '/crewai/ch23' },
   { text: '24 综合实战二：数据分析流水线', link: '/crewai/ch24' },
-  { text: '25 最佳实践与生产清单', link: '/crewai/ch25' }
+  { text: '25 综合实战三：竞品监控情报 Crew', link: '/crewai/ch25' },
+  { text: '26 最佳实践与生产清单', link: '/crewai/ch26' }
 ]
 
 // ===== Playwright (Python) 1.x =====
@@ -234,7 +237,8 @@ const piAgent = [
   { text: '17 会话持久化与 SQLite 后端', link: '/pi-agent/ch17' },
   { text: '18 上下文序列化与浏览器使用', link: '/pi-agent/ch18' },
   { text: '19 实战：测试智能体（上）——需求到用例', link: '/pi-agent/ch19' },
-  { text: '20 实战：测试智能体（下）——执行与报告', link: '/pi-agent/ch20' }
+  { text: '20 实战：测试智能体（下）——执行与报告', link: '/pi-agent/ch20' },
+  { text: '21 实战：CI 集成与定时回归巡检', link: '/pi-agent/ch21' }
 ]
 
 
@@ -258,7 +262,8 @@ const flue = [
   { text: '15 部署：Node.js 与 Cloudflare Workers', link: '/flue/ch15' },
   { text: '16 部署：CI 与托管平台', link: '/flue/ch16' },
   { text: '17 实战：GitHub 自动分诊 Agent', link: '/flue/ch17' },
-  { text: '18 综合实战与框架对比', link: '/flue/ch18' }
+  { text: '18 综合实战与框架对比', link: '/flue/ch18' },
+  { text: '19 实战三：代码审查 Agent', link: '/flue/ch19' }
 ]
 
 // ===== Mastra =====
@@ -283,7 +288,8 @@ const mastra = [
   { text: '17 集成 React 与 Next.js', link: '/mastra/ch17' },
   { text: '18 独立部署与服务端', link: '/mastra/ch18' },
   { text: '19 实战：生产级智能客服 Agent', link: '/mastra/ch19' },
-  { text: '20 综合实战：全栈 AI 应用', link: '/mastra/ch20' }
+  { text: '20 综合实战：全栈 AI 应用', link: '/mastra/ch20' },
+  { text: '21 综合实战三：数据问答 BI Agent', link: '/mastra/ch21' }
 ]
 
 // ===== Locust 性能测试 =====
@@ -505,12 +511,12 @@ export default defineConfig({
       '/playwright/': [{ text: 'Playwright 教程（22 章）', items: playwright }],
       '/fastapi/': [{ text: 'FastAPI 教程（22 章）', items: fastapi }],
       '/agno/': [{ text: 'Agno 2 教程（24 章）', items: agno }],
-      '/crewai/': [{ text: 'CrewAI 教程（25 章）', items: crewai }],
+      '/crewai/': [{ text: 'CrewAI 教程（26 章）', items: crewai }],
       '/locust/': [{ text: 'Locust 性能测试教程（20 章）', items: locust }],
       '/claude-code/': [{ text: 'Claude Code 教程（20 章）', items: claudeCode }],
-      '/pi-agent/': [{ text: 'Pi Agent 开发教程（20 章）', items: piAgent }],
-      '/flue/': [{ text: 'Flue 教程（18 章）', items: flue }],
-      '/mastra/': [{ text: 'Mastra 教程（20 章）', items: mastra }],
+      '/pi-agent/': [{ text: 'Pi Agent 开发教程（21 章）', items: piAgent }],
+      '/flue/': [{ text: 'Flue 教程（19 章）', items: flue }],
+      '/mastra/': [{ text: 'Mastra 教程（21 章）', items: mastra }],
       '/agent/': [{ text: 'Agent 工程基础教程（32 章）', items: agent }],
       '/pi/': [{ text: 'Pi 编码智能体教程（21 章）', items: pi }]
     },

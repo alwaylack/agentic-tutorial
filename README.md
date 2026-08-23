@@ -16,16 +16,16 @@
 | [Playwright](docs/playwright/index.md) | 22 章 | Playwright 1.62 (Python) | 定位器/自动等待/网络 Mock/POM/Sharding/无障碍 |
 | [Locust](docs/locust/index.md) | 20 章 | Locust 2.46 | HttpUser/TaskSet/分布式/Docker/K8s/asyncio 压测 |
 | [FastAPI](docs/fastapi/index.md) | 22 章 | FastAPI 0.141+ | 依赖注入/OAuth2/数据库/WebSocket/部署 |
-| [Agno](docs/agno/index.md) | 25 章 | Agno 2.9 | Agent/工具/RAG/Team/Workflow/AgentOS |
-| [CrewAI](docs/crewai/index.md) | 25 章 | CrewAI 1.15 | Agent/Task/Crew/Flow/记忆/MCP/评估 |
+| [Agno](docs/agno/index.md) | 27 章 | Agno 2.9 | Agent/工具/RAG/Team/Workflow/AgentOS |
+| [CrewAI](docs/crewai/index.md) | 26 章 | CrewAI 1.15 | Agent/Task/Crew/Flow/记忆/MCP/评估 |
 | [Agent 工程](docs/agent/index.md) | 32 章 | — | PromptingGuide/Harness/MCP/Skills/AGENTS.md/Loop 六大基石 |
 | [Claude Code](docs/claude-code/index.md) | 21 章 | Claude Code 2.1.x | CLAUDE.md/MCP/Skills/Hooks/SDK + 近期新特性 |
 | [Pi](docs/pi/index.md) | 21 章 | pi 0.84.x | 会话管理/技能扩展/SDK/RPC/pi-intercom 与 pi-messenger 多会话协作 |
-| [Pi Agent 开发](docs/pi-agent/index.md) | 20 章 | pi-agent-core / pi-ai | 统一 LLM API/工具调用/事件流/Provider/会话持久化 |
-| [Flue](docs/flue/index.md) | 18 章 | @flue/runtime | 函数式 Harness/Tools/Skills/Sandboxes/Durability/Channels |
-| [Mastra](docs/mastra/index.md) | 20 章 | @mastra/core (TS) | Workflow 图引擎/Memory/RAG/MCP/Evals/部署 |
+| [Pi Agent 开发](docs/pi-agent/index.md) | 21 章 | pi-agent-core / pi-ai | 统一 LLM API/工具调用/事件流/Provider/会话持久化 |
+| [Flue](docs/flue/index.md) | 19 章 | @flue/runtime | 函数式 Harness/Tools/Skills/Sandboxes/Durability/Channels |
+| [Mastra](docs/mastra/index.md) | 21 章 | @mastra/core (TS) | Workflow 图引擎/Memory/RAG/MCP/Evals/部署 |
 
-**共 286 章。**
+**共 292 章。**
 
 每章包含：文字讲解 + 可运行示例代码 + **4 道交互式随堂测验**（答错展示正确答案与原因）+ **3 道动手实践题**。
 
