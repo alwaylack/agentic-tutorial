@@ -1,0 +1,116 @@
+/* ===== GitHub Light Theme for VitePress ===== */
+:root {
+  --gh-canvas: #ffffff;
+  --gh-canvas-subtle: #f6f8fa;
+  --gh-fg: #1f2328;
+  --gh-muted: #59636e;
+  --gh-border: #d1d9e0;
+  --gh-accent: #0969da;
+
+  /* VitePress variable overrides */
+  --vp-c-bg: var(--gh-canvas);
+  --vp-c-bg-alt: var(--gh-canvas-subtle);
+  --vp-c-bg-soft: var(--gh-canvas-subtle);
+  --vp-c-text-1: var(--gh-fg);
+  --vp-c-text-2: #424a53;
+  --vp-c-text-3: var(--gh-muted);
+  --vp-c-divider: var(--gh-border);
+  --vp-c-gutter: var(--gh-border);
+
+  --vp-c-brand-1: var(--gh-accent);
+  --vp-c-brand-2: #0550ae;
+  --vp-c-brand-3: var(--gh-accent);
+  --vp-c-brand-soft: rgba(9, 105, 218, 0.14);
+
+  --vp-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Noto Sans', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', sans-serif;
+
+  --vp-sidebar-bg-color: var(--gh-canvas);
+  --vp-nav-bg-color: var(--gh-canvas);
+
+  --vp-code-block-bg: #f6f8fa;
+  --vp-code-tab-divider: var(--gh-border);
+  --vp-code-line-highlight-color: #fff8c5;
+
+  --vp-home-hero-name-color: var(--gh-accent);
+  --vp-button-brand-bg: #1f883d;
+  --vp-button-brand-hover-bg: #1a7f37;
+  --vp-button-brand-active-bg: #182f26;
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-border: rgba(31, 35, 40, 0.15);
+  --vp-button-alt-bg: #f6f8fa;
+  --vp-button-alt-hover-bg: #eef1f4;
+  --vp-button-alt-text: var(--gh-fg);
+  --vp-button-alt-border: var(--gh-border);
+}
+
+body {
+  font-family: var(--vp-font-family-base);
+  color: var(--gh-fg);
+}
+
+/* nav */
+.VPNavBar {
+  border-bottom: 1px solid var(--gh-border);
+}
+.VPNavBarMenuLink:hover,
+.VPNavBarMenuLink.active {
+  color: var(--gh-accent) !important;
+}
+
+/* headings anchor like GitHub */
+.vp-doc h1,
+.vp-doc h2 {
+  border-bottom: 1px solid var(--gh-border);
+  padding-bottom: 0.3em;
+}
+
+/* links */
+.vp-doc a:hover {
+  text-decoration: underline;
+}
+
+/* code blocks like GitHub */
+.vp-doc div[class*='language-'] {
+  border: 1px solid var(--gh-border);
+  border-radius: 6px;
+}
+.vp-doc :not(pre) > code {
+  background: rgba(175, 184, 193, 0.2);
+  border-radius: 6px;
+  padding: 0.2em 0.4em;
+  font-size: 85%;
+  color: var(--gh-fg);
+}
+
+/* tables like GitHub */
+.vp-doc table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.vp-doc th,
+.vp-doc td {
+  border: 1px solid var(--gh-border);
+  padding: 6px 13px;
+}
+.vp-doc tr:nth-child(2n) {
+  background: var(--gh-canvas-subtle);
+}
+
+/* custom containers restyled to GitHub callouts */
+.vp-doc .custom-block.tip {
+  border-color: #1a7f37;
+  background: #dafbe1;
+  color: var(--gh-fg);
+}
+.vp-doc .custom-block.warning {
+  border-color: #bf8700;
+  background: #fff8c5;
+  color: var(--gh-fg);
+}
+.vp-doc .custom-block.danger {
+  border-color: #cf222e;
+  background: #ffebe9;
+  color: var(--gh-fg);
+}
