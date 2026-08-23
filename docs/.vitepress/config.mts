@@ -236,11 +236,11 @@ const piAgent = [
   { text: '16 跨提供商切换 Handoffs', link: '/pi-agent/ch16' },
   { text: '17 会话持久化与 SQLite 后端', link: '/pi-agent/ch17' },
   { text: '18 上下文序列化与浏览器使用', link: '/pi-agent/ch18' },
-  { text: '19 实战一：测试智能体——从需求到用例', link: '/pi-agent/ch19' },
-  { text: '20 实战二：测试智能体——自动化执行与报告', link: '/pi-agent/ch20' },
-  { text: '21 实战三：测试智能体——CI 集成与定时回归巡检', link: '/pi-agent/ch21' },
-  { text: '22 可观测性：Telemetry 与 Span 追踪', link: '/pi-agent/ch22' },
-  { text: '23 终端用户界面：pi-tui 与差量渲染', link: '/pi-agent/ch23' }
+  { text: '19 可观测性：Telemetry 与 Span 追踪', link: '/pi-agent/ch19' },
+  { text: '20 终端用户界面：pi-tui 与差量渲染', link: '/pi-agent/ch20' },
+  { text: '21 实战一：测试智能体——从需求到测试用例', link: '/pi-agent/ch21' },
+  { text: '22 实战二：测试智能体——自动化执行与报告', link: '/pi-agent/ch22' },
+  { text: '23 实战三：测试智能体——CI 集成与定时回归巡检', link: '/pi-agent/ch23' }
 ]
 
 
