@@ -1,6 +1,6 @@
 # Pi Agent 开发 · 课程导学
 
-本课程共 **20 章**，基于 **@earendil-works/pi-agent-core** 与 **@earendil-works/pi-ai** 官方源码文档，用 TypeScript 从零构建生产级智能体。
+本课程共 **23 章**，基于 **@earendil-works/pi-agent-core** 与 **@earendil-works/pi-ai** 官方源码文档，用 TypeScript 从零构建生产级智能体。
 
 ## 你将学到什么
 
