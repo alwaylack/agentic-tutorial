@@ -76,9 +76,9 @@ const agno = [
   { text: '22 AgentOS：把 Agent 发布成服务', link: '/agno/ch22' },
   { text: '23 可观测性与调试', link: '/agno/ch23' },
   { text: '24 性能优化与生产实践', link: '/agno/ch24' },
-  { text: '25 综合实战：智能数据分析助手', link: '/agno/ch25' },
-  { text: '26 综合实战二：多源研究助手 Team', link: '/agno/ch26' },
-  { text: '27 综合实战三：客服知识库 Agent 上线 AgentOS', link: '/agno/ch27' }
+  { text: '25 实战一：智能数据分析助手', link: '/agno/ch25' },
+  { text: '26 实战二：多源研究助手 Team', link: '/agno/ch26' },
+  { text: '27 实战三：客服知识库 Agent 上线 AgentOS', link: '/agno/ch27' }
 ]
 
 const crewai = [
@@ -236,9 +236,9 @@ const piAgent = [
   { text: '16 跨提供商切换 Handoffs', link: '/pi-agent/ch16' },
   { text: '17 会话持久化与 SQLite 后端', link: '/pi-agent/ch17' },
   { text: '18 上下文序列化与浏览器使用', link: '/pi-agent/ch18' },
-  { text: '19 实战：测试智能体（上）——需求到用例', link: '/pi-agent/ch19' },
-  { text: '20 实战：测试智能体（下）——执行与报告', link: '/pi-agent/ch20' },
-  { text: '21 实战：CI 集成与定时回归巡检', link: '/pi-agent/ch21' }
+  { text: '19 实战一：测试智能体——从需求到用例', link: '/pi-agent/ch19' },
+  { text: '20 实战二：测试智能体——自动化执行与报告', link: '/pi-agent/ch20' },
+  { text: '21 实战三：测试智能体——CI 集成与定时回归巡检', link: '/pi-agent/ch21' }
 ]
 
 
@@ -261,8 +261,8 @@ const flue = [
   { text: '14 CLI 与本地运行', link: '/flue/ch14' },
   { text: '15 部署：Node.js 与 Cloudflare Workers', link: '/flue/ch15' },
   { text: '16 部署：CI 与托管平台', link: '/flue/ch16' },
-  { text: '17 实战：GitHub 自动分诊 Agent', link: '/flue/ch17' },
-  { text: '18 综合实战与框架对比', link: '/flue/ch18' },
+  { text: '17 实战一：GitHub 自动分诊 Agent', link: '/flue/ch17' },
+  { text: '18 实战二：Slack 值班助手（含框架对比）', link: '/flue/ch18' },
   { text: '19 实战三：代码审查 Agent', link: '/flue/ch19' }
 ]
 
@@ -288,8 +288,8 @@ const mastra = [
   { text: '17 集成 React 与 Next.js', link: '/mastra/ch17' },
   { text: '18 独立部署与服务端', link: '/mastra/ch18' },
   { text: '19 实战：生产级智能客服 Agent', link: '/mastra/ch19' },
-  { text: '20 综合实战：全栈 AI 应用', link: '/mastra/ch20' },
-  { text: '21 综合实战三：数据问答 BI Agent', link: '/mastra/ch21' }
+  { text: '20 实战二：全栈 AI 应用', link: '/mastra/ch20' },
+  { text: '21 实战三：数据问答 BI Agent', link: '/mastra/ch21' }
 ]
 
 // ===== Locust 性能测试 =====
