@@ -114,3 +114,8 @@ body {
   background: #ffebe9;
   color: var(--gh-fg);
 }
+
+/* 隐藏导航栏默认 GitHub 图标（由 NavGitHubStars 组件替代） */
+.VPNavBar .VPNavBarSocialLinks {
+  display: none;
+}

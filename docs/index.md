@@ -7,10 +7,6 @@ hero:
   tagline: 从 0 基础到生产实践的十套系统教程，每章配有随堂测验与动手实践
 ---
 
-<div class="home-star-row">
-  <GitHubStars />
-</div>
-
 <CourseCards />
 
 ## 为什么选这套教程
