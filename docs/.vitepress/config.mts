@@ -75,7 +75,8 @@ const agno = [
   { text: '21 Workflow 进阶：并行/分支/循环', link: '/agno/ch21' },
   { text: '22 AgentOS：把 Agent 发布成服务', link: '/agno/ch22' },
   { text: '23 可观测性与调试', link: '/agno/ch23' },
-  { text: '24 性能优化与生产实践', link: '/agno/ch24' }
+  { text: '24 性能优化与生产实践', link: '/agno/ch24' },
+  { text: '25 综合实战：智能数据分析助手', link: '/agno/ch25' }
 ]
 
 const crewai = [

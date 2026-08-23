@@ -16,7 +16,7 @@
 | [Playwright](docs/playwright/index.md) | 22 章 | Playwright 1.62 (Python) | 定位器/自动等待/网络 Mock/POM/Sharding/无障碍 |
 | [Locust](docs/locust/index.md) | 20 章 | Locust 2.46 | HttpUser/TaskSet/分布式/Docker/K8s/asyncio 压测 |
 | [FastAPI](docs/fastapi/index.md) | 22 章 | FastAPI 0.141+ | 依赖注入/OAuth2/数据库/WebSocket/部署 |
-| [Agno](docs/agno/index.md) | 24 章 | Agno 2.9 | Agent/工具/RAG/Team/Workflow/AgentOS |
+| [Agno](docs/agno/index.md) | 25 章 | Agno 2.9 | Agent/工具/RAG/Team/Workflow/AgentOS |
 | [CrewAI](docs/crewai/index.md) | 25 章 | CrewAI 1.15 | Agent/Task/Crew/Flow/记忆/MCP/评估 |
 | [Agent 工程](docs/agent/index.md) | 32 章 | — | PromptingGuide/Harness/MCP/Skills/AGENTS.md/Loop 六大基石 |
 | [Claude Code](docs/claude-code/index.md) | 21 章 | Claude Code 2.1.x | CLAUDE.md/MCP/Skills/Hooks/SDK + 近期新特性 |
@@ -25,7 +25,7 @@
 | [Flue](docs/flue/index.md) | 18 章 | @flue/runtime | 函数式 Harness/Tools/Skills/Sandboxes/Durability/Channels |
 | [Mastra](docs/mastra/index.md) | 20 章 | @mastra/core (TS) | Workflow 图引擎/Memory/RAG/MCP/Evals/部署 |
 
-**共 285 章。**
+**共 286 章。**
 
 每章包含：文字讲解 + 可运行示例代码 + **4 道交互式随堂测验**（答错展示正确答案与原因）+ **3 道动手实践题**。
 
@@ -36,8 +36,19 @@
 | 方向 | 路线 |
 |---|---|
 | 🌐 Web 开发 | HTTP 请求 → FastAPI → Playwright |
-| ✅ 测试工程 | pytest → Playwright → Locust |
-| 🤖 智能体开发 | Agent 工程 → Agno → CrewAI → Pi → Pi Agent 开发 → Claude Code → Flue → Mastra |
+| ✅ 测试工程 | pytest → Playwright → Locust → Pi Agent 开发（测试智能体实战） |
+| 🐍 Python 智能体 | Agent 工程 → Agno → CrewAI → Pi → Claude Code |
+| 🟦 TypeScript 智能体 | Agent 工程 → Mastra → Flue → Pi Agent 开发 |
+
+## 实战项目
+
+| 课程 | 实战项目 |
+|---|---|
+| [Pi Agent 开发](docs/pi-agent/index.md) | 测试智能体全流程：需求解析 → 需求评审 → 测试方案 → 用例生成（支持交互稿设计图）→ 接口/Web 自动化执行 → 报告 |
+| [Mastra](docs/mastra/index.md) | 生产级智能客服 Agent（意图分流/RAG/人工转接）+ 全栈 AI 应用 |
+| [Flue](docs/flue/index.md) | GitHub 自动分诊 Agent + Slack 值班助手 |
+| [CrewAI](docs/crewai/index.md) | 内容营销流水线 + 数据分析流水线 |
+| [Agno](docs/agno/index.md) | 智能数据分析助手（CSV 工具调用 → 图表生成 → Workflow 报告） |
 
 ## 本地开发
 

@@ -7,7 +7,7 @@ const courses = [
   { icon: '🎭', name: 'Playwright', desc: '22 章搞定 E2E 测试：自动等待、网络 Mock、POM 到无障碍与 CI', link: '/playwright/', cta: '开始学习' },
   { icon: '🔥', name: 'Locust', desc: '20 章掌握性能压测：HttpUser、分布式、Docker/K8s 到 CI/CD 集成', link: '/locust/', cta: '开始学习' },
   { icon: '🚀', name: 'FastAPI', desc: '22 章覆盖官方文档全主题：Pydantic 校验、依赖注入、OAuth2 安全到生产部署', link: '/fastapi/', cta: '开始学习' },
-  { icon: '🤖', name: 'Agno', desc: '24 章玩转 Agno 2 智能体：工具、RAG、Team、Workflow 与 AgentOS', link: '/agno/', cta: '开始学习' },
+  { icon: '🤖', name: 'Agno', desc: '25 章玩转 Agno 2 智能体：工具、RAG、Team、Workflow、AgentOS 与数据分析实战：工具、RAG、Team、Workflow 与 AgentOS', link: '/agno/', cta: '开始学习' },
   { icon: '👥', name: 'CrewAI', desc: '25 章精通 CrewAI 多智能体：角色设计、Flow 工作流与评估部署', link: '/crewai/', cta: '开始学习' },
   { icon: '🛠️', name: 'Agent 工程', desc: '32 章打通 Prompt、Harness、MCP、Skills、AGENTS.md 与 Loop Engineering 六大基石', link: '/agent/', cta: '开始学习' },
   { icon: '🧠', name: 'Claude Code', desc: '20 章驾驭 AI 编码助手：CLAUDE.md、MCP、Skills、Hooks 到团队工程化', link: '/claude-code/', cta: '开始学习' },
