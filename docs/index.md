@@ -17,8 +17,6 @@ hero:
       link: https://agentic-tutorial.vercel.app
 ---
 
-<CourseCards />
-
 ## 为什么选这套教程
 
 - **零基础友好**：所有课程默认从安装环境讲起，循序渐进到入门 / 进阶 / 高级 / 生产实践四个阶段；
