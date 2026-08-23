@@ -287,7 +287,7 @@ const mastra = [
   { text: '16 Observability 可观测性', link: '/mastra/ch16' },
   { text: '17 集成 React 与 Next.js', link: '/mastra/ch17' },
   { text: '18 独立部署与服务端', link: '/mastra/ch18' },
-  { text: '19 实战：生产级智能客服 Agent', link: '/mastra/ch19' },
+  { text: '19 实战一：生产级智能客服 Agent', link: '/mastra/ch19' },
   { text: '20 实战二：全栈 AI 应用', link: '/mastra/ch20' },
   { text: '21 实战三：数据问答 BI Agent', link: '/mastra/ch21' }
 ]
