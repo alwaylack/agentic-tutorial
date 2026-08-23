@@ -12,7 +12,7 @@ const courses = [
   { icon: '🛠️', name: 'Agent 工程', desc: '32 章打通 Prompt、Harness、MCP、Skills、AGENTS.md 与 Loop Engineering 六大基石', link: '/agent/', cta: '开始学习' },
   { icon: '🧠', name: 'Claude Code', desc: '20 章驾驭 AI 编码助手：CLAUDE.md、MCP、Skills、Hooks 到团队工程化', link: '/claude-code/', cta: '开始学习' },
   { icon: '🧩', name: 'Pi', desc: '21 章定制你的编码智能体：会话管理、技能扩展与多会话协作', link: '/pi/', cta: '开始学习' },
-  { icon: '⚙️', name: 'Pi Agent 开发', desc: '21 章用 pi-agent-core 与 pi-ai 构建生产级智能体：工具调用、事件流与会话持久化', link: '/pi-agent/', cta: '开始学习' },
+  { icon: '⚙️', name: 'Pi Agent 开发', desc: '23 章用 pi-agent-core + pi-telemetry + pi-tui 与 pi-ai 构建生产级智能体：工具调用、事件流与会话持久化', link: '/pi-agent/', cta: '开始学习' },
   { icon: '🪄', name: 'Flue', desc: '19 章掌握可编程 Agent Harness：use agent 函数式写法、Skills、Sandboxes 与多云部署', link: '/flue/', cta: '开始学习' },
   { icon: '🌀', name: 'Mastra', desc: '21 章掌握 TypeScript AI 框架：Workflow 图引擎、Memory、RAG、Evals 与部署', link: '/mastra/', cta: '开始学习' }
 ]

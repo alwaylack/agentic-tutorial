@@ -238,7 +238,9 @@ const piAgent = [
   { text: '18 上下文序列化与浏览器使用', link: '/pi-agent/ch18' },
   { text: '19 实战一：测试智能体——从需求到用例', link: '/pi-agent/ch19' },
   { text: '20 实战二：测试智能体——自动化执行与报告', link: '/pi-agent/ch20' },
-  { text: '21 实战三：测试智能体——CI 集成与定时回归巡检', link: '/pi-agent/ch21' }
+  { text: '21 实战三：测试智能体——CI 集成与定时回归巡检', link: '/pi-agent/ch21' },
+  { text: '22 可观测性：Telemetry 与 Span 追踪', link: '/pi-agent/ch22' },
+  { text: '23 终端用户界面：pi-tui 与差量渲染', link: '/pi-agent/ch23' }
 ]
 
 
@@ -514,7 +516,7 @@ export default defineConfig({
       '/crewai/': [{ text: 'CrewAI 教程（26 章）', items: crewai }],
       '/locust/': [{ text: 'Locust 性能测试教程（20 章）', items: locust }],
       '/claude-code/': [{ text: 'Claude Code 教程（20 章）', items: claudeCode }],
-      '/pi-agent/': [{ text: 'Pi Agent 开发教程（21 章）', items: piAgent }],
+      '/pi-agent/': [{ text: 'Pi Agent 开发教程（23 章）', items: piAgent }],
       '/flue/': [{ text: 'Flue 教程（19 章）', items: flue }],
       '/mastra/': [{ text: 'Mastra 教程（21 章）', items: mastra }],
       '/agent/': [{ text: 'Agent 工程基础教程（32 章）', items: agent }],
