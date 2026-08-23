@@ -105,9 +105,9 @@ const crewai = [
   { text: '20 测试与评估：crewai test/train', link: '/crewai/ch20' },
   { text: '21 可观测性与监控集成', link: '/crewai/ch21' },
   { text: '22 部署与服务化', link: '/crewai/ch22' },
-  { text: '23 综合实战一：内容营销流水线', link: '/crewai/ch23' },
-  { text: '24 综合实战二：数据分析流水线', link: '/crewai/ch24' },
-  { text: '25 综合实战三：竞品监控情报 Crew', link: '/crewai/ch25' },
+  { text: '23 实战一：内容营销流水线', link: '/crewai/ch23' },
+  { text: '24 实战二：数据分析流水线', link: '/crewai/ch24' },
+  { text: '25 实战三：竞品监控情报 Crew', link: '/crewai/ch25' },
   { text: '26 最佳实践与生产清单', link: '/crewai/ch26' }
 ]
 
