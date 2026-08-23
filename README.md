@@ -1,8 +1,11 @@
 # 📚 编程进阶教程站
 
-从 0 基础到生产实践的**十套系统教程**（中文），基于各项目**最新官方文档**编写。
+[![Cloudflare Pages](https://img.shields.io/badge/☁️_Cloudflare_Pages-agentic--tutorial.pages.dev-F38020?style=for-the-badge)](https://agentic-tutorial.pages.dev)
+[![Vercel](https://img.shields.io/badge/▲_Vercel-agentic--tutorial.vercel.app-000000?style=for-the-badge)](https://agentic-tutorial.vercel.app)
 
-🌐 在线访问：部署后填入你的站点地址 · 仓库：[alwaylack/agentic-tutorial](https://github.com/alwaylack/agentic-tutorial)
+从 0 基础到生产实践的**十三套系统教程**（中文），基于各项目**最新官方文档**编写。
+
+仓库：[alwaylack/agentic-tutorial](https://github.com/alwaylack/agentic-tutorial)
 
 ## 课程总览
 
@@ -18,8 +21,11 @@
 | [Agent 工程](docs/agent/index.md) | 32 章 | — | PromptingGuide/Harness/MCP/Skills/AGENTS.md/Loop 六大基石 |
 | [Claude Code](docs/claude-code/index.md) | 21 章 | Claude Code 2.1.x | CLAUDE.md/MCP/Skills/Hooks/SDK + 近期新特性 |
 | [Pi](docs/pi/index.md) | 21 章 | pi 0.84.x | 会话管理/技能扩展/SDK/RPC/pi-intercom 与 pi-messenger 多会话协作 |
+| [Pi Agent 开发](docs/pi-agent/index.md) | 20 章 | pi-agent-core / pi-ai | 统一 LLM API/工具调用/事件流/Provider/会话持久化 |
+| [Flue](docs/flue/index.md) | 18 章 | @flue/runtime | 函数式 Harness/Tools/Skills/Sandboxes/Durability/Channels |
+| [Mastra](docs/mastra/index.md) | 20 章 | @mastra/core (TS) | Workflow 图引擎/Memory/RAG/MCP/Evals/部署 |
 
-**共 227 章。**
+**共 285 章。**
 
 每章包含：文字讲解 + 可运行示例代码 + **4 道交互式随堂测验**（答错展示正确答案与原因）+ **3 道动手实践题**。
 
@@ -31,7 +37,7 @@
 |---|---|
 | 🌐 Web 开发 | HTTP 请求 → FastAPI → Playwright |
 | ✅ 测试工程 | pytest → Playwright → Locust |
-| 🤖 智能体开发 | Agent 工程 → Agno → CrewAI → Pi → Claude Code |
+| 🤖 智能体开发 | Agent 工程 → Agno → CrewAI → Pi → Pi Agent 开发 → Claude Code → Flue → Mastra |
 
 ## 本地开发
 

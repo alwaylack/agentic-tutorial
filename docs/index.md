@@ -4,7 +4,7 @@ layout: home
 hero:
   name: 编程进阶教程站
   text: HTTP · 测试 · 压测 · Web · 智能体 · AI 助手
-  tagline: 从 0 基础到生产实践的十套系统教程，每章配有随堂测验与动手实践
+  tagline: 从 0 基础到生产实践的十三套系统教程，每章配有随堂测验与动手实践
 ---
 
 <CourseCards />
@@ -22,4 +22,4 @@ hero:
 |---|---|
 | 🌐 Web 开发 | HTTP 请求 → FastAPI → Playwright |
 | ✅ 测试工程 | pytest → Playwright → Locust |
-| 🤖 智能体开发 | Agent 工程 → Agno → CrewAI → Pi → Claude Code |
+| 🤖 智能体开发 | Agent 工程 → Agno → CrewAI → Pi → Pi Agent 开发 → Claude Code → Flue → Mastra |

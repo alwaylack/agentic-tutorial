@@ -210,6 +210,81 @@ const http = [
 
 
 
+
+// ===== Pi Agent 开发 =====
+const piAgent = [
+  { text: '0. 课程导学', link: '/pi-agent/' },
+  { text: '01 课程导览与环境准备', link: '/pi-agent/ch01' },
+  { text: '02 pi-ai 快速入门：统一 LLM API', link: '/pi-agent/ch02' },
+  { text: '03 Provider 与模型目录', link: '/pi-agent/ch03' },
+  { text: '04 第一个 Agent', link: '/pi-agent/ch04' },
+  { text: '05 事件流订阅与流式输出', link: '/pi-agent/ch05' },
+  { text: '06 工具定义与执行', link: '/pi-agent/ch06' },
+  { text: '07 工具调用事件流', link: '/pi-agent/ch07' },
+  { text: '08 AgentMessage 与消息转换', link: '/pi-agent/ch08' },
+  { text: '09 transformContext 上下文变换', link: '/pi-agent/ch09' },
+  { text: '10 认证解析与凭据管理', link: '/pi-agent/ch10' },
+  { text: '11 思考与推理模式', link: '/pi-agent/ch11' },
+  { text: '12 图片输入与图像生成', link: '/pi-agent/ch12' },
+  { text: '13 停止原因、中止与错误处理', link: '/pi-agent/ch13' },
+  { text: '14 自定义 Provider 与 OpenAI 兼容端点', link: '/pi-agent/ch14' },
+  { text: '15 Faux Provider 与单元测试', link: '/pi-agent/ch15' },
+  { text: '16 跨提供商切换 Handoffs', link: '/pi-agent/ch16' },
+  { text: '17 会话持久化与 SQLite 后端', link: '/pi-agent/ch17' },
+  { text: '18 上下文序列化与浏览器使用', link: '/pi-agent/ch18' },
+  { text: '19 实战：构建编码助手 CLI', link: '/pi-agent/ch19' },
+  { text: '20 综合实战：生产级 Agent 服务', link: '/pi-agent/ch20' }
+]
+
+
+// ===== Flue =====
+const flue = [
+  { text: '0. 课程导学', link: '/flue/' },
+  { text: '01 Flue 概述与 Harness 理念', link: '/flue/ch01' },
+  { text: '02 项目搭建与开发流程', link: '/flue/ch02' },
+  { text: "03 'use agent'：函数式 Agent", link: '/flue/ch03' },
+  { text: '04 模型配置与指令设计', link: '/flue/ch04' },
+  { text: '05 会话与上下文管理', link: '/flue/ch05' },
+  { text: '06 Tools 类型化工具', link: '/flue/ch06' },
+  { text: '07 Skills 技能包', link: '/flue/ch07' },
+  { text: '08 连接 MCP 工具生态', link: '/flue/ch08' },
+  { text: '09 Subagents 子代理委派', link: '/flue/ch09' },
+  { text: '10 Channels 事件通道', link: '/flue/ch10' },
+  { text: '11 Sandboxes 安全沙箱', link: '/flue/ch11' },
+  { text: '12 Durability 持久化与恢复', link: '/flue/ch12' },
+  { text: '13 Observability 可观测性', link: '/flue/ch13' },
+  { text: '14 CLI 与本地运行', link: '/flue/ch14' },
+  { text: '15 部署：Node.js 与 Cloudflare Workers', link: '/flue/ch15' },
+  { text: '16 部署：CI 与托管平台', link: '/flue/ch16' },
+  { text: '17 实战：GitHub 自动分诊 Agent', link: '/flue/ch17' },
+  { text: '18 综合实战与框架对比', link: '/flue/ch18' }
+]
+
+// ===== Mastra =====
+const mastra = [
+  { text: '0. 课程导学', link: '/mastra/' },
+  { text: '01 Mastra 概述与环境搭建', link: '/mastra/ch01' },
+  { text: '02 项目结构与 Mastra Studio', link: '/mastra/ch02' },
+  { text: '03 Model Routing 模型路由', link: '/mastra/ch03' },
+  { text: '04 第一个 Agent', link: '/mastra/ch04' },
+  { text: '05 Tools 工具定义', link: '/mastra/ch05' },
+  { text: '06 Agent 与工具集成实战', link: '/mastra/ch06' },
+  { text: '07 Workflow 基础与 .then()', link: '/mastra/ch07' },
+  { text: '08 分支与并行执行', link: '/mastra/ch08' },
+  { text: '09 Suspend & Resume 人机协同', link: '/mastra/ch09' },
+  { text: '10 Memory 对话历史', link: '/mastra/ch10' },
+  { text: '11 Observational Memory 观察记忆', link: '/mastra/ch11' },
+  { text: '12 RAG 检索增强', link: '/mastra/ch12' },
+  { text: '13 Storage 存储层', link: '/mastra/ch13' },
+  { text: '14 构建 MCP Server', link: '/mastra/ch14' },
+  { text: '15 Evals 评估体系', link: '/mastra/ch15' },
+  { text: '16 Observability 可观测性', link: '/mastra/ch16' },
+  { text: '17 集成 React 与 Next.js', link: '/mastra/ch17' },
+  { text: '18 独立部署与服务端', link: '/mastra/ch18' },
+  { text: '19 生产最佳实践', link: '/mastra/ch19' },
+  { text: '20 综合实战：全栈 AI 应用', link: '/mastra/ch20' }
+]
+
 // ===== Locust 性能测试 =====
 const locust = [
   { text: '0. 课程导学', link: '/locust/' },
@@ -335,7 +410,9 @@ const agent = [
 
 export default defineConfig({
   title: '编程进阶教程站',
-  description: '从零基础到生产实践：pytest · FastAPI · Agno · CrewAI · Playwright · Pi · HTTP 请求库',
+  description: '从零基础到生产实践：HTTP · pytest · Playwright · Locust · FastAPI · Agno · CrewAI · Agent 工程 · Claude Code · Pi · Flue · Mastra',
+  // localhost 示例地址（如 Mastra Studio :4111）不算死链
+  ignoreDeadLinks: [/^https?:\/\/localhost/],
   // 锁定 GitHub Light 浅色主题：禁用深色模式与右上角主题切换开关
   appearance: false,
   head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }]],
@@ -352,7 +429,10 @@ export default defineConfig({
       { text: 'CrewAI', link: '/crewai/' },
       { text: 'Agent 工程', link: '/agent/' },
       { text: 'Claude Code', link: '/claude-code/' },
-      { text: 'Pi', link: '/pi/' }
+      { text: 'Pi', link: '/pi/' },
+      { text: 'Pi Agent 开发', link: '/pi-agent/' },
+      { text: 'Flue', link: '/flue/' },
+      { text: 'Mastra', link: '/mastra/' }
     ],
     sidebar: {
       '/http/': [{
@@ -412,6 +492,9 @@ export default defineConfig({
       '/crewai/': [{ text: 'CrewAI 教程（25 章）', items: crewai }],
       '/locust/': [{ text: 'Locust 性能测试教程（20 章）', items: locust }],
       '/claude-code/': [{ text: 'Claude Code 教程（20 章）', items: claudeCode }],
+      '/pi-agent/': [{ text: 'Pi Agent 开发教程（20 章）', items: piAgent }],
+      '/flue/': [{ text: 'Flue 教程（18 章）', items: flue }],
+      '/mastra/': [{ text: 'Mastra 教程（20 章）', items: mastra }],
       '/agent/': [{ text: 'Agent 工程基础教程（32 章）', items: agent }],
       '/pi/': [{ text: 'Pi 编码智能体教程（21 章）', items: pi }]
     },
