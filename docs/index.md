@@ -37,7 +37,7 @@ hero:
 | Agent 工程 | PromptingGuide + Harness + MCP + Skills + Loop + AGENTS.md |
 | Claude Code | Claude Code 2.1.x |
 | Pi | Pi 0.84.x |
-| Pi Agent 开发 | pi-agent-core + pi-ai（最新 main） |
+| Pi Agent 开发 | pi-agent-core + pi-ai + pi-telemetry + pi-tui（最新 main） |
 | Flue | @flue/runtime（最新 main） |
 | Mastra | @mastra/core（最新） |
 
