@@ -40,6 +40,7 @@ hero:
 | Pi Agent 开发 | pi-agent-core + pi-ai（最新 main） |
 | Flue | @flue/runtime（最新 main） |
 | Mastra | @mastra/core（最新） |
+| Mastra | @mastra/core（最新） |
 
 - **生产导向**：每门课都以真实生产场景收尾——CI 集成、容器化部署、可观测性与上线检查单；
 - **实战贯穿**：智能体框架五门课均配备完整项目实战——

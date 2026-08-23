@@ -1,6 +1,6 @@
 # Flue · 课程导学
 
-本课程共 **18 章**，基于 **Flue 官方仓库与文档**，掌握可编程 TypeScript Agent Harness 框架。
+本课程共 **19 章**，基于 **Flue 官方仓库与文档**，掌握可编程 TypeScript Agent Harness 框架。
 
 ## 你将学到什么
 
