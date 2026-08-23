@@ -268,6 +268,29 @@ const flue = [
   { text: '19 实战三：代码审查 Agent', link: '/flue/ch19' }
 ]
 
+// ===== FirstMate =====
+const firstmate = [
+  { text: '0. 课程导学', link: '/firstmate/' },
+  { text: '01 FirstMate 概述：Agent Distro 与舰队理念', link: '/firstmate/ch01' },
+  { text: '02 环境搭建与首次启航', link: '/firstmate/ch02' },
+  { text: '03 AGENTS.md 解剖：第一副手的岗位职责', link: '/firstmate/ch03' },
+  { text: '04 五条硬规则与安全边界', link: '/firstmate/ch04' },
+  { text: '05 运行时布局：FM_HOME 与目录约定', link: '/firstmate/ch05' },
+  { text: '06 会话后端：tmux 参考后端', link: '/firstmate/ch06' },
+  { text: '07 实验性后端：herdr、zellij、Orca 与 cmux', link: '/firstmate/ch07' },
+  { text: '08 Crewmate 委派：ship 任务与 scout 任务', link: '/firstmate/ch08' },
+  { text: '09 Worktree 隔离与并行交付', link: '/firstmate/ch09' },
+  { text: '10 项目模式与合并权限：no-mistakes / direct-PR / local-only', link: '/firstmate/ch10' },
+  { text: '11 零 token 事件驱动监督：watcher 与 turn-end guard', link: '/firstmate/ch11' },
+  { text: '12 内置技能：/ahoy、/bearings、/afk、/stow、/updatefirstmate', link: '/firstmate/ch12' },
+  { text: '13 两层技能体系与自定义扩展', link: '/firstmate/ch13' },
+  { text: '14 Secondmate：持久第二副手与隔离章程', link: '/firstmate/ch14' },
+  { text: '15 远程舰队、Relay 与运维工具箱', link: '/firstmate/ch15' },
+  { text: '16 实战一：搭建个人开发舰队', link: '/firstmate/ch16' },
+  { text: '17 实战二：多项目并行交付流水线', link: '/firstmate/ch17' },
+  { text: '18 实战三：Secondmate 远程舰队规模化运营', link: '/firstmate/ch18' }
+]
+
 // ===== Mastra =====
 const mastra = [
   { text: '0. 课程导学', link: '/mastra/' },
@@ -446,6 +469,7 @@ export default defineConfig({
           { text: 'CrewAI（Python）', link: '/crewai/' },
           { text: 'Mastra（TypeScript）', link: '/mastra/' },
           { text: 'Flue（TypeScript）', link: '/flue/' },
+          { text: 'FirstMate（Shell）', link: '/firstmate/' },
           { text: 'Pi Agent 开发（TypeScript）', link: '/pi-agent/' }
         ]
       },
@@ -518,6 +542,7 @@ export default defineConfig({
       '/claude-code/': [{ text: 'Claude Code 教程（20 章）', items: claudeCode }],
       '/pi-agent/': [{ text: 'Pi Agent 开发教程（23 章）', items: piAgent }],
       '/flue/': [{ text: 'Flue 教程（19 章）', items: flue }],
+      '/firstmate/': [{ text: 'FirstMate 舰队编排教程（18 章）', items: firstmate }],
       '/mastra/': [{ text: 'Mastra 教程（21 章）', items: mastra }],
       '/agent/': [{ text: 'Agent 工程基础教程（32 章）', items: agent }],
       '/pi/': [{ text: 'Pi 编码智能体教程（21 章）', items: pi }]
