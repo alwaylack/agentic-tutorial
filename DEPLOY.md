@@ -23,6 +23,7 @@ npx vercel --prod
 1. 登录 [dash.cloudflare.com](https://dash.cloudflare.com) → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**
 2. 选择仓库 `agentic-tutorial`，构建配置：
    - Framework preset: **VitePress**（若无则选 None）
+   - Build command: `npm run build`（若预设填了 `npx vitepress build`，请改为 `npm run build`；仓库已内置根目录兜底配置，两种均可，但 `npm run build` 更稳妥）
    - Build command: `npm run build`
    - Build output directory: `docs/.vitepress/dist`
    - 环境变量：`NODE_VERSION` = `22`（wrangler.toml 已内置）
