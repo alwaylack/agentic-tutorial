@@ -46,7 +46,7 @@
 
 | 课程 | 实战一 | 实战二 | 实战三 |
 |---|---|---|---|
-| [Pi Agent 开发](docs/pi-agent/index.md) | Telemetry 可观测性 | pi-tui 终端 UI | 测试智能体——需求到用例 / 自动化执行 / CI 回归 |
+| [Pi Agent 开发](docs/pi-agent/index.md) | 测试智能体——从需求到用例 | 测试智能体——自动化执行与报告 | 测试智能体——CI 集成与定时回归巡检 |
 | [Mastra](docs/mastra/index.md) | 生产级智能客服 Agent | 全栈 AI 应用 | 数据问答 BI Agent |
 | [Flue](docs/flue/index.md) | GitHub 自动分诊 Agent | Slack 值班助手 | 代码审查 Agent |
 | [CrewAI](docs/crewai/index.md) | 内容营销流水线 | 数据分析流水线 | 竞品监控情报 Crew |
