@@ -291,6 +291,24 @@ const firstmate = [
   { text: '18 实战三：Secondmate 远程舰队规模化运营', link: '/firstmate/ch18' }
 ]
 
+// ===== Hands-On LLM =====
+const handsOnLLM = [
+  { text: '0. 课程导学', link: '/hands-on-llm/' },
+  { text: '01 语言模型导论', link: '/hands-on-llm/ch01' },
+  { text: '02 Token 与 Token 嵌入', link: '/hands-on-llm/ch02' },
+  { text: '03 深入 LLM 内部', link: '/hands-on-llm/ch03' },
+  { text: '04 文本分类', link: '/hands-on-llm/ch04' },
+  { text: '05 文本聚类与主题建模', link: '/hands-on-llm/ch05' },
+  { text: '06 提示工程', link: '/hands-on-llm/ch06' },
+  { text: '07 高级文本生成技术与工具', link: '/hands-on-llm/ch07' },
+  { text: '08 语义搜索', link: '/hands-on-llm/ch08' },
+  { text: '09 多模态大语言模型', link: '/hands-on-llm/ch09' },
+  { text: '10 构建文本嵌入模型', link: '/hands-on-llm/ch10' },
+  { text: '11 微调 BERT', link: '/hands-on-llm/ch11' },
+  { text: '12 微调生成模型', link: '/hands-on-llm/ch12' },
+  { text: '13 扩展阅读（Bonus）', link: '/hands-on-llm/bonus' }
+]
+
 // ===== Mastra =====
 const mastra = [
   { text: '0. 课程导学', link: '/mastra/' },
@@ -476,6 +494,7 @@ export default defineConfig({
       {
         text: '🧠 AI 助手与工程',
         items: [
+          { text: 'Hands-On LLM', link: '/hands-on-llm/' },
           { text: 'Agent 工程', link: '/agent/' },
           { text: 'Claude Code', link: '/claude-code/' },
           { text: 'Pi 编码智能体', link: '/pi/' }
@@ -543,6 +562,7 @@ export default defineConfig({
       '/pi-agent/': [{ text: 'Pi Agent 开发教程（23 章）', items: piAgent }],
       '/flue/': [{ text: 'Flue 教程（19 章）', items: flue }],
       '/firstmate/': [{ text: 'FirstMate 舰队编排教程（18 章）', items: firstmate }],
+      '/hands-on-llm/': [{ text: 'Hands-On LLM 教程（12 章 + 扩展）', items: handsOnLLM }],
       '/mastra/': [{ text: 'Mastra 教程（21 章）', items: mastra }],
       '/agent/': [{ text: 'Agent 工程基础教程（32 章）', items: agent }],
       '/pi/': [{ text: 'Pi 编码智能体教程（21 章）', items: pi }]

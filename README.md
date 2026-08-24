@@ -3,7 +3,7 @@
 [![Cloudflare Pages](https://img.shields.io/badge/☁️_Cloudflare_Pages-agentic--tutorial.pages.dev-F38020?style=for-the-badge)](https://agentic-tutorial.pages.dev)
 [![Vercel](https://img.shields.io/badge/▲_Vercel-agentic--tutorial.vercel.app-000000?style=for-the-badge)](https://agentic-tutorial.vercel.app)
 
-从 0 基础到生产实践的**十四套系统教程**（中文），基于各项目**最新官方文档**编写。
+从 0 基础到生产实践的**十五套系统教程**（中文），基于各项目**最新官方文档**编写。
 
 仓库：[alwaylack/agentic-tutorial](https://github.com/alwaylack/agentic-tutorial)
 
@@ -24,9 +24,10 @@
 | [Pi Agent 开发](docs/pi-agent/index.md) | 23 章 | pi-agent-core / pi-ai | 统一 LLM API/工具调用/事件流/Provider/会话持久化 · **三实战：测试智能体全流程 / CI 集成 / 报告** · Telemetry / TUI |
 | [Flue](docs/flue/index.md) | 19 章 | @flue/runtime | 函数式 Harness/Tools/Skills/Sandboxes/Durability/Channels · **三实战：GitHub 分诊 / Slack 值班 / 代码审查** |
 | [Mastra](docs/mastra/index.md) | 21 章 | @mastra/core (TS) | Workflow 图引擎/Memory/RAG/MCP/Evals/部署 · **三实战：智能客服 / 全栈 AI 应用 / 数据问答 BI** |
+| [Hands-On LLM](docs/hands-on-llm/index.md) | 12 章 + 扩展 | O'Reilly 图书配套（main） | 语言模型/Token/LLM 内部/分类/聚类/提示工程/语义搜索/多模态/嵌入/微调 · 章节代码图片与仓库一致 |
 | [FirstMate](docs/firstmate/index.md) | 18 章 | firstmate（最新 main） | Agent Distro/五条硬规则/FM_HOME/tmux 等后端/ship·scout 任务/watcher 监督/Skills/Secondmate/Relay · **三实战：个人舰队 / 并行交付流水线 / 远程规模化运营** |
 
-**共 312 章。**
+**共 324 章。**
 
 每章包含：文字讲解 + 可运行示例代码 + **4 道交互式随堂测验**（答错展示正确答案与原因）+ **3 道动手实践题**。
 
