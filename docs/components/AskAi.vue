@@ -19,12 +19,13 @@
     <span v-if="!configured && !open" class="askai-dot"></span>
   </button>
 
-  <!-- 聊天面板 -->
+  <!-- 聊天面板：从右侧弹出 -->
   <transition name="askai-slide">
-    <div v-if="open" class="askai-panel" :style="panelStyle">
+    <div v-if="open" class="askai-panel" :class="{ maximized: isMax }">
       <div class="askai-header">
         <strong>🎓 学习助手</strong>
         <span class="askai-header-actions">
+          <button class="askai-icon-btn" :title="isMax ? '还原图标尺寸' : '最大化全屏'" @click="toggleMax">{{ isMax ? '🗗 还原' : '⛶ 最大化' }}</button>
           <button class="askai-icon-btn" title="清空对话记录" @click="clearChat">🧹 清空</button>
           <button class="askai-icon-btn" title="配置 Provider / 模型 / API Key" @click="showSettings = !showSettings">⚙️ 设置</button>
         </span>
@@ -75,7 +76,9 @@
           :disabled="loading"
           @keydown.enter.exact.prevent="send"
         ></textarea>
-        <button class="askai-btn-primary" :disabled="loading || !draft.trim() || !configured" @click="send">发送</button>
+        <button class="askai-btn-primary askai-btn-send" :disabled="loading || !draft.trim() || !configured" title="发送（Enter）" @click="send">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg>
+        </button>
       </div>
     </div>
   </transition>
@@ -105,7 +108,7 @@ const configured = computed(() => !!(cfg.baseUrl && cfg.model && cfg.apiKey))
 const fabEl = ref(null)
 const pos = reactive({ x: null, y: null })   // null = 使用 CSS 默认右下角
 const posSet = computed(() => pos.x !== null)
-const panelPos = reactive({ x: null, y: null })
+const isMax = ref(false)
 const FAB_SIZE = 52
 let dragState = null
 
@@ -117,7 +120,6 @@ onMounted(() => {
     if (p && typeof p.x === 'number') {
       const c = clampPos(p.x, p.y)
       pos.x = c.x; pos.y = c.y
-      panelPos.x = c.x; panelPos.y = c.y
     }
   } catch (e) { /* 忽略损坏的缓存 */ }
 })
@@ -161,33 +163,17 @@ function onPointerUp() {
   dragState = null
   if (wasDrag) {
     try { localStorage.setItem('askai-pos', JSON.stringify({ x: pos.x, y: pos.y })) } catch (e) {}
-    updatePanelAnchor()
   } else {
     toggle() // 未拖动视为点击
   }
 }
 
-// 面板从悬浮球侧面展开：优先向左弹，靠左边缘时改向右；底边与球对齐
-function updatePanelAnchor() {
-  const rect = fabEl.value?.getBoundingClientRect()
-  if (!rect) return
-  const pw = Math.min(400, window.innerWidth - 32)
-  const ph = Math.min(560, window.innerHeight - 130)
-  // 水平：优先在球左侧，放不下则换到右侧
-  let px = rect.left - 12 - pw
-  if (px < 8) px = Math.min(rect.right + 12, window.innerWidth - pw - 8)
-  px = Math.max(px, 8)
-  // 垂直：面板底边对齐球底边，越界则收紧到视口内
-  let py = rect.bottom - ph
-  py = Math.min(Math.max(py, 60), window.innerHeight - ph - 8)
-  panelPos.x = px; panelPos.y = py
+function toggleMax() {
+  isMax.value = !isMax.value
 }
 
 const fabStyle = computed(() =>
   posSet.value ? { left: pos.x + 'px', top: pos.y + 'px', right: 'auto', bottom: 'auto' } : {}
-)
-const panelStyle = computed(() =>
-  posSet.value ? { left: panelPos.x + 'px', top: panelPos.y + 'px', right: 'auto', bottom: 'auto', width: 'min(400px, calc(100vw - 32px))' } : {}
 )
 
 const SYSTEM_PROMPT_BASE =
@@ -332,11 +318,11 @@ async function send() {
 
 .askai-panel {
   position: fixed;
-  right: 20px;
+  right: 16px;
   bottom: 88px;
   z-index: 999;
-  width: min(400px, calc(100vw - 32px));
-  height: min(560px, calc(100vh - 130px));
+  width: min(420px, calc(100vw - 32px));
+  height: min(600px, calc(100vh - 120px));
   display: flex;
   flex-direction: column;
   background: var(--gh-canvas);
@@ -345,6 +331,14 @@ async function send() {
   box-shadow: 0 8px 32px rgba(31, 35, 40, 0.18);
   overflow: hidden;
 }
+.askai-panel.maximized {
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  border-radius: 0;
+  border: none;
+}
 .askai-slide-enter-active,
 .askai-slide-leave-active {
   transition: opacity 0.18s ease, transform 0.18s ease;
@@ -352,7 +346,7 @@ async function send() {
 .askai-slide-enter-from,
 .askai-slide-leave-to {
   opacity: 0;
-  transform: translateY(12px);
+  transform: translateX(28px);
 }
 
 .askai-header {
@@ -516,5 +510,18 @@ async function send() {
 .askai-btn-primary:disabled {
   opacity: 0.45;
   cursor: not-allowed;
+}
+.askai-btn-send {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.askai-btn-send svg {
+  width: 18px;
+  height: 18px;
 }
 </style>
