@@ -1,0 +1,32 @@
+name: Deploy to Cloudflare Pages (direct upload)
+
+# 兜底方案：绕过 CF 的 Git 集成，构建后用 wrangler 直接上传
+# 需要在仓库 Secrets 中配置：
+#   CLOUDFLARE_API_TOKEN  —— CF API Token（权限：Cloudflare Pages Edit）
+#   CLOUDFLARE_ACCOUNT_ID —— CF 账户 ID（Dashboard 首页右侧可见）
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm clean-install
+
+      - run: npx vitepress build docs
+
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy docs/.vitepress/dist --project-name=agentic-tutorial --branch=main --commit-dirty=true
