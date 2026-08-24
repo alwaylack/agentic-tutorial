@@ -1,6 +1,13 @@
 <template>
-  <!-- 悬浮球 -->
-  <button class="askai-fab" :title="open ? '收起 AI 助手' : '遇到问题？问问 AI 助手'" @click="toggle">
+  <!-- 悬浮球：可拖动 -->
+  <button
+    ref="fabEl"
+    class="askai-fab"
+    :class="{ draggable: posSet }"
+    :style="fabStyle"
+    :title="open ? '收起 AI 助手' : '遇到问题？问问 AI 助手（可拖动）'"
+    @pointerdown="onPointerDown"
+  >
     <span v-if="!open">🤖</span>
     <span v-else>✕</span>
     <span v-if="!configured && !open" class="askai-dot"></span>
@@ -8,12 +15,12 @@
 
   <!-- 聊天面板 -->
   <transition name="askai-slide">
-    <div v-if="open" class="askai-panel">
+    <div v-if="open" class="askai-panel" :style="panelStyle">
       <div class="askai-header">
         <strong>🎓 学习助手</strong>
         <span class="askai-header-actions">
-          <button class="askai-icon-btn" title="清空对话" @click="clearChat">🗑️</button>
-          <button class="askai-icon-btn" title="设置 Provider / 模型 / API Key" @click="showSettings = !showSettings">⚙️</button>
+          <button class="askai-icon-btn" title="清空对话记录" @click="clearChat">🧹 清空</button>
+          <button class="askai-icon-btn" title="配置 Provider / 模型 / API Key" @click="showSettings = !showSettings">⚙️ 设置</button>
         </span>
       </div>
 
@@ -88,6 +95,88 @@ const DEFAULT_CFG = {
 const cfg = reactive({ ...DEFAULT_CFG })
 const configured = computed(() => !!(cfg.baseUrl && cfg.model && cfg.apiKey))
 
+/* ===== 拖动逻辑 ===== */
+const fabEl = ref(null)
+const pos = reactive({ x: null, y: null })   // null = 使用 CSS 默认右下角
+const posSet = computed(() => pos.x !== null)
+const panelPos = reactive({ x: null, y: null })
+const FAB_SIZE = 52
+let dragState = null
+
+onMounted(() => {
+  try {
+    const raw = localStorage.getItem('askai-config')
+    if (raw) Object.assign(cfg, JSON.parse(raw))
+    const p = JSON.parse(localStorage.getItem('askai-pos') || 'null')
+    if (p && typeof p.x === 'number') {
+      const c = clampPos(p.x, p.y)
+      pos.x = c.x; pos.y = c.y
+      panelPos.x = c.x; panelPos.y = c.y
+    }
+  } catch (e) { /* 忽略损坏的缓存 */ }
+})
+
+function clampPos(x, y) {
+  const maxX = window.innerWidth - FAB_SIZE - 8
+  const maxY = window.innerHeight - FAB_SIZE - 8
+  return { x: Math.min(Math.max(x, 8), maxX), y: Math.min(Math.max(y, 8), maxY) }
+}
+
+function onPointerDown(e) {
+  // 只响应鼠标左键与触摸/笔，避免与右键冲突
+  if (e.button !== undefined && e.button !== 0) return
+  const rect = fabEl.value.getBoundingClientRect()
+  dragState = {
+    startX: e.clientX,
+    startY: e.clientY,
+    origX: rect.left,
+    origY: rect.top,
+    moved: false
+  }
+  ;(e.currentTarget).setPointerCapture?.(e.pointerId)
+  window.addEventListener('pointermove', onPointerMove)
+  window.addEventListener('pointerup', onPointerUp)
+}
+
+function onPointerMove(e) {
+  if (!dragState) return
+  const dx = e.clientX - dragState.startX
+  const dy = e.clientY - dragState.startY
+  if (!dragState.moved && Math.abs(dx) < 4 && Math.abs(dy) < 4) return
+  dragState.moved = true
+  const c = clampPos(dragState.origX + dx, dragState.origY + dy)
+  pos.x = c.x; pos.y = c.y
+}
+
+function onPointerUp() {
+  window.removeEventListener('pointermove', onPointerMove)
+  window.removeEventListener('pointerup', onPointerUp)
+  const wasDrag = dragState?.moved
+  dragState = null
+  if (wasDrag) {
+    try { localStorage.setItem('askai-pos', JSON.stringify({ x: pos.x, y: pos.y })) } catch (e) {}
+    updatePanelAnchor()
+  } else {
+    toggle() // 未拖动视为点击
+  }
+}
+
+// 面板跟随悬浮球位置展开，并限制在视口内
+function updatePanelAnchor() {
+  const pw = Math.min(400, window.innerWidth - 32)
+  const px = Math.min(Math.max(pos.x + FAB_SIZE - pw, 8), window.innerWidth - pw - 8)
+  let py = pos.y - 12 - Math.min(560, window.innerHeight - 130)
+  if (py < 60) py = Math.min(pos.y + FAB_SIZE + 12, window.innerHeight - 200)
+  panelPos.x = px; panelPos.y = Math.max(py, 8)
+}
+
+const fabStyle = computed(() =>
+  posSet.value ? { left: pos.x + 'px', top: pos.y + 'px', right: 'auto', bottom: 'auto' } : {}
+)
+const panelStyle = computed(() =>
+  posSet.value ? { left: panelPos.x + 'px', top: panelPos.y + 'px', right: 'auto', bottom: 'auto', width: 'min(400px, calc(100vw - 32px))' } : {}
+)
+
 const SYSTEM_PROMPT_BASE =
   '你是一个中文编程教程网站的学习助手。用户正在学习智能体开发相关课程（pytest/FastAPI/Agno/CrewAI/Mastra/Flue/Pi Agent/Claude Code/Locust 等）。' +
   '请用简体中文回答，技术术语保留英文；回答要简洁、循序渐进、贴合教程语境；如果问题与当前章节相关，优先围绕当前章节内容解释。'
@@ -103,6 +192,7 @@ onMounted(() => {
 
 function toggle() {
   open.value = !open.value
+  if (open.value && posSet.value) updatePanelAnchor()
 }
 
 function saveSettings() {
@@ -195,10 +285,20 @@ async function send() {
   align-items: center;
   justify-content: center;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+  touch-action: none;
+  user-select: none;
 }
 .askai-fab:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(31, 35, 40, 0.22);
+}
+.askai-fab.draggable {
+  touch-action: none;
+  user-select: none;
+  cursor: grab;
+}
+.askai-fab.draggable:active {
+  cursor: grabbing;
 }
 .askai-dot {
   position: absolute;
@@ -246,15 +346,16 @@ async function send() {
 }
 .askai-header-actions {
   display: flex;
-  gap: 4px;
+  gap: 6px;
 }
 .askai-icon-btn {
   border: none;
   background: transparent;
   cursor: pointer;
-  font-size: 15px;
-  padding: 2px 4px;
+  font-size: 13px;
+  padding: 3px 8px;
   border-radius: 6px;
+  color: var(--gh-fg);
 }
 .askai-icon-btn:hover {
   background: var(--gh-brand-soft, rgba(9, 105, 218, 0.14));
