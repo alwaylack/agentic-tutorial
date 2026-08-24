@@ -8,8 +8,14 @@
     :title="open ? '收起 AI 助手' : '遇到问题？问问 AI 助手（可拖动）'"
     @pointerdown="onPointerDown"
   >
-    <span v-if="!open">🤖</span>
-    <span v-else>✕</span>
+    <!-- 展开时显示关闭叉，否则显示对话气泡 -->
+    <svg v-if="!open" class="askai-fab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+      <path d="M12 8l1.1 2.1 2.4 1.4-2.4 1.4L12 15l-1.1-2.1-2.4-1.4 2.4-1.4z" fill="currentColor" stroke="none"/>
+    </svg>
+    <svg v-else class="askai-fab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <path d="M18 6L6 18M6 6l12 12"/>
+    </svg>
     <span v-if="!configured && !open" class="askai-dot"></span>
   </button>
 
@@ -161,13 +167,20 @@ function onPointerUp() {
   }
 }
 
-// 面板跟随悬浮球位置展开，并限制在视口内
+// 面板从悬浮球侧面展开：优先向左弹，靠左边缘时改向右；底边与球对齐
 function updatePanelAnchor() {
+  const rect = fabEl.value?.getBoundingClientRect()
+  if (!rect) return
   const pw = Math.min(400, window.innerWidth - 32)
-  const px = Math.min(Math.max(pos.x + FAB_SIZE - pw, 8), window.innerWidth - pw - 8)
-  let py = pos.y - 12 - Math.min(560, window.innerHeight - 130)
-  if (py < 60) py = Math.min(pos.y + FAB_SIZE + 12, window.innerHeight - 200)
-  panelPos.x = px; panelPos.y = Math.max(py, 8)
+  const ph = Math.min(560, window.innerHeight - 130)
+  // 水平：优先在球左侧，放不下则换到右侧
+  let px = rect.left - 12 - pw
+  if (px < 8) px = Math.min(rect.right + 12, window.innerWidth - pw - 8)
+  px = Math.max(px, 8)
+  // 垂直：面板底边对齐球底边，越界则收紧到视口内
+  let py = rect.bottom - ph
+  py = Math.min(Math.max(py, 60), window.innerHeight - ph - 8)
+  panelPos.x = px; panelPos.y = py
 }
 
 const fabStyle = computed(() =>
@@ -279,18 +292,25 @@ async function send() {
   border: 1px solid var(--gh-border);
   background: var(--gh-canvas);
   box-shadow: 0 4px 16px rgba(31, 35, 40, 0.16);
-  font-size: 24px;
+  color: var(--gh-accent);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
   touch-action: none;
   user-select: none;
 }
 .askai-fab:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(31, 35, 40, 0.22);
+  background: var(--vp-c-brand-soft, rgba(9, 105, 218, 0.1));
+}
+.askai-fab-icon {
+  width: 26px;
+  height: 26px;
+  display: block;
+  pointer-events: none;
 }
 .askai-fab.draggable {
   touch-action: none;
