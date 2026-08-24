@@ -61,7 +61,8 @@
           <p v-if="!configured" class="askai-empty-warn">⚠️ 尚未配置 Provider——请点击右上角 ⚙️ 填写 Base URL、模型与 API Key。</p>
         </div>
         <div v-for="(m, i) in messages" :key="i" class="askai-msg" :class="m.role">
-          <div class="askai-bubble">{{ m.content }}</div>
+          <div v-if="m.role === 'user'" class="askai-bubble">{{ m.content }}</div>
+          <div v-else class="askai-bubble askai-md" v-html="renderMd(m.content)"></div>
         </div>
         <div v-if="loading" class="askai-msg assistant">
           <div class="askai-bubble askai-typing">思考中<span>.</span><span>.</span><span>.</span></div>
@@ -88,6 +89,18 @@
 <script setup>
 import { ref, reactive, computed, onMounted, nextTick } from 'vue'
 import { useData } from 'vitepress'
+import MarkdownIt from 'markdown-it'
+
+// html:false 时 markdown-it 会转义原生 HTML 标签并拦截 javascript: 链接，输出可安全 v-html
+const md = new MarkdownIt({ html: false, linkify: true, breaks: true })
+
+function renderMd(text) {
+  try {
+    return md.render(text || '')
+  } catch (e) {
+    return ''
+  }
+}
 
 const { page } = useData()
 const open = ref(false)
@@ -461,6 +474,83 @@ async function send() {
   background: var(--gh-canvas-subtle);
   border: 1px solid var(--gh-border);
   border-bottom-left-radius: 3px;
+}
+
+/* ===== Markdown 渲染样式（v-html 内容需 :deep）===== */
+.askai-md :deep(p) {
+  margin: 0 0 8px;
+}
+.askai-md :deep(p:last-child) {
+  margin-bottom: 0;
+}
+.askai-md :deep(h1),
+.askai-md :deep(h2),
+.askai-md :deep(h3),
+.askai-md :deep(h4) {
+  margin: 10px 0 6px;
+  font-size: 13.5px;
+  line-height: 1.4;
+}
+.askai-md :deep(ul),
+.askai-md :deep(ol) {
+  margin: 4px 0 8px;
+  padding-left: 18px;
+}
+.askai-md :deep(li) {
+  margin: 2px 0;
+}
+.askai-md :deep(code) {
+  padding: 1px 5px;
+  border-radius: 5px;
+  background: rgba(175, 184, 233, 0.2);
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 12px;
+}
+.askai-md :deep(pre) {
+  margin: 8px 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #f6f8fa;
+  border: 1px solid var(--gh-border);
+  overflow-x: auto;
+}
+.askai-md :deep(pre code) {
+  padding: 0;
+  background: transparent;
+  font-size: 12px;
+  line-height: 1.55;
+}
+.askai-md :deep(blockquote) {
+  margin: 8px 0;
+  padding: 2px 10px;
+  border-left: 3px solid var(--gh-border);
+  color: var(--gh-muted);
+}
+.askai-md :deep(table) {
+  width: 100%;
+  margin: 8px 0;
+  border-collapse: collapse;
+  font-size: 12px;
+  display: block;
+  overflow-x: auto;
+}
+.askai-md :deep(th),
+.askai-md :deep(td) {
+  padding: 4px 8px;
+  border: 1px solid var(--gh-border);
+  text-align: left;
+}
+.askai-md :deep(th) {
+  background: var(--gh-canvas-subtle);
+}
+.askai-md :deep(a) {
+  color: var(--gh-accent);
+  word-break: break-all;
+}
+.askai-md :deep(hr) {
+  border: none;
+  border-top: 1px solid var(--gh-border);
+  margin: 8px 0;
 }
 .askai-typing span {
   animation: askai-blink 1.2s infinite;
