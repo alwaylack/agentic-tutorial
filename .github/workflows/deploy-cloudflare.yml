@@ -25,8 +25,17 @@ jobs:
 
       - run: npx vitepress build docs
 
-      - uses: cloudflare/wrangler-action@v3
+      - id: deploy
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy docs/.vitepress/dist --project-name=agentic-tutorial --branch=main --commit-dirty=true
+
+      # 直传部署可能停留在 queued 状态导致生产别名不前移，用 rollback API 强制激活
+      - name: Force activate deployment
+        run: |
+          DEP_ID="${{ fromJSON(steps.deploy.outputs.outputs).id }}"
+          curl -s -X POST \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
+            "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CLOUDFLARE_ACCOUNT_ID }}/pages/projects/agentic-tutorial/deployments/$DEP_ID/rollback"
