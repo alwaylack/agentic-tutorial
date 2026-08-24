@@ -461,7 +461,7 @@ async function send() {
   padding: 8px 11px;
   border-radius: 10px;
   font-size: 13px;
-  line-height: 1.65;
+  line-height: 1.5;
   white-space: pre-wrap;
   word-break: break-word;
 }
@@ -478,7 +478,7 @@ async function send() {
 
 /* ===== Markdown 渲染样式（v-html 内容需 :deep）===== */
 .askai-md :deep(p) {
-  margin: 0 0 8px;
+  margin: 0 0 3px;
 }
 .askai-md :deep(p:last-child) {
   margin-bottom: 0;
@@ -487,17 +487,17 @@ async function send() {
 .askai-md :deep(h2),
 .askai-md :deep(h3),
 .askai-md :deep(h4) {
-  margin: 10px 0 6px;
+  margin: 7px 0 3px;
   font-size: 13.5px;
-  line-height: 1.4;
+  line-height: 1.35;
 }
 .askai-md :deep(ul),
 .askai-md :deep(ol) {
-  margin: 4px 0 8px;
-  padding-left: 18px;
+  margin: 2px 0 4px;
+  padding-left: 16px;
 }
 .askai-md :deep(li) {
-  margin: 2px 0;
+  margin: 0;
 }
 .askai-md :deep(code) {
   padding: 1px 5px;
@@ -507,8 +507,8 @@ async function send() {
   font-size: 12px;
 }
 .askai-md :deep(pre) {
-  margin: 8px 0;
-  padding: 10px 12px;
+  margin: 5px 0;
+  padding: 8px 10px;
   border-radius: 8px;
   background: #f6f8fa;
   border: 1px solid var(--gh-border);
@@ -518,17 +518,17 @@ async function send() {
   padding: 0;
   background: transparent;
   font-size: 12px;
-  line-height: 1.55;
+  line-height: 1.45;
 }
 .askai-md :deep(blockquote) {
-  margin: 8px 0;
+  margin: 5px 0;
   padding: 2px 10px;
   border-left: 3px solid var(--gh-border);
   color: var(--gh-muted);
 }
 .askai-md :deep(table) {
   width: 100%;
-  margin: 8px 0;
+  margin: 5px 0;
   border-collapse: collapse;
   font-size: 12px;
   display: block;
@@ -550,7 +550,7 @@ async function send() {
 .askai-md :deep(hr) {
   border: none;
   border-top: 1px solid var(--gh-border);
-  margin: 8px 0;
+  margin: 6px 0;
 }
 .askai-typing span {
   animation: askai-blink 1.2s infinite;
