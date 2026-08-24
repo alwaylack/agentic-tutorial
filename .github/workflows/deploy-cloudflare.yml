@@ -32,11 +32,27 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy docs/.vitepress/dist --project-name=agentic-tutorial --branch=main --commit-dirty=true
 
-      # 直传部署可能停留在 queued 状态导致生产别名不前移，用 rollback API 强制激活
-      - name: Force activate deployment
+      # 直传部署可能停留在 queued 状态导致生产别名不前移；
+      # 从最近 5 个部署里找到含 askai-fab 的最新一个，用 rollback API 强制激活
+      - name: Force activate latest good deployment
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
-          DEP_ID="${{ steps.deploy.outputs.id }}"
-          echo "Activating $DEP_ID"
-          curl -s -X POST \
-            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
-            "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CLOUDFLARE_ACCOUNT_ID }}/pages/projects/agentic-tutorial/deployments/$DEP_ID/rollback"
+          API="https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT/pages/projects/agentic-tutorial/deployments"
+          curl -s -H "Authorization: Bearer $CF_TOKEN" "$API" > deps.json
+          DEP_ID=$(python3 -c "
+          import json, subprocess
+          deps = json.load(open('deps.json'))['result'][:5]
+          for x in deps:
+              html = subprocess.run(['curl', '-s', '--max-time', '30', x['url'] + '/'], capture_output=True, text=True).stdout
+              if 'askai-fab' in html:
+                  print(x['id'])
+                  break
+          ")
+          echo "Activating: $DEP_ID"
+          test -n "$DEP_ID"
+          curl -s -X POST -H "Authorization: Bearer $CF_TOKEN" "$API/$DEP_ID/rollback"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
