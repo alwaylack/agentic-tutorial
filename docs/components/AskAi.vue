@@ -28,6 +28,7 @@
           <button class="askai-icon-btn" :title="isMax ? '还原图标尺寸' : '最大化全屏'" @click="toggleMax">{{ isMax ? '🗗 还原' : '⛶ 最大化' }}</button>
           <button class="askai-icon-btn" title="清空对话记录" @click="clearChat">🧹 清空</button>
           <button class="askai-icon-btn" title="配置 Provider / 模型 / API Key" @click="showSettings = !showSettings">⚙️ 设置</button>
+          <button class="askai-icon-btn askai-close-btn" title="关闭窗口" @click="open = false">✕</button>
         </span>
       </div>
 
@@ -271,7 +272,7 @@ async function send() {
   position: fixed;
   right: 20px;
   bottom: 24px;
-  z-index: 999;
+  z-index: 1001;
   width: 52px;
   height: 52px;
   border-radius: 50%;
@@ -320,7 +321,7 @@ async function send() {
   position: fixed;
   right: 16px;
   bottom: 88px;
-  z-index: 999;
+  z-index: 998;
   width: min(420px, calc(100vw - 32px));
   height: min(600px, calc(100vh - 120px));
   display: flex;
@@ -476,7 +477,7 @@ async function send() {
   gap: 8px;
   padding: 10px;
   border-top: 1px solid var(--gh-border);
-  align-items: flex-end;
+  align-items: stretch;
 }
 .askai-input textarea {
   flex: 1;
@@ -513,12 +514,16 @@ async function send() {
 }
 .askai-btn-send {
   width: 40px;
-  height: 40px;
+  height: auto;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+}
+.askai-close-btn {
+  color: #d1242f;
+  font-weight: bold;
 }
 .askai-btn-send svg {
   width: 18px;
