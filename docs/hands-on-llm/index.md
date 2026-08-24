@@ -2,8 +2,6 @@
 
 本课程共 **12 章 + 扩展阅读**，逐章对照 O'Reilly 图书《Hands-On Large Language Models》（Jay Alammar & Maarten Grootendorst 著）官方仓库的笔记本编写：**章节结构、代码、图片与仓库保持一致**，文字说明翻译为中文。
 
-<a href="https://github.com/HandsOnLLM/Hands-On-Large-Language-Models"><img src="./images/book_cover.png" width="40%" align="right"></a>
-
 ## 你将学到什么
 
 | 阶段 | 章节 | 内容 |
