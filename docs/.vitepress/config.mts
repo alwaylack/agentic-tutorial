@@ -465,12 +465,12 @@ export default defineConfig({
       {
         text: '🤖 智能体框架',
         items: [
-          { text: 'Agno（Python）', link: '/agno/' },
-          { text: 'CrewAI（Python）', link: '/crewai/' },
-          { text: 'Mastra（TypeScript）', link: '/mastra/' },
-          { text: 'Flue（TypeScript）', link: '/flue/' },
-          { text: 'FirstMate（Shell）', link: '/firstmate/' },
-          { text: 'Pi Agent 开发（TypeScript）', link: '/pi-agent/' }
+          { text: 'Agno', link: '/agno/' },
+          { text: 'CrewAI', link: '/crewai/' },
+          { text: 'Mastra', link: '/mastra/' },
+          { text: 'Flue', link: '/flue/' },
+          { text: 'FirstMate', link: '/firstmate/' },
+          { text: 'Pi Agent 开发', link: '/pi-agent/' }
         ]
       },
       {
