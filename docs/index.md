@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: 编程进阶教程站
-  text: HTTP · 测试 · 压测 · Web · 智能体 · AI 助手
+  name: 'AI 工程与智能体教程站'
+  text: 'LangGraph · FastAPI · AWS · Agent · LLM'
   tagline: 从 0 基础到生产实践的十七套系统教程，每章配有随堂测验与动手实践
   actions:
     - theme: brand
@@ -44,12 +44,13 @@ hero:
 | Agent 工程实战 | LangGraph 1.2 + Deep Agents + AWS ECS/SQS/DynamoDB |
 
 - **生产导向**：每门课都以真实生产场景收尾——CI 集成、容器化部署、可观测性与上线检查单；
-- **实战贯穿**：智能体框架五门课均配备完整项目实战——
+- **实战贯穿**：六门智能体框架课程均配备完整项目实战——
   - **Pi Agent 开发**：测试智能体全流程（需求 → 评审 → 测试方案 → 用例生成 → 接口/Web 自动化）；
   - **Mastra**：生产级智能客服 Agent + 全栈 AI 应用；
   - **Flue**：GitHub 自动分诊 Agent + Slack 值班助手；
   - **CrewAI**：内容营销与数据分析双流水线；
-  - **Agno**：智能数据分析助手（工具调用 → 图表生成 → Workflow 报告）。
+  - **Agno**：智能数据分析助手（工具调用 → 图表生成 → Workflow 报告）；
+  - **Agent 工程实战**：RAG 知识库 Agent + 多代理工单系统 + 全栈 Agent 服务（端到端部署到 AWS）。
 
 ## 推荐学习路线
 
@@ -59,3 +60,5 @@ hero:
 | ✅ 测试工程 | pytest → Playwright → Locust → Pi Agent 开发（测试智能体实战） |
 | 🐍 Python 智能体 | Agent 工程 → Agno → CrewAI → Pi → Claude Code |
 | 🟦 TypeScript 智能体 | Agent 工程 → Mastra → Flue → Pi Agent 开发 |
+| 🧠 AI 生产部署 | Agent 工程 → LangGraph → Deep Agents → Agent 工程实战（ECS/SQS/CloudWatch） |
+| 🔍 LLM 应用开发 | Vercel AI SDK → Agent 工程实战 → Hands-On LLM（微调与推理） |

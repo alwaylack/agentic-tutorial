@@ -512,7 +512,7 @@ const agent = [
 ]
 
 export default defineConfig({
-  title: '编程进阶教程站',
+  title: 'AI 工程与智能体教程站',
   description: '从零基础到生产实践：HTTP · pytest · Playwright · Locust · FastAPI · Agno · CrewAI · Agent 工程 · Claude Code · Pi · Flue · Mastra',
   // localhost 示例地址（如 Mastra Studio :4111）不算死链
   ignoreDeadLinks: [/^https?:\/\/localhost/,
@@ -521,7 +521,7 @@ export default defineConfig({
   appearance: false,
   head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }]],
   themeConfig: {
-    siteTitle: '📚 编程进阶教程站',
+    siteTitle: '📚 AI 工程与智能体教程站',
     nav: [
       { text: '首页', link: '/' },
       {

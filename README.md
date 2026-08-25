@@ -43,10 +43,12 @@
 | ✅ 测试工程 | pytest → Playwright → Locust → Pi Agent 开发（测试智能体实战） |
 | 🐍 Python 智能体 | Agent 工程 → Agno → CrewAI → Pi → Claude Code |
 | 🟦 TypeScript 智能体 | Agent 工程 → Mastra → Flue → Pi Agent 开发 |
+| 🧠 AI 生产部署 | Agent 工程 → LangGraph → Deep Agents → Agent 工程实战（ECS/SQS/CloudWatch） |
+| 🔍 LLM 应用开发 | Vercel AI SDK → Agent 工程实战 → Hands-On LLM（微调与推理） |
 
 ## 实战项目
 
-六门智能体框架课程均配备 **三章贯穿式实战**，覆盖不同场景与复杂度：
+七门智能体框架课程均配备 **三章贯穿式实战**，覆盖不同场景与复杂度：
 
 | 课程 | 实战一 | 实战二 | 实战三 |
 |---|---|---|---|
@@ -56,6 +58,7 @@
 | [CrewAI](docs/crewai/index.md) | 内容营销流水线 | 数据分析流水线 | 竞品监控情报 Crew |
 | [Agno](docs/agno/index.md) | 智能数据分析助手 | 多源研究助手 Team | 客服知识库 Agent 上线 AgentOS |
 | [FirstMate](docs/firstmate/index.md) | 搭建个人开发舰队 | 多项目并行交付流水线 | Secondmate 远程舰队规模化运营 |
+| [Agent 工程实战](docs/agent-prod/index.md) | RAG 知识库 Agent | 多代理工单处理系统 | 全栈 Agent 服务（FastAPI + LangGraph + Fargate） |
 
 ## 本地开发
 
