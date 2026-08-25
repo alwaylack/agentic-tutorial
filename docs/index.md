@@ -139,20 +139,44 @@ hero:
 
 ## 推荐学习路线
 
-<div class="route-table-wrap">
-<table class="route-table">
-<thead>
-<tr><th>方向</th><th>路线</th></tr>
-</thead>
-<tbody>
-<tr><td>🌐 Web 开发</td><td>HTTP 请求 → FastAPI → Playwright</td></tr>
-<tr><td>✅ 测试工程</td><td>pytest → Playwright → Locust → Pi Agent 开发（测试智能体实战）</td></tr>
-<tr><td>🐍 Python 智能体</td><td>Agent 工程 → Agno → CrewAI → Pi → Claude Code</td></tr>
-<tr><td>🟦 TypeScript 智能体</td><td>Agent 工程 → Mastra → Flue → Pi Agent 开发</td></tr>
-<tr><td>🧠 AI 生产部署</td><td>Agent 工程 → LangGraph → Deep Agents → Agent 工程实战（ECS/SQS/CloudWatch）</td></tr>
-<tr><td>🔍 LLM 应用开发</td><td>Vercel AI SDK → Agent 工程实战 → Hands-On LLM（微调与推理）</td></tr>
-</tbody>
-</table>
+<div class="route-grid">
+
+<div class="route-card">
+  <span class="route-tag web">🌐 Web 开发</span>
+  <div class="route-title">HTTP 请求 → FastAPI → Playwright</div>
+  <p class="route-desc">从网络基础到全栈 API，再到 E2E 自动化测试，覆盖 Web 应用完整生命周期。</p>
+</div>
+
+<div class="route-card">
+  <span class="route-tag test">✅ 测试工程</span>
+  <div class="route-title">pytest → Playwright → Locust → Pi Agent 开发</div>
+  <p class="route-desc">从单元测试到 E2E 压测，再到测试智能体全流程自动化，打造质量保障闭环。</p>
+</div>
+
+<div class="route-card">
+  <span class="route-tag agent">🐍 Python 智能体</span>
+  <div class="route-title">Agent 工程 → Agno → CrewAI → Claude Code</div>
+  <p class="route-desc">从 Harness/MCP 基础到多 Agent 框架，再到 AI 编码助手，深入 Python Agent 生态。</p>
+</div>
+
+<div class="route-card">
+  <span class="route-tag prod">🟦 TypeScript 智能体</span>
+  <div class="route-title">Agent 工程 → Mastra → Flue → Pi Agent 开发</div>
+  <p class="route-desc">从 Agent 设计模式到 TS 框架实战，结合 FirstMate 舰队编排，掌握企业级 Agent 工程。</p>
+</div>
+
+<div class="route-card">
+  <span class="route-tag agent">🧠 AI 生产部署</span>
+  <div class="route-title">Agent 工程 → Agent 工程实战</div>
+  <p class="route-desc">从 LangGraph 工作流到 Deep Agents 审批与上下文工程，最终落地 AWS ECS/SQS 生产部署。</p>
+</div>
+
+<div class="route-card">
+  <span class="route-tag prod">🔍 LLM 应用开发</span>
+  <div class="route-title">Vercel AI SDK → Agent 工程实战 → Hands-On LLM</div>
+  <p class="route-desc">从多网关兼容的 LLM 调用层到生产级 Agent 系统，再到微调与推理实践。</p>
+</div>
+
 </div>
 
 <style scoped>
@@ -238,38 +262,49 @@ hero:
   margin: 0;
 }
 
-/* 学习路线表 */
-.route-table-wrap {
+/* 学习路线卡片 */
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
   margin: 1rem 0 2rem;
-  overflow-x: auto;
 }
-.route-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.95em;
-}
-.route-table th {
-  text-align: left;
-  padding: 0.55rem 1rem;
-  border-bottom: 2px solid var(--gh-border);
-  color: var(--gh-fg);
-  font-weight: 600;
-}
-.route-table td {
-  padding: 0.5rem 1rem;
-  border-bottom: 1px solid var(--gh-border);
-  color: var(--gh-muted);
-}
-.route-table tr:hover td {
+.route-card {
   background: var(--gh-canvas-subtle);
+  border: 1px solid var(--gh-border);
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
-.route-table td:first-child {
+.route-card:hover {
+  border-color: var(--gh-accent);
+  box-shadow: 0 4px 14px rgba(9, 105, 218, 0.10);
+}
+.route-tag {
+  display: inline-block;
+  font-size: 0.72em;
   font-weight: 600;
-  color: var(--gh-fg);
-  white-space: nowrap;
+  border-radius: 4px;
+  padding: 0.08em 0.4em;
+  margin-bottom: 0.45rem;
+  border: 1px solid;
 }
-.route-table td:nth-child(2) {
+.route-tag.web { color: #0550ae; border-color: rgba(5,80,174,0.3); background: rgba(5,80,174,0.07); }
+.route-tag.test { color: #8250df; border-color: rgba(130,80,223,0.3); background: rgba(130,80,223,0.07); }
+.route-tag.agent { color: #1f883d; border-color: rgba(31,136,61,0.3); background: rgba(31,136,61,0.07); }
+.route-tag.prod { color: #9e6a03; border-color: rgba(158,106,3,0.3); background: rgba(158,106,3,0.07); }
+.route-title {
+  font-weight: 700;
+  font-size: 0.92em;
   color: var(--gh-fg);
+  margin: 0 0 0.35rem;
+  line-height: 1.4;
+}
+.route-desc {
+  font-size: 0.83em;
+  color: var(--gh-muted);
+  line-height: 1.55;
+  margin: 0;
 }
 
 @media (max-width: 1100px) {
