@@ -59,79 +59,79 @@ hero:
 
 <div class="project-card">
   <span class="project-tag web">🌐 Web与测试</span>
-  <div class="project-name">HTTP 请求 · ch20</div>
+  <div class="project-name">HTTP 请求</div>
   <p class="project-desc">GitHub API 客户端：requests/httpx 全栈封装，含认证、限流、缓存与 CLI 工具</p>
 </div>
 
 <div class="project-card">
   <span class="project-tag test">✅ 测试工程</span>
-  <div class="project-name">pytest · ch20</div>
+  <div class="project-name">pytest</div>
   <p class="project-desc">CI 测试治理：fixture 工厂、参数化矩阵、覆盖率门禁与 pytest-xdist 并行跑测</p>
 </div>
 
 <div class="project-card">
   <span class="project-tag test">✅ 测试工程</span>
-  <div class="project-name">Playwright · ch22</div>
+  <div class="project-name">Playwright</div>
   <p class="project-desc">E2E 策略与报告：Page Object 架构、多浏览器并行、trace viewer 与 CI 集成</p>
 </div>
 
 <div class="project-card">
   <span class="project-tag web">🌐 Web与测试</span>
-  <div class="project-name">Locust · ch20</div>
+  <div class="project-name">Locust</div>
   <p class="project-desc">全链路压测：HttpUser 分布式脚本、Web UI 实时监控、Docker/K8s 集群压测</p>
 </div>
 
 <div class="project-card">
   <span class="project-tag web">🌐 Web与测试</span>
-  <div class="project-name">FastAPI · ch22</div>
+  <div class="project-name">FastAPI</div>
   <p class="project-desc">生产部署实战：Docker 镜像优化、Uvicorn 多 worker、健康检查与滚动重启</p>
 </div>
 
 <div class="project-card">
   <span class="project-tag agent">🤖 智能体框架</span>
-  <div class="project-name">Agno · ch25-27</div>
+  <div class="project-name">Agno</div>
   <p class="project-desc">三实战：智能数据分析助手（工具→图表→Workflow）· 多源研究助手 Team · 客服知识库 Agent 上线 AgentOS</p>
 </div>
 
 <div class="project-card">
   <span class="project-tag agent">🤖 智能体框架</span>
-  <div class="project-name">CrewAI · ch23-25</div>
+  <div class="project-name">CrewAI</div>
   <p class="project-desc">三实战：内容营销流水线 · 数据分析流水线 · 竞品监控情报 Crew（hierarchical + Flow）</p>
 </div>
 
 <div class="project-card">
   <span class="project-tag agent">🤖 智能体框架</span>
-  <div class="project-name">Mastra · ch19-21</div>
+  <div class="project-name">Mastra</div>
   <p class="project-desc">三实战：生产级智能客服 Agent · 全栈 AI 应用（Workflow+RAG+Memory）· 数据问答 BI Agent</p>
 </div>
 
 <div class="project-card">
   <span class="project-tag agent">🤖 智能体框架</span>
-  <div class="project-name">Flue · ch17-19</div>
+  <div class="project-name">Flue</div>
   <p class="project-desc">三实战：GitHub 自动分诊 Agent · Slack 值班助手（Sandboxes隔离+多云部署）· 代码审查 Agent</p>
 </div>
 
 <div class="project-card">
   <span class="project-tag agent">🤖 智能体框架</span>
-  <div class="project-name">FirstMate · ch16-18</div>
+  <div class="project-name">FirstMate</div>
   <p class="project-desc">三实战：搭建个人开发舰队 · 多项目并行交付流水线 · Secondmate 远程舰队规模化运营</p>
 </div>
 
 <div class="project-card">
   <span class="project-tag agent">🤖 智能体框架</span>
-  <div class="project-name">Pi Agent 开发 · ch21-23</div>
+  <div class="project-name">Pi Agent 开发</div>
   <p class="project-desc">三实战：测试智能体全流程（需求→用例→接口自动化）· 执行与报告 · CI 集成与定时回归巡检</p>
 </div>
 
 <div class="project-card">
   <span class="project-tag prod">🧠 AI生产部署</span>
-  <div class="project-name">Vercel AI SDK · ch20-22</div>
+  <div class="project-name">Vercel AI SDK</div>
   <p class="project-desc">三实战：语义搜索知识库问答（RAG）· 多代理客服工单系统 · 全栈流式聊天应用（多网关兼容）</p>
 </div>
 
 <div class="project-card">
   <span class="project-tag prod">🧠 AI生产部署</span>
-  <div class="project-name">Agent 工程实战 · ch19-21</div>
+  <div class="project-name">Agent 工程实战</div>
   <p class="project-desc">三实战：RAG 知识库 Agent · 多代理工单处理系统 · 全栈 Agent 服务（端到端部署 AWS ECS/SQS）</p>
 </div>
 
