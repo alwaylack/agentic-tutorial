@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 异步基础 | 01–04 | asyncio 深入、生产级 FastAPI、消息队列、分布式协调 | [FastAPI](/fastapi/) ch01-22 |
 | LangGraph 核心 | 05–12 | StateGraph、工具调用、子图、持久化、流式输出、中断恢复 | [Agent 工程](/agent/) ch01-12 |
-| Deep Agents | 13–16 | create_deep_agent、Skills/Memory、审批与沙箱、上下文工程 | [LangGraph](./ch05) |
+| Deep Agents | 13–16 | create_deep_agent、Skills/Memory、审批与沙箱、上下文工程 | [LangGraph](/agent-prod/ch05) |
 | 评估与可观测 | 17–20 | LLM-as-judge、A/B 测试、Langfuse、多网关与成本优化 | [Vercel AI SDK](/ai-sdk/) ch03 |
 | 生产部署 | 21–24 | Docker 进阶、AWS ECS/SQS/DynamoDB、CloudWatch/CI-CD | [FastAPI](/fastapi/) ch22 |
 | 综合实战 | 25–27 | RAG Agent → 多代理工单系统 → 全栈 Agent 服务 | 无 |
@@ -41,4 +41,4 @@ Langfuse      ·  OpenTelemetry
 - **实战三章可独立运行**：每章都是完整项目，可直接用于求职作品集；
 - 建议配合 [Vercel AI SDK](/ai-sdk/) 课程学习 Provider 管理部分。
 
-👉 从 [第 1 章](./ch01) 开始。
+👉 从 [第 1 章](/agent-prod/ch01) 开始。
