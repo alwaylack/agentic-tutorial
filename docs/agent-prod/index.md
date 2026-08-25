@@ -41,4 +41,4 @@ Langfuse      ·  OpenTelemetry
 - **实战三章可独立运行**：每章都是完整项目，可直接用于求职作品集；
 - 建议配合 [Vercel AI SDK](/ai-sdk/) 课程学习 Provider 管理部分。
 
-👉 从 [第 1 章](/agent-prod/ch01) 开始。
+👉 从 [第 1 章](/agent-prod/ch01) 开始。（即将发布）
