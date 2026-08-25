@@ -24,7 +24,7 @@ function letter(i) {
     <h2 tabindex="-1">🧪 随堂测验</h2>
     <p class="quiz-tip">点击你认为正确的选项。答错时会展示正确答案与原因解析。</p>
     <div v-for="(q, qi) in items" :key="qi" class="quiz-q">
-      <p class="quiz-title"><strong>{{ qi + 1 }}. {{ q.question }}</strong></p>
+      <p class="quiz-title"><strong>{{ qi + 1 }}. {{ q.question || q.q }}</strong></p>
       <div v-for="(opt, oi) in q.options" :key="oi" class="quiz-opt">
         <button
           :class="{
