@@ -36,7 +36,7 @@ hero:
 <div class="feature-card">
   <div class="feature-icon">✅</div>
   <div class="feature-title">忠于官方文档</div>
-  <p class="feature-desc">内容严格对照各项目最新官方文档编写，各课程基准版本详见 [About 弹窗](#)。</p>
+  <p class="feature-desc">内容严格对照各项目最新官方文档编写，各课程基准版本详见 [关于页面](/about/)。</p>
 </div>
 
 <div class="feature-card">
@@ -137,66 +137,6 @@ hero:
 
 </div>
 
-## 推荐学习路线
-
-<div class="route-grid">
-
-<div class="route-card">
-  <div class="route-icon" style="background:rgba(5,80,174,0.12);color:#0550ae;">🌐</div>
-  <div class="route-header">
-    <span class="route-label">Web 开发</span>
-    <span class="route-path">HTTP 请求 → FastAPI → Playwright</span>
-  </div>
-  <p class="route-desc">从网络基础到全栈 API，再到 E2E 自动化测试，覆盖 Web 应用完整生命周期。</p>
-</div>
-
-<div class="route-card">
-  <div class="route-icon" style="background:rgba(130,80,223,0.12);color:#8250df;">✅</div>
-  <div class="route-header">
-    <span class="route-label">测试工程</span>
-    <span class="route-path">pytest → Playwright → Locust → Pi Agent 开发</span>
-  </div>
-  <p class="route-desc">从单元测试到 E2E 压测，再到测试智能体全流程自动化，打造质量保障闭环。</p>
-</div>
-
-<div class="route-card">
-  <div class="route-icon" style="background:rgba(31,136,61,0.12);color:#1f883d;">🐍</div>
-  <div class="route-header">
-    <span class="route-label">Python 智能体</span>
-    <span class="route-path">Agent 工程 → Agno → CrewAI → Claude Code</span>
-  </div>
-  <p class="route-desc">从 Harness/MCP 基础到多 Agent 框架，再到 AI 编码助手，深入 Python Agent 生态。</p>
-</div>
-
-<div class="route-card">
-  <div class="route-icon" style="background:rgba(158,106,3,0.12);color:#9e6a03;">🟦</div>
-  <div class="route-header">
-    <span class="route-label">TypeScript 智能体</span>
-    <span class="route-path">Agent 工程 → Mastra → Flue → Pi Agent 开发</span>
-  </div>
-  <p class="route-desc">从 Agent 设计模式到 TS 框架实战，结合 FirstMate 舰队编排，掌握企业级 Agent 工程。</p>
-</div>
-
-<div class="route-card">
-  <div class="route-icon" style="background:rgba(31,136,61,0.12);color:#1f883d;">☁️</div>
-  <div class="route-header">
-    <span class="route-label">AI 生产部署</span>
-    <span class="route-path">Agent 工程 → Agent 工程实战</span>
-  </div>
-  <p class="route-desc">从 LangGraph 工作流到 Deep Agents 审批与上下文工程，最终落地 AWS ECS/SQS 生产部署。</p>
-</div>
-
-<div class="route-card">
-  <div class="route-icon" style="background:rgba(158,106,3,0.12);color:#9e6a03;">🔬</div>
-  <div class="route-header">
-    <span class="route-label">LLM 应用开发</span>
-    <span class="route-path">Vercel AI SDK → Agent 工程实战 → Hands-On LLM</span>
-  </div>
-  <p class="route-desc">从多网关兼容的 LLM 调用层到生产级 Agent 系统，再到微调与推理实践。</p>
-</div>
-
-</div>
-
 <style scoped>
 .features-grid {
   display: grid;
@@ -278,63 +218,6 @@ hero:
   color: var(--gh-muted);
   line-height: 1.5;
   margin: 0;
-}
-
-/* 学习路线卡片 */
-.route-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-  margin: 1rem 0 2rem;
-}
-.route-card {
-  background: var(--gh-canvas-subtle);
-  border: 1px solid var(--gh-border);
-  border-radius: 10px;
-  padding: 1.15rem 1.2rem;
-  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
-  display: flex;
-  flex-direction: column;
-  gap: 0.55rem;
-}
-.route-card:hover {
-  border-color: var(--gh-accent);
-  box-shadow: 0 6px 20px rgba(9, 105, 218, 0.12);
-  transform: translateY(-2px);
-}
-.route-icon {
-  width: 38px;
-  height: 38px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2em;
-  flex-shrink: 0;
-}
-.route-header {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-.route-label {
-  font-weight: 700;
-  font-size: 0.95em;
-  color: var(--gh-fg);
-}
-.route-path {
-  font-size: 0.78em;
-  color: var(--gh-muted);
-  font-family: 'SF Mono', Monaco, Consolas, monospace;
-  line-height: 1.4;
-  word-break: break-all;
-}
-.route-desc {
-  font-size: 0.84em;
-  color: var(--gh-muted);
-  line-height: 1.55;
-  margin: 0;
-  flex: 1;
 }
 
 @media (max-width: 1100px) {
