@@ -523,8 +523,7 @@ export default defineConfig({
   appearance: false,
   head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }]],
   themeConfig: {
-    siteTitle: '📚 AI 工程与智能体教程站',
-    nav: [
+    siteTitle: '📚 AI 工程与智能体教程站',    nav: [
       { text: '首页', link: '/' },
       {
         text: '🌐 Web 与测试基础',
@@ -559,11 +558,6 @@ export default defineConfig({
         ]
       },
       { text: '关于', link: '/about/' }
-        ]
-      },
-      { text: '关于', link: '/about/' }
-        ]
-      }
     ],
     sidebar: {
       '/http/': [{
