@@ -557,6 +557,12 @@ export default defineConfig({
           { text: 'Claude Code', link: '/claude-code/' },
           { text: 'Pi 编码智能体', link: '/pi/' }
         ]
+      },
+      { text: '关于', link: '/about/' }
+        ]
+      },
+      { text: '关于', link: '/about/' }
+        ]
       }
     ],
     sidebar: {
