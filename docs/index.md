@@ -36,7 +36,7 @@ hero:
 <div class="feature-card">
   <div class="feature-icon">✅</div>
   <div class="feature-title">忠于官方文档</div>
-  <p class="feature-desc">内容严格对照各项目最新官方文档编写，各课程基准版本如下表，确保你学的是当下最实用的 API。</p>
+  <p class="feature-desc">内容严格对照各项目最新官方文档编写，各课程基准版本详见 [About 弹窗](#)。</p>
 </div>
 
 <div class="feature-card">
@@ -48,38 +48,9 @@ hero:
 <div class="feature-card">
   <div class="feature-icon">🛠️</div>
   <div class="feature-title">实战贯穿</div>
-  <p class="feature-desc">七门智能体框架课程均配备完整项目实战，可直接用作求职作品集，覆盖 RAG、多 Agent 协作、全栈服务。</p>
+  <p class="feature-desc">十三门课程均配备完整项目实战，可直接用作求职作品集，覆盖 RAG、多 Agent 协作、全栈服务与云部署。</p>
 </div>
 
-</div>
-
-### 各课程版本基准
-
-<div class="version-table-wrap">
-<table class="version-table">
-<thead>
-<tr><th>课程</th><th>官方版本基准</th></tr>
-</thead>
-<tbody>
-<tr><td>HTTP 请求</td><td>requests 2.34 / httpx 0.28</td></tr>
-<tr><td>pytest</td><td>pytest 9.1</td></tr>
-<tr><td>Playwright</td><td>Playwright 1.62 (Python)</td></tr>
-<tr><td>Locust</td><td>Locust 2.46</td></tr>
-<tr><td>FastAPI</td><td>FastAPI 0.141+</td></tr>
-<tr><td>Agno</td><td>Agno 2.9</td></tr>
-<tr><td>CrewAI</td><td>CrewAI 1.15</td></tr>
-<tr><td>Agent 工程</td><td>PromptingGuide + Harness + MCP + Skills + Loop + AGENTS.md</td></tr>
-<tr><td>Claude Code</td><td>Claude Code 2.1.x</td></tr>
-<tr><td>Pi</td><td>Pi 0.84.x</td></tr>
-<tr><td>Pi Agent 开发</td><td>pi-agent-core + pi-ai + pi-telemetry + pi-tui（最新 main）</td></tr>
-<tr><td>Flue</td><td>@flue/runtime（最新 main）</td></tr>
-<tr><td>Mastra</td><td>@mastra/core（最新）</td></tr>
-<tr><td>FirstMate</td><td>firstmate 最新 main（AGENTS.md + docs/）</td></tr>
-<tr><td>Hands-On LLM</td><td>O'Reilly《Hands-On Large Language Models》配套仓库 main</td></tr>
-<tr><td>Vercel AI SDK</td><td>ai-sdk.dev v6 最新文档 + Cookbook</td></tr>
-<tr><td>Agent 工程实战</td><td>LangGraph 1.2 + Deep Agents + AWS ECS/SQS/DynamoDB</td></tr>
-</tbody>
-</table>
 </div>
 
 ### 实战项目一览
@@ -87,45 +58,81 @@ hero:
 <div class="project-grid">
 
 <div class="project-card">
-  <span class="project-tag">测试智能体</span>
-  <div class="project-name">Pi Agent 开发</div>
-  <p class="project-desc">需求分析 → 评审 → 测试方案 → 用例生成 → 接口/Web 自动化全链路</p>
+  <span class="project-tag web">🌐 Web与测试</span>
+  <div class="project-name">HTTP 请求 · ch20</div>
+  <p class="project-desc">GitHub API 客户端：requests/httpx 全栈封装，含认证、限流、缓存与 CLI 工具</p>
 </div>
 
 <div class="project-card">
-  <span class="project-tag">智能客服</span>
-  <div class="project-name">Mastra</div>
-  <p class="project-desc">生产级智能客服 Agent + 全栈 AI 应用（Workflow + Memory + RAG）</p>
+  <span class="project-tag test">✅ 测试工程</span>
+  <div class="project-name">pytest · ch20</div>
+  <p class="project-desc">CI 测试治理：fixture 工厂、参数化矩阵、覆盖率门禁与 pytest-xdist 并行跑测</p>
 </div>
 
 <div class="project-card">
-  <span class="project-tag">值班助手</span>
-  <div class="project-name">Flue</div>
-  <p class="project-desc">GitHub 自动分诊 Agent + Slack 值班助手（Sandboxes 隔离 + 多云部署）</p>
+  <span class="project-tag test">✅ 测试工程</span>
+  <div class="project-name">Playwright · ch22</div>
+  <p class="project-desc">E2E 策略与报告：Page Object 架构、多浏览器并行、trace viewer 与 CI 集成</p>
 </div>
 
 <div class="project-card">
-  <span class="project-tag">双流水线</span>
-  <div class="project-name">CrewAI</div>
-  <p class="project-desc">内容营销流水线 + 数据分析流水线（hierarchical 团队 + Flow 工作流）</p>
+  <span class="project-tag web">🌐 Web与测试</span>
+  <div class="project-name">Locust · ch20</div>
+  <p class="project-desc">全链路压测：HttpUser 分布式脚本、Web UI 实时监控、Docker/K8s 集群压测</p>
 </div>
 
 <div class="project-card">
-  <span class="project-tag">数据分析</span>
-  <div class="project-name">Agno</div>
-  <p class="project-desc">智能数据分析助手（工具调用 → 图表生成 → Workflow 报告 + AgentOS 上线）</p>
+  <span class="project-tag web">🌐 Web与测试</span>
+  <div class="project-name">FastAPI · ch22</div>
+  <p class="project-desc">生产部署实战：Docker 镜像优化、Uvicorn 多 worker、健康检查与滚动重启</p>
 </div>
 
 <div class="project-card">
-  <span class="project-tag">AWS 生产级</span>
-  <div class="project-name">Agent 工程实战</div>
-  <p class="project-desc">RAG 知识库 Agent + 多代理工单系统 + 全栈 Agent 服务（端到端部署到 AWS ECS/SQS）</p>
+  <span class="project-tag agent">🤖 智能体框架</span>
+  <div class="project-name">Agno · ch25-27</div>
+  <p class="project-desc">三实战：智能数据分析助手（工具→图表→Workflow）· 多源研究助手 Team · 客服知识库 Agent 上线 AgentOS</p>
 </div>
 
 <div class="project-card">
-  <span class="project-tag">AI Gateway</span>
-  <div class="project-name">Vercel AI SDK</div>
-  <p class="project-desc">语义搜索 RAG + 多代理客服工单 + 全栈流式聊天应用（兼容多供应商网关）</p>
+  <span class="project-tag agent">🤖 智能体框架</span>
+  <div class="project-name">CrewAI · ch23-25</div>
+  <p class="project-desc">三实战：内容营销流水线 · 数据分析流水线 · 竞品监控情报 Crew（hierarchical + Flow）</p>
+</div>
+
+<div class="project-card">
+  <span class="project-tag agent">🤖 智能体框架</span>
+  <div class="project-name">Mastra · ch19-21</div>
+  <p class="project-desc">三实战：生产级智能客服 Agent · 全栈 AI 应用（Workflow+RAG+Memory）· 数据问答 BI Agent</p>
+</div>
+
+<div class="project-card">
+  <span class="project-tag agent">🤖 智能体框架</span>
+  <div class="project-name">Flue · ch17-19</div>
+  <p class="project-desc">三实战：GitHub 自动分诊 Agent · Slack 值班助手（Sandboxes隔离+多云部署）· 代码审查 Agent</p>
+</div>
+
+<div class="project-card">
+  <span class="project-tag agent">🤖 智能体框架</span>
+  <div class="project-name">FirstMate · ch16-18</div>
+  <p class="project-desc">三实战：搭建个人开发舰队 · 多项目并行交付流水线 · Secondmate 远程舰队规模化运营</p>
+</div>
+
+<div class="project-card">
+  <span class="project-tag agent">🤖 智能体框架</span>
+  <div class="project-name">Pi Agent 开发 · ch21-23</div>
+  <p class="project-desc">三实战：测试智能体全流程（需求→用例→接口自动化）· 执行与报告 · CI 集成与定时回归巡检</p>
+</div>
+
+<div class="project-card">
+  <span class="project-tag prod">🧠 AI生产部署</span>
+  <div class="project-name">Vercel AI SDK · ch20-22</div>
+  <p class="project-desc">三实战：语义搜索知识库问答（RAG）· 多代理客服工单系统 · 全栈流式聊天应用（多网关兼容）</p>
+</div>
+
+<div class="project-card">
+  <span class="project-tag prod">🧠 AI生产部署</span>
+  <div class="project-name">Agent 工程实战 · ch19-21</div>
+  <p class="project-desc">三实战：RAG 知识库 Agent · 多代理工单处理系统 · 全栈 Agent 服务（端到端部署 AWS ECS/SQS）</p>
 </div>
 
 </div>
@@ -187,37 +194,6 @@ hero:
   margin: 0;
 }
 
-/* 版本表 */
-.version-table-wrap {
-  margin: 1rem 0 2.5rem;
-  overflow-x: auto;
-}
-.version-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.92em;
-}
-.version-table th {
-  text-align: left;
-  padding: 0.55rem 1rem;
-  border-bottom: 2px solid var(--gh-border);
-  color: var(--gh-fg);
-  font-weight: 600;
-  white-space: nowrap;
-}
-.version-table td {
-  padding: 0.45rem 1rem;
-  border-bottom: 1px solid var(--gh-border);
-  color: var(--gh-muted);
-}
-.version-table tr:hover td {
-  background: var(--gh-canvas-subtle);
-}
-.version-table td:first-child {
-  font-weight: 600;
-  color: var(--gh-fg);
-}
-
 /* 实战项目卡片 */
 .project-grid {
   display: grid;
@@ -238,25 +214,27 @@ hero:
 }
 .project-tag {
   display: inline-block;
-  font-size: 0.75em;
+  font-size: 0.72em;
   font-weight: 600;
-  color: var(--gh-accent);
-  background: var(--vp-c-brand-soft);
-  border: 1px solid rgba(9, 105, 218, 0.20);
   border-radius: 4px;
-  padding: 0.1em 0.45em;
-  margin-bottom: 0.45rem;
+  padding: 0.08em 0.4em;
+  margin-bottom: 0.4rem;
+  border: 1px solid;
 }
+.project-tag.web { color: #0550ae; border-color: rgba(5,80,174,0.3); background: rgba(5,80,174,0.07); }
+.project-tag.test { color: #8250df; border-color: rgba(130,80,223,0.3); background: rgba(130,80,223,0.07); }
+.project-tag.agent { color: #1f883d; border-color: rgba(31,136,61,0.3); background: rgba(31,136,61,0.07); }
+.project-tag.prod { color: #9e6a03; border-color: rgba(158,106,3,0.3); background: rgba(158,106,3,0.07); }
 .project-name {
   font-weight: 700;
-  font-size: 1em;
+  font-size: 0.95em;
   color: var(--gh-fg);
-  margin: 0 0 0.35rem;
+  margin: 0 0 0.3rem;
 }
 .project-desc {
-  font-size: 0.85em;
+  font-size: 0.83em;
   color: var(--gh-muted);
-  line-height: 1.55;
+  line-height: 1.5;
   margin: 0;
 }
 
