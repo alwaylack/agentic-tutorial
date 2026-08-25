@@ -309,6 +309,33 @@ const handsOnLLM = [
   { text: '13 扩展阅读（Bonus）', link: '/hands-on-llm/bonus' }
 ]
 
+// ===== Vercel AI SDK =====
+const aiSdk = [
+  { text: '0. 课程导学', link: '/ai-sdk/' },
+  { text: '01 AI SDK 概览与架构', link: '/ai-sdk/ch01' },
+  { text: '02 快速开始：环境搭建与第一次生成', link: '/ai-sdk/ch02' },
+  { text: '03 Provider 管理：AI Gateway 与自定义 Provider', link: '/ai-sdk/ch03' },
+  { text: '04 提示词与消息模型', link: '/ai-sdk/ch04' },
+  { text: '05 文本生成与流式输出', link: '/ai-sdk/ch05' },
+  { text: '06 生成设置与生命周期回调', link: '/ai-sdk/ch06' },
+  { text: '07 结构化输出', link: '/ai-sdk/ch07' },
+  { text: '08 工具调用', link: '/ai-sdk/ch08' },
+  { text: '09 多步工具循环与 MCP', link: '/ai-sdk/ch09' },
+  { text: '10 推理模型', link: '/ai-sdk/ch10' },
+  { text: '11 嵌入向量与重排序', link: '/ai-sdk/ch11' },
+  { text: '12 中间件与测试', link: '/ai-sdk/ch12' },
+  { text: '13 遥测与错误处理', link: '/ai-sdk/ch13' },
+  { text: '14 图像生成与多模态输入', link: '/ai-sdk/ch14' },
+  { text: '15 语音转写与合成', link: '/ai-sdk/ch15' },
+  { text: '16 Chatbot：useChat 与流协议', link: '/ai-sdk/ch16' },
+  { text: '17 流式数据、元数据与消息持久化', link: '/ai-sdk/ch17' },
+  { text: '18 Agent 入门：ToolLoopAgent 与循环控制', link: '/ai-sdk/ch18' },
+  { text: '19 审批、记忆与子代理', link: '/ai-sdk/ch19' },
+  { text: '20 实战一：构建语义搜索知识库问答（RAG）', link: '/ai-sdk/ch20' },
+  { text: '21 实战二：多代理客服工单系统', link: '/ai-sdk/ch21' },
+  { text: '22 实战三：全栈流式聊天应用', link: '/ai-sdk/ch22' }
+]
+
 // ===== Mastra =====
 const mastra = [
   { text: '0. 课程导学', link: '/mastra/' },
@@ -485,6 +512,7 @@ export default defineConfig({
         items: [
           { text: 'Agno', link: '/agno/' },
           { text: 'CrewAI', link: '/crewai/' },
+          { text: 'Vercel AI SDK', link: '/ai-sdk/' },
           { text: 'Mastra', link: '/mastra/' },
           { text: 'Flue', link: '/flue/' },
           { text: 'FirstMate', link: '/firstmate/' },
@@ -563,6 +591,7 @@ export default defineConfig({
       '/flue/': [{ text: 'Flue 教程（19 章）', items: flue }],
       '/firstmate/': [{ text: 'FirstMate 舰队编排教程（18 章）', items: firstmate }],
       '/hands-on-llm/': [{ text: 'Hands-On LLM 教程（12 章 + 扩展）', items: handsOnLLM }],
+      '/ai-sdk/': [{ text: 'Vercel AI SDK 教程（22 章）', items: aiSdk }],
       '/mastra/': [{ text: 'Mastra 教程（21 章）', items: mastra }],
       '/agent/': [{ text: 'Agent 工程基础教程（32 章）', items: agent }],
       '/pi/': [{ text: 'Pi 编码智能体教程（21 章）', items: pi }]
