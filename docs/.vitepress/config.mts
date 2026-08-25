@@ -359,7 +359,9 @@ const agentProd = [
   { text: '18 CloudWatch 监控与 CI/CD', link: '/agent-prod/ch18' },
   { text: '19 实战一：RAG 知识库 Agent', link: '/agent-prod/ch19' },
   { text: '20 实战二：多代理工单处理系统', link: '/agent-prod/ch20' },
-  { text: '21 实战三：全栈 Agent 服务', link: '/agent-prod/ch21' }
+  { text: '21 实战三：全栈 Agent 服务', link: '/agent-prod/ch21' },
+  { text: '22 扩展：复杂文档解析管线（PDF/PPT/OCR）', link: '/agent-prod/ch22' },
+  { text: '23 扩展：音视频处理与无头渲染管线', link: '/agent-prod/ch23' }
 ]
 
 // ===== Mastra =====
@@ -620,7 +622,7 @@ export default defineConfig({
       '/firstmate/': [{ text: 'FirstMate 舰队编排教程（18 章）', items: firstmate }],
       '/hands-on-llm/': [{ text: 'Hands-On LLM 教程（12 章 + 扩展）', items: handsOnLLM }],
       '/ai-sdk/': [{ text: 'Vercel AI SDK 教程（22 章）', items: aiSdk }],
-      '/agent-prod/': [{ text: 'Agent 工程实战教程（21 章）', items: agentProd }],
+      '/agent-prod/': [{ text: 'Agent 工程实战教程（23 章）', items: agentProd }],
       '/mastra/': [{ text: 'Mastra 教程（21 章）', items: mastra }],
       '/agent/': [{ text: 'Agent 工程基础教程（32 章）', items: agent }],
       '/pi/': [{ text: 'Pi 编码智能体教程（21 章）', items: pi }]

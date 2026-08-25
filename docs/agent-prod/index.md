@@ -1,6 +1,6 @@
 # Agent 工程实战 · 课程导学
 
-本课程共 **21 章（含 3 章综合实战）**，基于 **LangGraph 1.2.x**、**Deep Agents**、**FastAPI**、**AWS** 等最新官方文档编写。岗位面向 Agent 工程师——从产品设计到生产上线的完整链路，覆盖多 Agent 协作、上下文工程、评估体系与可观测性。
+本课程共 **21 章核心 + 2 章扩展（含 3 章综合实战）**，基于 **LangGraph 1.2.x**、**Deep Agents**、**FastAPI**、**AWS** 等最新官方文档编写。岗位面向 Agent 工程师——从产品设计到生产上线的完整链路，覆盖多 Agent 协作、上下文工程、评估体系与可观测性。
 
 ## 你将学到什么
 
@@ -12,6 +12,7 @@
 | 评估与可观测 | 12–15 | LLM-as-judge、A/B 测试、Langfuse/OpenTelemetry、多网关成本优化 | [Vercel AI SDK](/ai-sdk/) ch03 |
 | 生产部署 | 16–18 | AWS ECS/Fargate、SQS/DynamoDB、CloudWatch/CI-CD | [FastAPI](/fastapi/) ch22 |
 | 综合实战 | 19–21 | RAG Agent → 多代理工单系统 → 全栈 Agent 服务 | 无 |
+| 多模态扩展 | 22–23 | 文档解析管线（PDF/PPT/OCR/转录）、音视频处理与无头渲染 | [Playwright](/playwright/) 全课 |
 
 > 📌 课程中涉及已有课程覆盖的基础知识时，直接链接到对应章节，避免重复内容。
 
