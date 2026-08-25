@@ -13,7 +13,7 @@ export default {
   extends: DefaultTheme,
   Layout() {
     return h(DefaultTheme.Layout, null, {
-      // 右上角：GitHub Stars 徽章 + About 按钮
+      // 右上角：GitHub Stars 徽章 + 关于 按钮
       'nav-bar-content-after': () => h('div', { style: 'display:flex;align-items:center;gap:8px;' }, [
         h(NavGitHubStars),
         h(NavAbout)

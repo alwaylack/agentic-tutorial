@@ -3,7 +3,7 @@ import { aboutState } from './aboutState'
 </script>
 
 <template>
-  <button class="about-nav-btn" @click="aboutState.open = true">About</button>
+  <button class="about-nav-btn" @click="aboutState.open = true">关于</button>
 </template>
 
 <style scoped>
