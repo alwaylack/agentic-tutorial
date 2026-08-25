@@ -336,6 +336,32 @@ const aiSdk = [
   { text: '22 实战三：全栈流式聊天应用', link: '/ai-sdk/ch22' }
 ]
 
+// ===== Agent 工程实战 =====
+const agentProd = [
+  { text: '0. 课程导学', link: '/agent-prod/' },
+  { text: '01 Python 异步编程与 FastAPI 生产进阶', link: '/agent-prod/ch01' },
+  { text: '02 消息队列：Redis Queue 与 Celery Worker', link: '/agent-prod/ch02' },
+  { text: '03 分布式协调与容器化部署', link: '/agent-prod/ch03' },
+  { text: '04 LangGraph 概述与 StateGraph 入门', link: '/agent-prod/ch04' },
+  { text: '05 状态管理与工具调用', link: '/agent-prod/ch05' },
+  { text: '06 条件边、子图与模块化', link: '/agent-prod/ch06' },
+  { text: '07 持久化：Checkpointer 与 Thread', link: '/agent-prod/ch07' },
+  { text: '08 流式输出与中断恢复', link: '/agent-prod/ch08' },
+  { text: '09 Deep Agents 入门：create_deep_agent', link: '/agent-prod/ch09' },
+  { text: '10 Skills、Memory 与审批模式', link: '/agent-prod/ch10' },
+  { text: '11 上下文工程：截断、压缩与 Token 预算', link: '/agent-prod/ch11' },
+  { text: '12 LLM-as-judge 评估器', link: '/agent-prod/ch12' },
+  { text: '13 A/B 测试与对照实验', link: '/agent-prod/ch13' },
+  { text: '14 Langfuse + OpenTelemetry', link: '/agent-prod/ch14' },
+  { text: '15 多模型网关与成本优化', link: '/agent-prod/ch15' },
+  { text: '16 AWS ECS/Fargate 与 S3', link: '/agent-prod/ch16' },
+  { text: '17 SQS 消息队列与 DynamoDB', link: '/agent-prod/ch17' },
+  { text: '18 CloudWatch 监控与 CI/CD', link: '/agent-prod/ch18' },
+  { text: '19 实战一：RAG 知识库 Agent', link: '/agent-prod/ch19' },
+  { text: '20 实战二：多代理工单处理系统', link: '/agent-prod/ch20' },
+  { text: '21 实战三：全栈 Agent 服务', link: '/agent-prod/ch21' }
+]
+
 // ===== Mastra =====
 const mastra = [
   { text: '0. 课程导学', link: '/mastra/' },
@@ -513,6 +539,7 @@ export default defineConfig({
           { text: 'Agno', link: '/agno/' },
           { text: 'CrewAI', link: '/crewai/' },
           { text: 'Vercel AI SDK', link: '/ai-sdk/' },
+          { text: 'Agent 工程实战', link: '/agent-prod/' },
           { text: 'Mastra', link: '/mastra/' },
           { text: 'Flue', link: '/flue/' },
           { text: 'FirstMate', link: '/firstmate/' },
@@ -592,6 +619,7 @@ export default defineConfig({
       '/firstmate/': [{ text: 'FirstMate 舰队编排教程（18 章）', items: firstmate }],
       '/hands-on-llm/': [{ text: 'Hands-On LLM 教程（12 章 + 扩展）', items: handsOnLLM }],
       '/ai-sdk/': [{ text: 'Vercel AI SDK 教程（22 章）', items: aiSdk }],
+      '/agent-prod/': [{ text: 'Agent 工程实战教程（21 章）', items: agentProd }],
       '/mastra/': [{ text: 'Mastra 教程（21 章）', items: mastra }],
       '/agent/': [{ text: 'Agent 工程基础教程（32 章）', items: agent }],
       '/pi/': [{ text: 'Pi 编码智能体教程（21 章）', items: pi }]

@@ -4,7 +4,7 @@ layout: home
 hero:
   name: 编程进阶教程站
   text: HTTP · 测试 · 压测 · Web · 智能体 · AI 助手
-  tagline: 从 0 基础到生产实践的十六套系统教程，每章配有随堂测验与动手实践
+  tagline: 从 0 基础到生产实践的十七套系统教程，每章配有随堂测验与动手实践
   actions:
     - theme: brand
       text: 开始学习 →
@@ -41,6 +41,7 @@ hero:
 | FirstMate | firstmate 最新 main（AGENTS.md + docs/） |
 | Hands-On LLM | O'Reilly《Hands-On Large Language Models》配套仓库 main |
 | Vercel AI SDK | ai-sdk.dev v6 最新文档 + Cookbook |
+| Agent 工程实战 | LangGraph 1.2 + Deep Agents + AWS ECS/SQS/DynamoDB |
 
 - **生产导向**：每门课都以真实生产场景收尾——CI 集成、容器化部署、可观测性与上线检查单；
 - **实战贯穿**：智能体框架五门课均配备完整项目实战——
