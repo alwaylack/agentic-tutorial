@@ -178,7 +178,7 @@ hero:
 </div>
 
 <div class="route-card">
-  <div class="route-icon" style="background:rgba(31,136,61,0.12);color:#1f883d;">🧠</div>
+  <div class="route-icon" style="background:rgba(31,136,61,0.12);color:#1f883d;">☁️</div>
   <div class="route-header">
     <span class="route-label">AI 生产部署</span>
     <span class="route-path">Agent 工程 → Agent 工程实战</span>
@@ -187,7 +187,7 @@ hero:
 </div>
 
 <div class="route-card">
-  <div class="route-icon" style="background:rgba(158,106,3,0.12);color:#9e6a03;">🔍</div>
+  <div class="route-icon" style="background:rgba(158,106,3,0.12);color:#9e6a03;">🔬</div>
   <div class="route-header">
     <span class="route-label">LLM 应用开发</span>
     <span class="route-path">Vercel AI SDK → Agent 工程实战 → Hands-On LLM</span>
