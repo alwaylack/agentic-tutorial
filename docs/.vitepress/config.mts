@@ -521,7 +521,7 @@ export default defineConfig({
   ignoreDeadLinks: [/^https?:\/\/localhost/,
     /^\/agent-prod\/ch/,
     /^\/en\//,
-    /^\/agent-prod\/ch/],
+    /^\.\/ch/],
   // 锁定 GitHub Light 浅色主题：禁用深色模式与右上角主题切换开关
   appearance: false,
   head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }]],
