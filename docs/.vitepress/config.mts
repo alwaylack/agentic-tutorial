@@ -639,6 +639,7 @@ export default defineConfig({
       label: 'English',
       lang: 'en-US',
       themeConfig: {
+        // EN-NAV-START
         nav: [
           { text: 'Home', link: '/en/' },
           {
@@ -668,7 +669,10 @@ export default defineConfig({
           },
           { text: 'About', link: '/en/about/' }
         ],
+        // EN-NAV-END
+        // EN-SIDEBAR-START
         sidebar: {},
+        // EN-SIDEBAR-END
         outline: { level: [2, 3], label: 'On this page' },
         docFooter: { prev: 'Previous', next: 'Next' },
         lastUpdated: { text: 'Last updated' }
