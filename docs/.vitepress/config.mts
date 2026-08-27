@@ -643,35 +643,18 @@ export default defineConfig({
         nav: [
           { text: 'Home', link: '/en/' },
           {
-            text: '📚 Courses',
+            text: '🌐 Web & Testing',
             items: [
-              { text: '— Web & Testing —', link: '/http/' },
-              { text: 'HTTP Requests', link: '/http/' },
-              { text: 'pytest', link: '/pytest/' },
-              { text: 'Playwright', link: '/playwright/' },
-              { text: 'Locust', link: '/locust/' },
-              { text: 'FastAPI', link: '/fastapi/' },
-              { text: '— Agent Frameworks —', link: '/agno/' },
-              { text: 'Agno', link: '/agno/' },
-              { text: 'CrewAI', link: '/crewai/' },
-              { text: 'Vercel AI SDK', link: '/ai-sdk/' },
-              { text: 'Agent Engineering in Production', link: '/agent-prod/' },
-              { text: 'Mastra', link: '/mastra/' },
-              { text: 'Flue', link: '/flue/' },
-              { text: 'FirstMate', link: '/firstmate/' },
-              { text: 'Pi Agent Development', link: '/pi-agent/' },
-              { text: '— AI Assistants & Engineering —', link: '/hands-on-llm/' },
-              { text: 'Hands-On LLM', link: '/hands-on-llm/' },
-              { text: 'Agent Engineering', link: '/agent/' },
-              { text: 'Claude Code', link: '/claude-code/' },
-              { text: 'Pi Coding Agent', link: '/pi/' }
+              { text: 'HTTP Requests', link: '/en/http/' }
             ]
           },
-          { text: 'About', link: '/en/about/' }
+          { text: 'About', link: '/en/about.html' }
         ],
         // EN-NAV-END
         // EN-SIDEBAR-START
-        sidebar: {},
+        sidebar: {
+      '/http/': [{ text: 'HTTP Requests', items: [{ text: '0. Course Guide', link: '/en/http/' }, { text: '01 The HTTP Client Ecosystem: An Overview', link: '/en/http/ch01.html' }, { text: '02 GET Requests and Response Handling', link: '/en/http/ch02.html' }, { text: '03 POST and Request Body Construction', link: '/en/http/ch03.html' }, { text: '04 Request Parameters: Headers, Cookies, Auth', link: '/en/http/ch04.html' }, { text: '05 Responses In Depth: Status Codes, JSON, Files', link: '/en/http/ch05.html' }, { text: '06 Sessions and Persistent Connections', link: '/en/http/ch06.html' }, { text: '07 Timeouts and Retry Mechanisms', link: '/en/http/ch07.html' }, { text: '08 Proxies and SSL/TLS Configuration', link: '/en/http/ch08.html' }, { text: '09 Exception Handling and Best Practices', link: '/en/http/ch09.html' }, { text: '10 httpx Introduction and Sync API', link: '/en/http/ch10.html' }, { text: '11 The AsyncClient', link: '/en/http/ch11.html' }, { text: '12 Concurrent Requests and Concurrency Control', link: '/en/http/ch12.html' }, { text: '13 HTTP/2 and WebSocket', link: '/en/http/ch13.html' }, { text: '14 Middleware and Event Hooks', link: '/en/http/ch14.html' }, { text: '15 pytest Integration Testing', link: '/en/http/ch15.html' }, { text: '16 Performance Optimization and Resource Management', link: '/en/http/ch16.html' }, { text: '17 API Client Wrapping Patterns', link: '/en/http/ch17.html' }, { text: '18 Security Best Practices', link: '/en/http/ch18.html' }, { text: '19 Production Deployment and Monitoring', link: '/en/http/ch19.html' }, { text: '20 Capstone: GitHub API Client', link: '/en/http/ch20.html' }] }],
+        },
         // EN-SIDEBAR-END
         outline: { level: [2, 3], label: 'On this page' },
         docFooter: { prev: 'Previous', next: 'Next' },

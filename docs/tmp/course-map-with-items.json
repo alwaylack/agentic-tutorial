@@ -1,100 +1,7 @@
 [
  {
-  "dir": "http",
-  "varName": "http",
-  "count": 21,
-  "chapters": [
-   {
-    "title": "0. 课程导学",
-    "link": "/http/"
-   },
-   {
-    "title": "01 HTTP 客户端生态概览",
-    "link": "/http/ch01"
-   },
-   {
-    "title": "02 GET 请求与响应处理",
-    "link": "/http/ch02"
-   },
-   {
-    "title": "03 POST 与请求体构建",
-    "link": "/http/ch03"
-   },
-   {
-    "title": "04 请求参数：Headers、Cookies、Auth",
-    "link": "/http/ch04"
-   },
-   {
-    "title": "05 响应详解：状态码、JSON、文件",
-    "link": "/http/ch05"
-   },
-   {
-    "title": "06 Session 与持久连接",
-    "link": "/http/ch06"
-   },
-   {
-    "title": "07 超时与重试机制",
-    "link": "/http/ch07"
-   },
-   {
-    "title": "08 代理与 SSL/TLS 配置",
-    "link": "/http/ch08"
-   },
-   {
-    "title": "09 异常处理与最佳实践",
-    "link": "/http/ch09"
-   },
-   {
-    "title": "10 httpx 简介与同步 API",
-    "link": "/http/ch10"
-   },
-   {
-    "title": "11 异步客户端 AsyncClient",
-    "link": "/http/ch11"
-   },
-   {
-    "title": "12 并发请求与并发控制",
-    "link": "/http/ch12"
-   },
-   {
-    "title": "13 HTTP/2 与 WebSocket",
-    "link": "/http/ch13"
-   },
-   {
-    "title": "14 中间件与事件钩子",
-    "link": "/http/ch14"
-   },
-   {
-    "title": "15 pytest 集成测试",
-    "link": "/http/ch15"
-   },
-   {
-    "title": "16 性能优化与资源管理",
-    "link": "/http/ch16"
-   },
-   {
-    "title": "17 API 客户端封装模式",
-    "link": "/http/ch17"
-   },
-   {
-    "title": "18 安全最佳实践",
-    "link": "/http/ch18"
-   },
-   {
-    "title": "19 生产部署与监控",
-    "link": "/http/ch19"
-   },
-   {
-    "title": "20 综合实战：GitHub API 客户端",
-    "link": "/http/ch20"
-   }
-  ]
- },
- {
   "dir": "pytest",
-  "varName": "pytest",
-  "count": 21,
-  "chapters": [
+  "items": [
    {
     "title": "0. 课程导学",
     "link": "/pytest/"
@@ -182,109 +89,8 @@
   ]
  },
  {
-  "dir": "playwright",
-  "varName": "playwright",
-  "count": 23,
-  "chapters": [
-   {
-    "title": "0. 课程导学",
-    "link": "/playwright/"
-   },
-   {
-    "title": "01 E2E 测试与 Playwright 概述",
-    "link": "/playwright/ch01"
-   },
-   {
-    "title": "02 第一个脚本与同步 API",
-    "link": "/playwright/ch02"
-   },
-   {
-    "title": "03 定位器 Locator 与严格模式",
-    "link": "/playwright/ch03"
-   },
-   {
-    "title": "04 自动等待与 Actionability",
-    "link": "/playwright/ch04"
-   },
-   {
-    "title": "05 Web-First 断言 expect",
-    "link": "/playwright/ch05"
-   },
-   {
-    "title": "06 pytest 集成与 fixture 体系",
-    "link": "/playwright/ch06"
-   },
-   {
-    "title": "07 多页面、Popup 与 iframe",
-    "link": "/playwright/ch07"
-   },
-   {
-    "title": "08 网络拦截与 Mock",
-    "link": "/playwright/ch08"
-   },
-   {
-    "title": "09 认证状态复用 storage_state",
-    "link": "/playwright/ch09"
-   },
-   {
-    "title": "10 表单与复杂组件交互",
-    "link": "/playwright/ch10"
-   },
-   {
-    "title": "11 截图、视频与 Trace Viewer",
-    "link": "/playwright/ch11"
-   },
-   {
-    "title": "12 设备仿真与多浏览器",
-    "link": "/playwright/ch12"
-   },
-   {
-    "title": "13 数据驱动与参数化 E2E",
-    "link": "/playwright/ch13"
-   },
-   {
-    "title": "14 Page Object Model 设计模式",
-    "link": "/playwright/ch14"
-   },
-   {
-    "title": "15 并行执行与 Sharding",
-    "link": "/playwright/ch15"
-   },
-   {
-    "title": "16 CI 集成与 Docker",
-    "link": "/playwright/ch16"
-   },
-   {
-    "title": "17 APIRequestContext 与 API 测试",
-    "link": "/playwright/ch17"
-   },
-   {
-    "title": "18 异步 API 与 FastAPI 联测",
-    "link": "/playwright/ch18"
-   },
-   {
-    "title": "19 调试技巧与 Flaky 治理",
-    "link": "/playwright/ch19"
-   },
-   {
-    "title": "20 无障碍测试与 Aria Snapshot",
-    "link": "/playwright/ch20"
-   },
-   {
-    "title": "21 WebSocket 与实时应用测试",
-    "link": "/playwright/ch21"
-   },
-   {
-    "title": "22 生产实践：E2E 策略与报告",
-    "link": "/playwright/ch22"
-   }
-  ]
- },
- {
   "dir": "fastapi",
-  "varName": "fastapi",
-  "count": 23,
-  "chapters": [
+  "items": [
    {
     "title": "0. 课程导学",
     "link": "/fastapi/"
@@ -380,101 +186,8 @@
   ]
  },
  {
-  "dir": "locust",
-  "varName": "locust",
-  "count": 21,
-  "chapters": [
-   {
-    "title": "0. 课程导学",
-    "link": "/locust/"
-   },
-   {
-    "title": "01 性能测试与 Locust 概述",
-    "link": "/locust/ch01"
-   },
-   {
-    "title": "02 安装与第一个脚本",
-    "link": "/locust/ch02"
-   },
-   {
-    "title": "03 HttpUser 与任务编写",
-    "link": "/locust/ch03"
-   },
-   {
-    "title": "04 任务权重与等待时间",
-    "link": "/locust/ch04"
-   },
-   {
-    "title": "05 Web UI 与无头模式",
-    "link": "/locust/ch05"
-   },
-   {
-    "title": "06 断言与失败检测",
-    "link": "/locust/ch06"
-   },
-   {
-    "title": "07 TaskSet 与嵌套任务",
-    "link": "/locust/ch07"
-   },
-   {
-    "title": "08 事件钩子与自定义统计",
-    "link": "/locust/ch08"
-   },
-   {
-    "title": "09 参数化与数据驱动",
-    "link": "/locust/ch09"
-   },
-   {
-    "title": "10 分布式压测",
-    "link": "/locust/ch10"
-   },
-   {
-    "title": "11 Docker 容器化运行",
-    "link": "/locust/ch11"
-   },
-   {
-    "title": "12 Kubernetes Operator",
-    "link": "/locust/ch12"
-   },
-   {
-    "title": "13 测试非 HTTP 协议",
-    "link": "/locust/ch13"
-   },
-   {
-    "title": "14 asyncio 支持",
-    "link": "/locust/ch14"
-   },
-   {
-    "title": "15 作为库使用",
-    "link": "/locust/ch15"
-   },
-   {
-    "title": "16 插件与扩展",
-    "link": "/locust/ch16"
-   },
-   {
-    "title": "17 性能调优与请求率提升",
-    "link": "/locust/ch17"
-   },
-   {
-    "title": "18 CI/CD 集成",
-    "link": "/locust/ch18"
-   },
-   {
-    "title": "19 监控与结果分析",
-    "link": "/locust/ch19"
-   },
-   {
-    "title": "20 综合实战：全链路压测",
-    "link": "/locust/ch20"
-   }
-  ]
- },
- {
   "dir": "agno",
-  "varName": "agno",
-  "count": 29,
-  "chapters": [
+  "items": [
    {
     "title": "0. 课程导学",
     "link": "/agno/"
@@ -595,9 +308,7 @@
  },
  {
   "dir": "crewai",
-  "varName": "crewai",
-  "count": 27,
-  "chapters": [
+  "items": [
    {
     "title": "0. 课程导学",
     "link": "/crewai/"
@@ -709,101 +420,287 @@
   ]
  },
  {
-  "dir": "claude-code",
-  "varName": "claudeCode",
-  "count": 21,
-  "chapters": [
+  "dir": "playwright",
+  "items": [
    {
     "title": "0. 课程导学",
-    "link": "/claude-code/"
+    "link": "/playwright/"
    },
    {
-    "title": "01 Claude Code 简介与安装",
-    "link": "/claude-code/ch01"
+    "title": "01 E2E 测试与 Playwright 概述",
+    "link": "/playwright/ch01"
    },
    {
-    "title": "02 基本对话与代码生成",
-    "link": "/claude-code/ch02"
+    "title": "02 第一个脚本与同步 API",
+    "link": "/playwright/ch02"
    },
    {
-    "title": "03 项目上下文与 CLAUDE.md",
-    "link": "/claude-code/ch03"
+    "title": "03 定位器 Locator 与严格模式",
+    "link": "/playwright/ch03"
    },
    {
-    "title": "04 文件操作与代码编辑",
-    "link": "/claude-code/ch04"
+    "title": "04 自动等待与 Actionability",
+    "link": "/playwright/ch04"
    },
    {
-    "title": "05 Bash 执行与自动化",
-    "link": "/claude-code/ch05"
+    "title": "05 Web-First 断言 expect",
+    "link": "/playwright/ch05"
    },
    {
-    "title": "06 权限模型与安全设置",
-    "link": "/claude-code/ch06"
+    "title": "06 pytest 集成与 fixture 体系",
+    "link": "/playwright/ch06"
    },
    {
-    "title": "07 多轮会话与上下文管理",
-    "link": "/claude-code/ch07"
+    "title": "07 多页面、Popup 与 iframe",
+    "link": "/playwright/ch07"
    },
    {
-    "title": "08 Git 集成与代码审查",
-    "link": "/claude-code/ch08"
+    "title": "08 网络拦截与 Mock",
+    "link": "/playwright/ch08"
    },
    {
-    "title": "09 自定义指令与配置",
-    "link": "/claude-code/ch09"
+    "title": "09 认证状态复用 storage_state",
+    "link": "/playwright/ch09"
    },
    {
-    "title": "10 MCP 集成与外部工具",
-    "link": "/claude-code/ch10"
+    "title": "10 表单与复杂组件交互",
+    "link": "/playwright/ch10"
    },
    {
-    "title": "11 Skills 技能系统",
-    "link": "/claude-code/ch11"
+    "title": "11 截图、视频与 Trace Viewer",
+    "link": "/playwright/ch11"
    },
    {
-    "title": "12 子代理与并行工作流",
-    "link": "/claude-code/ch12"
+    "title": "12 设备仿真与多浏览器",
+    "link": "/playwright/ch12"
    },
    {
-    "title": "13 Hooks 自动化钩子",
-    "link": "/claude-code/ch13"
+    "title": "13 数据驱动与参数化 E2E",
+    "link": "/playwright/ch13"
    },
    {
-    "title": "14 IDE 集成",
-    "link": "/claude-code/ch14"
+    "title": "14 Page Object Model 设计模式",
+    "link": "/playwright/ch14"
    },
    {
-    "title": "15 SDK 与编程式调用",
-    "link": "/claude-code/ch15"
+    "title": "15 并行执行与 Sharding",
+    "link": "/playwright/ch15"
    },
    {
-    "title": "16 企业级配置与管理",
-    "link": "/claude-code/ch16"
+    "title": "16 CI 集成与 Docker",
+    "link": "/playwright/ch16"
    },
    {
-    "title": "17 成本控制与用量管理",
-    "link": "/claude-code/ch17"
+    "title": "17 APIRequestContext 与 API 测试",
+    "link": "/playwright/ch17"
    },
    {
-    "title": "18 高级技巧与最佳实践",
-    "link": "/claude-code/ch18"
+    "title": "18 异步 API 与 FastAPI 联测",
+    "link": "/playwright/ch18"
    },
    {
-    "title": "19 团队协作规范",
-    "link": "/claude-code/ch19"
+    "title": "19 调试技巧与 Flaky 治理",
+    "link": "/playwright/ch19"
    },
    {
-    "title": "20 综合实战项目",
-    "link": "/claude-code/ch20"
+    "title": "20 无障碍测试与 Aria Snapshot",
+    "link": "/playwright/ch20"
+   },
+   {
+    "title": "21 WebSocket 与实时应用测试",
+    "link": "/playwright/ch21"
+   },
+   {
+    "title": "22 生产实践：E2E 策略与报告",
+    "link": "/playwright/ch22"
+   }
+  ]
+ },
+ {
+  "dir": "pi",
+  "items": [
+   {
+    "title": "0. 课程导学",
+    "link": "/pi/"
+   },
+   {
+    "title": "01 Pi 是什么：极简终端编码智能体",
+    "link": "/pi/ch01"
+   },
+   {
+    "title": "02 安装与快速上手",
+    "link": "/pi/ch02"
+   },
+   {
+    "title": "03 Providers 与 Models 配置",
+    "link": "/pi/ch03"
+   },
+   {
+    "title": "04 交互模式：编辑器/命令/快捷键",
+    "link": "/pi/ch04"
+   },
+   {
+    "title": "05 会话管理：恢复与分支",
+    "link": "/pi/ch05"
+   },
+   {
+    "title": "06 上下文压缩 Compaction 与 Context Files",
+    "link": "/pi/ch06"
+   },
+   {
+    "title": "07 Settings 设置与项目信任",
+    "link": "/pi/ch07"
+   },
+   {
+    "title": "08 Prompt Templates 提示词模板",
+    "link": "/pi/ch08"
+   },
+   {
+    "title": "09 Skills 技能体系",
+    "link": "/pi/ch09"
+   },
+   {
+    "title": "10 Extensions 入门：TypeScript 扩展 API",
+    "link": "/pi/ch10"
+   },
+   {
+    "title": "11 Extensions 进阶：自定义工具与 UI",
+    "link": "/pi/ch11"
+   },
+   {
+    "title": "12 Themes 主题定制",
+    "link": "/pi/ch12"
+   },
+   {
+    "title": "13 Pi Packages 包生态与分发",
+    "link": "/pi/ch13"
+   },
+   {
+    "title": "14 SDK 编程式嵌入",
+    "link": "/pi/ch14"
+   },
+   {
+    "title": "15 RPC 模式与进程集成",
+    "link": "/pi/ch15"
+   },
+   {
+    "title": "16 Print/JSON 模式与 CI 自动化",
+    "link": "/pi/ch16"
+   },
+   {
+    "title": "17 工具系统与 CLI 全解",
+    "link": "/pi/ch17"
+   },
+   {
+    "title": "18 安全模型与环境变量",
+    "link": "/pi/ch18"
+   },
+   {
+    "title": "19 高级场景：容器化/tmux/会话格式",
+    "link": "/pi/ch19"
+   },
+   {
+    "title": "20 工作流哲学与团队实践",
+    "link": "/pi/ch20"
+   },
+   {
+    "title": "21 多会话协作：intercom 与 messenger",
+    "link": "/pi/ch21"
+   }
+  ]
+ },
+ {
+  "dir": "http",
+  "items": [
+   {
+    "title": "0. 课程导学",
+    "link": "/http/"
+   },
+   {
+    "title": "01 HTTP 客户端生态概览",
+    "link": "/http/ch01"
+   },
+   {
+    "title": "02 GET 请求与响应处理",
+    "link": "/http/ch02"
+   },
+   {
+    "title": "03 POST 与请求体构建",
+    "link": "/http/ch03"
+   },
+   {
+    "title": "04 请求参数：Headers、Cookies、Auth",
+    "link": "/http/ch04"
+   },
+   {
+    "title": "05 响应详解：状态码、JSON、文件",
+    "link": "/http/ch05"
+   },
+   {
+    "title": "06 Session 与持久连接",
+    "link": "/http/ch06"
+   },
+   {
+    "title": "07 超时与重试机制",
+    "link": "/http/ch07"
+   },
+   {
+    "title": "08 代理与 SSL/TLS 配置",
+    "link": "/http/ch08"
+   },
+   {
+    "title": "09 异常处理与最佳实践",
+    "link": "/http/ch09"
+   },
+   {
+    "title": "10 httpx 简介与同步 API",
+    "link": "/http/ch10"
+   },
+   {
+    "title": "11 异步客户端 AsyncClient",
+    "link": "/http/ch11"
+   },
+   {
+    "title": "12 并发请求与并发控制",
+    "link": "/http/ch12"
+   },
+   {
+    "title": "13 HTTP/2 与 WebSocket",
+    "link": "/http/ch13"
+   },
+   {
+    "title": "14 中间件与事件钩子",
+    "link": "/http/ch14"
+   },
+   {
+    "title": "15 pytest 集成测试",
+    "link": "/http/ch15"
+   },
+   {
+    "title": "16 性能优化与资源管理",
+    "link": "/http/ch16"
+   },
+   {
+    "title": "17 API 客户端封装模式",
+    "link": "/http/ch17"
+   },
+   {
+    "title": "18 安全最佳实践",
+    "link": "/http/ch18"
+   },
+   {
+    "title": "19 生产部署与监控",
+    "link": "/http/ch19"
+   },
+   {
+    "title": "20 综合实战：GitHub API 客户端",
+    "link": "/http/ch20"
    }
   ]
  },
  {
   "dir": "pi-agent",
-  "varName": "piAgent",
-  "count": 24,
-  "chapters": [
+  "items": [
    {
     "title": "0. 课程导学",
     "link": "/pi-agent/"
@@ -904,9 +801,7 @@
  },
  {
   "dir": "flue",
-  "varName": "flue",
-  "count": 19,
-  "chapters": [
+  "items": [
    {
     "title": "0. 课程导学",
     "link": "/flue/"
@@ -918,6 +813,10 @@
    {
     "title": "02 项目搭建与开发流程",
     "link": "/flue/ch02"
+   },
+   {
+    "title": "03 'use agent'：函数式 Agent",
+    "link": "/flue/ch03"
    },
    {
     "title": "04 模型配置与指令设计",
@@ -987,9 +886,7 @@
  },
  {
   "dir": "firstmate",
-  "varName": "firstmate",
-  "count": 19,
-  "chapters": [
+  "items": [
    {
     "title": "0. 课程导学",
     "link": "/firstmate/"
@@ -1070,12 +967,14 @@
  },
  {
   "dir": "hands-on-llm",
-  "varName": "handsOnLLM",
-  "count": 14,
-  "chapters": [
+  "items": [
    {
     "title": "0. 课程导学",
     "link": "/hands-on-llm/"
+   },
+   {
+    "title": "13 扩展阅读（Bonus）",
+    "link": "/hands-on-llm/bonus"
    },
    {
     "title": "01 语言模型导论",
@@ -1124,18 +1023,12 @@
    {
     "title": "12 微调生成模型",
     "link": "/hands-on-llm/ch12"
-   },
-   {
-    "title": "13 扩展阅读（Bonus）",
-    "link": "/hands-on-llm/bonus"
    }
   ]
  },
  {
   "dir": "ai-sdk",
-  "varName": "aiSdk",
-  "count": 23,
-  "chapters": [
+  "items": [
    {
     "title": "0. 课程导学",
     "link": "/ai-sdk/"
@@ -1232,9 +1125,7 @@
  },
  {
   "dir": "agent-prod",
-  "varName": "agentProd",
-  "count": 24,
-  "chapters": [
+  "items": [
    {
     "title": "0. 课程导学",
     "link": "/agent-prod/"
@@ -1335,9 +1226,7 @@
  },
  {
   "dir": "mastra",
-  "varName": "mastra",
-  "count": 22,
-  "chapters": [
+  "items": [
    {
     "title": "0. 课程导学",
     "link": "/mastra/"
@@ -1429,10 +1318,190 @@
   ]
  },
  {
+  "dir": "locust",
+  "items": [
+   {
+    "title": "0. 课程导学",
+    "link": "/locust/"
+   },
+   {
+    "title": "01 性能测试与 Locust 概述",
+    "link": "/locust/ch01"
+   },
+   {
+    "title": "02 安装与第一个脚本",
+    "link": "/locust/ch02"
+   },
+   {
+    "title": "03 HttpUser 与任务编写",
+    "link": "/locust/ch03"
+   },
+   {
+    "title": "04 任务权重与等待时间",
+    "link": "/locust/ch04"
+   },
+   {
+    "title": "05 Web UI 与无头模式",
+    "link": "/locust/ch05"
+   },
+   {
+    "title": "06 断言与失败检测",
+    "link": "/locust/ch06"
+   },
+   {
+    "title": "07 TaskSet 与嵌套任务",
+    "link": "/locust/ch07"
+   },
+   {
+    "title": "08 事件钩子与自定义统计",
+    "link": "/locust/ch08"
+   },
+   {
+    "title": "09 参数化与数据驱动",
+    "link": "/locust/ch09"
+   },
+   {
+    "title": "10 分布式压测",
+    "link": "/locust/ch10"
+   },
+   {
+    "title": "11 Docker 容器化运行",
+    "link": "/locust/ch11"
+   },
+   {
+    "title": "12 Kubernetes Operator",
+    "link": "/locust/ch12"
+   },
+   {
+    "title": "13 测试非 HTTP 协议",
+    "link": "/locust/ch13"
+   },
+   {
+    "title": "14 asyncio 支持",
+    "link": "/locust/ch14"
+   },
+   {
+    "title": "15 作为库使用",
+    "link": "/locust/ch15"
+   },
+   {
+    "title": "16 插件与扩展",
+    "link": "/locust/ch16"
+   },
+   {
+    "title": "17 性能调优与请求率提升",
+    "link": "/locust/ch17"
+   },
+   {
+    "title": "18 CI/CD 集成",
+    "link": "/locust/ch18"
+   },
+   {
+    "title": "19 监控与结果分析",
+    "link": "/locust/ch19"
+   },
+   {
+    "title": "20 综合实战：全链路压测",
+    "link": "/locust/ch20"
+   }
+  ]
+ },
+ {
+  "dir": "claude-code",
+  "items": [
+   {
+    "title": "0. 课程导学",
+    "link": "/claude-code/"
+   },
+   {
+    "title": "01 Claude Code 简介与安装",
+    "link": "/claude-code/ch01"
+   },
+   {
+    "title": "02 基本对话与代码生成",
+    "link": "/claude-code/ch02"
+   },
+   {
+    "title": "03 项目上下文与 CLAUDE.md",
+    "link": "/claude-code/ch03"
+   },
+   {
+    "title": "04 文件操作与代码编辑",
+    "link": "/claude-code/ch04"
+   },
+   {
+    "title": "05 Bash 执行与自动化",
+    "link": "/claude-code/ch05"
+   },
+   {
+    "title": "06 权限模型与安全设置",
+    "link": "/claude-code/ch06"
+   },
+   {
+    "title": "07 多轮会话与上下文管理",
+    "link": "/claude-code/ch07"
+   },
+   {
+    "title": "08 Git 集成与代码审查",
+    "link": "/claude-code/ch08"
+   },
+   {
+    "title": "09 自定义指令与配置",
+    "link": "/claude-code/ch09"
+   },
+   {
+    "title": "10 MCP 集成与外部工具",
+    "link": "/claude-code/ch10"
+   },
+   {
+    "title": "11 Skills 技能系统",
+    "link": "/claude-code/ch11"
+   },
+   {
+    "title": "12 子代理与并行工作流",
+    "link": "/claude-code/ch12"
+   },
+   {
+    "title": "13 Hooks 自动化钩子",
+    "link": "/claude-code/ch13"
+   },
+   {
+    "title": "14 IDE 集成",
+    "link": "/claude-code/ch14"
+   },
+   {
+    "title": "15 SDK 与编程式调用",
+    "link": "/claude-code/ch15"
+   },
+   {
+    "title": "16 企业级配置与管理",
+    "link": "/claude-code/ch16"
+   },
+   {
+    "title": "17 成本控制与用量管理",
+    "link": "/claude-code/ch17"
+   },
+   {
+    "title": "18 高级技巧与最佳实践",
+    "link": "/claude-code/ch18"
+   },
+   {
+    "title": "19 团队协作规范",
+    "link": "/claude-code/ch19"
+   },
+   {
+    "title": "20 综合实战项目",
+    "link": "/claude-code/ch20"
+   },
+   {
+    "title": "21 近期更新与新特性",
+    "link": "/claude-code/ch21"
+   }
+  ]
+ },
+ {
   "dir": "agent",
-  "varName": "agent",
-  "count": 33,
-  "chapters": [
+  "items": [
    {
     "title": "0. 课程导学",
     "link": "/agent/"
@@ -1564,101 +1633,6 @@
    {
     "title": "32 课程总结与学习路线",
     "link": "/agent/ch32"
-   }
-  ]
- },
- {
-  "dir": "pi",
-  "varName": "pi",
-  "count": 22,
-  "chapters": [
-   {
-    "title": "0. 课程导学",
-    "link": "/pi/"
-   },
-   {
-    "title": "01 Pi 是什么：极简终端编码智能体",
-    "link": "/pi/ch01"
-   },
-   {
-    "title": "02 安装与快速上手",
-    "link": "/pi/ch02"
-   },
-   {
-    "title": "03 Providers 与 Models 配置",
-    "link": "/pi/ch03"
-   },
-   {
-    "title": "04 交互模式：编辑器/命令/快捷键",
-    "link": "/pi/ch04"
-   },
-   {
-    "title": "05 会话管理：恢复与分支",
-    "link": "/pi/ch05"
-   },
-   {
-    "title": "06 上下文压缩 Compaction 与 Context Files",
-    "link": "/pi/ch06"
-   },
-   {
-    "title": "07 Settings 设置与项目信任",
-    "link": "/pi/ch07"
-   },
-   {
-    "title": "08 Prompt Templates 提示词模板",
-    "link": "/pi/ch08"
-   },
-   {
-    "title": "09 Skills 技能体系",
-    "link": "/pi/ch09"
-   },
-   {
-    "title": "10 Extensions 入门：TypeScript 扩展 API",
-    "link": "/pi/ch10"
-   },
-   {
-    "title": "11 Extensions 进阶：自定义工具与 UI",
-    "link": "/pi/ch11"
-   },
-   {
-    "title": "12 Themes 主题定制",
-    "link": "/pi/ch12"
-   },
-   {
-    "title": "13 Pi Packages 包生态与分发",
-    "link": "/pi/ch13"
-   },
-   {
-    "title": "14 SDK 编程式嵌入",
-    "link": "/pi/ch14"
-   },
-   {
-    "title": "15 RPC 模式与进程集成",
-    "link": "/pi/ch15"
-   },
-   {
-    "title": "16 Print/JSON 模式与 CI 自动化",
-    "link": "/pi/ch16"
-   },
-   {
-    "title": "17 工具系统与 CLI 全解",
-    "link": "/pi/ch17"
-   },
-   {
-    "title": "18 安全模型与环境变量",
-    "link": "/pi/ch18"
-   },
-   {
-    "title": "19 高级场景：容器化/tmux/会话格式",
-    "link": "/pi/ch19"
-   },
-   {
-    "title": "20 工作流哲学与团队实践",
-    "link": "/pi/ch20"
-   },
-   {
-    "title": "21 多会话协作：intercom 与 messenger",
-    "link": "/pi/ch21"
    }
   ]
  }
