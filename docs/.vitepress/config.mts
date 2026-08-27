@@ -647,11 +647,36 @@ export default defineConfig({
           {
             text: '🌐 Web & Testing',
             items: [
-              { text: 'pytest', link: '/en/pytest/ch01.html' },
-              { text: 'HTTP Requests', link: '/en/http/' }
+              { text: 'HTTP Requests', link: '/en/http/' },
+              { text: 'pytest', link: '/en/pytest/' },
+              { text: 'Playwright', link: '/en/playwright/' },
+              { text: 'Locust', link: '/en/locust/' },
+              { text: 'FastAPI', link: '/en/fastapi/' }
             ]
           },
-          { text: 'About', link: '/en/about.html' }
+          {
+            text: '🤖 Agent Frameworks',
+            items: [
+              { text: 'Agno', link: '/en/agno/' },
+              { text: 'CrewAI', link: '/en/crewai/' },
+              { text: 'Vercel AI SDK', link: '/en/ai-sdk/' },
+              { text: 'Agent Engineering', link: '/en/agent-prod/' },
+              { text: 'Mastra', link: '/en/mastra/' },
+              { text: 'Flue', link: '/en/flue/' },
+              { text: 'FirstMate', link: '/en/firstmate/' },
+              { text: 'Pi Agent Dev', link: '/en/pi-agent/' }
+            ]
+          },
+          {
+            text: '🧠 AI Assistants',
+            items: [
+              { text: 'Hands-On LLM', link: '/en/hands-on-llm/' },
+              { text: 'Agent Engineering', link: '/en/agent/' },
+              { text: 'Claude Code', link: '/en/claude-code/' },
+              { text: 'Pi Coding Agent', link: '/en/pi/' }
+            ]
+          },
+          { text: 'About', link: '/en/about/' }
         ],
         // EN-NAV-END
         // EN-SIDEBAR-START
