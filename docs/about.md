@@ -1,11 +1,11 @@
 ---
 title: 关于本教程站
-description: 十七套系统教程、369 章内容，覆盖 Web 基础到 AI 智能体生产部署
+description: 十七套系统教程、370 章内容，覆盖 Web 基础到 AI 智能体生产部署
 ---
 
 # 关于 AI 工程与智能体教程站
 
-本教程站提供 <Badge type="warning" text="17 套系统教程" /> <Badge type="info" text="369 章" /> 内容，覆盖从 Web 基础到 AI 智能体生产部署的完整学习路径。每章配有可运行示例代码、4 道随堂测验和 3 道动手实践题。
+本教程站提供 <Badge type="warning" text="17 套系统教程" /> <Badge type="info" text="370 章" /> 内容，覆盖从 Web 基础到 AI 智能体生产部署的完整学习路径。每章配有可运行示例代码、4 道随堂测验和 3 道动手实践题。
 
 ## 各课程版本基准
 
@@ -18,7 +18,7 @@ description: 十七套系统教程、369 章内容，覆盖 Web 基础到 AI 智
 <tr><td>Playwright</td><td>Playwright 1.62 (Python)</td></tr>
 <tr><td>Locust</td><td>Locust 2.46</td></tr>
 <tr><td>FastAPI</td><td>FastAPI 0.141+</td></tr>
-<tr><td>Agno</td><td>Agno 2.9</td></tr>
+<tr><td>Agno</td><td>Agno 3.x</td></tr>
 <tr><td>CrewAI</td><td>CrewAI 1.15</td></tr>
 <tr><td>Agent 工程</td><td>PromptingGuide + Harness + MCP + Skills + Loop + AGENTS.md</td></tr>
 <tr><td>Claude Code</td><td>Claude Code 2.1.x</td></tr>
@@ -28,7 +28,7 @@ description: 十七套系统教程、369 章内容，覆盖 Web 基础到 AI 智
 <tr><td>Mastra</td><td>@mastra/core（最新）</td></tr>
 <tr><td>FirstMate</td><td>firstmate 最新 main（AGENTS.md + docs/）</td></tr>
 <tr><td>Hands-On LLM</td><td>O'Reilly《Hands-On Large Language Models》配套仓库 main</td></tr>
-<tr><td>Vercel AI SDK</td><td>ai-sdk.dev v6 最新文档 + Cookbook</td></tr>
+<tr><td>Vercel AI SDK</td><td>ai-sdk.dev v7 最新文档 + Cookbook</td></tr>
 <tr><td>Agent 工程实战</td><td>LangGraph 1.2 + Deep Agents + AWS ECS/SQS/DynamoDB</td></tr>
 </tbody>
 </table>

@@ -60,25 +60,26 @@ const agno = [
   { text: '06 Prompt 工程：instructions 与描述体系', link: '/agno/ch06' },
   { text: '07 工具 Tools：内置工具包原理与使用', link: '/agno/ch07' },
   { text: '08 自定义工具与 Toolkit 开发', link: '/agno/ch08' },
-  { text: '09 多模态 Agent', link: '/agno/ch09' },
-  { text: '10 会话管理 session state 与 chat history', link: '/agno/ch10' },
-  { text: '11 存储 Storage：会话持久化', link: '/agno/ch11' },
-  { text: '12 记忆 Memory：用户画像与摘要', link: '/agno/ch12' },
-  { text: '13 知识库 Knowledge 与 RAG 入门', link: '/agno/ch13' },
-  { text: '14 RAG 进阶：Agentic RAG 与混合检索', link: '/agno/ch14' },
-  { text: '15 推理 Reasoning 与思考模型', link: '/agno/ch15' },
-  { text: '16 人机协同与 Guardrails', link: '/agno/ch16' },
-  { text: '17 MCP 协议集成', link: '/agno/ch17' },
-  { text: '18 Agent Team 入门：协作模式', link: '/agno/ch18' },
-  { text: '19 Team 进阶：共享状态与成员通信', link: '/agno/ch19' },
-  { text: '20 Workflow 入门：Steps 步骤编排', link: '/agno/ch20' },
-  { text: '21 Workflow 进阶：并行/分支/循环', link: '/agno/ch21' },
-  { text: '22 AgentOS：把 Agent 发布成服务', link: '/agno/ch22' },
-  { text: '23 可观测性与调试', link: '/agno/ch23' },
-  { text: '24 性能优化与生产实践', link: '/agno/ch24' },
-  { text: '25 实战一：智能数据分析助手', link: '/agno/ch25' },
-  { text: '26 实战二：多源研究助手 Team', link: '/agno/ch26' },
-  { text: '27 实战三：客服知识库 Agent 上线 AgentOS', link: '/agno/ch27' }
+  { text: '09 Agent Team 入门：协作模式', link: '/agno/ch09' },
+  { text: '10 Team 进阶：共享状态与成员通信', link: '/agno/ch10' },
+  { text: '11 Workflow 入门：Steps 步骤编排', link: '/agno/ch11' },
+  { text: '12 Workflow 进阶：并行/分支/循环', link: '/agno/ch12' },
+  { text: '13 多模态 Agent', link: '/agno/ch13' },
+  { text: '14 会话管理 session state 与 chat history', link: '/agno/ch14' },
+  { text: '15 存储 Storage：会话持久化', link: '/agno/ch15' },
+  { text: '16 记忆 Memory：用户画像与摘要', link: '/agno/ch16' },
+  { text: '17 知识库 Knowledge 与 RAG 入门', link: '/agno/ch17' },
+  { text: '18 RAG 进阶：Agentic RAG 与混合检索', link: '/agno/ch18' },
+  { text: '19 推理 Reasoning 与思考模型', link: '/agno/ch19' },
+  { text: '20 Skills：可插拔的领域能力', link: '/agno/ch20' },
+  { text: '21 人机协同与 Guardrails', link: '/agno/ch21' },
+  { text: '22 MCP 协议集成', link: '/agno/ch22' },
+  { text: '23 AgentOS：把 Agent 发布成服务', link: '/agno/ch23' },
+  { text: '24 可观测性与调试', link: '/agno/ch24' },
+  { text: '25 性能优化与生产实践', link: '/agno/ch25' },
+  { text: '26 实战一：智能数据分析助手', link: '/agno/ch26' },
+  { text: '27 实战二：多源研究助手 Team', link: '/agno/ch27' },
+  { text: '28 实战三：客服知识库 Agent 上线 AgentOS', link: '/agno/ch28' }
 ]
 
 const crewai = [
@@ -357,11 +358,11 @@ const agentProd = [
   { text: '16 AWS ECS/Fargate 与 S3', link: '/agent-prod/ch16' },
   { text: '17 SQS 消息队列与 DynamoDB', link: '/agent-prod/ch17' },
   { text: '18 CloudWatch 监控与 CI/CD', link: '/agent-prod/ch18' },
-  { text: '19 实战一：RAG 知识库 Agent', link: '/agent-prod/ch19' },
-  { text: '20 实战二：多代理工单处理系统', link: '/agent-prod/ch20' },
-  { text: '21 实战三：全栈 Agent 服务', link: '/agent-prod/ch21' },
-  { text: '22 扩展：复杂文档解析管线（PDF/PPT/OCR）', link: '/agent-prod/ch22' },
-  { text: '23 扩展：音视频处理与无头渲染管线', link: '/agent-prod/ch23' }
+  { text: '19 扩展一：复杂文档解析管线（PDF/PPT/OCR/转录）', link: '/agent-prod/ch19' },
+  { text: '20 扩展二：音视频处理与无头渲染管线（FFmpeg/OpenCV/Playwright）', link: '/agent-prod/ch20' },
+  { text: '21 实战一：RAG 知识库 Agent', link: '/agent-prod/ch21' },
+  { text: '22 实战二：多代理工单处理系统', link: '/agent-prod/ch22' },
+  { text: '23 实战三：全栈 Agent 服务', link: '/agent-prod/ch23' }
 ]
 
 // ===== Mastra =====

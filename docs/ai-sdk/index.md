@@ -50,11 +50,11 @@ const model = myProvider('gpt-4o-mini'); // 模型名按服务端实际填写
 | GitHub 仓库 | [vercel/ai](https://github.com/vercel/ai) |
 | Cookbook | [ai-sdk.dev/cookbook](https://ai-sdk.dev/cookbook) |
 
-内容版本基准：**AI SDK v6（最新 main 文档）**
+内容版本基准：**AI SDK v7**（npm `ai@7.0.x`，对照 ai-sdk.dev 最新文档核对）
 
 ## 学习建议
 
 - **第 3 章 Provider 管理是全课地基**：后续所有章节的模型都由它构造；
 - **第 5–8 章是日常开发主力 API**：generateText / streamText / generateObject / tool；
-- **Agent 三部曲（18–20）循序渐进**：先会跑循环，再控审批与记忆；
+- **Agent 两部曲（18–19）循序渐进**：先会跑循环，再控审批与记忆；
 - **实战三章可独立阅读**：每章都是完整可运行的项目。

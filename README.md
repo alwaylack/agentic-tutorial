@@ -16,7 +16,7 @@
 | [Playwright](docs/playwright/index.md) | 22 章 | Playwright 1.62 (Python) | 定位器/自动等待/网络 Mock/POM/Sharding/无障碍 |
 | [Locust](docs/locust/index.md) | 20 章 | Locust 2.46 | HttpUser/TaskSet/分布式/Docker/K8s/asyncio 压测 |
 | [FastAPI](docs/fastapi/index.md) | 22 章 | FastAPI 0.141+ | 依赖注入/OAuth2/数据库/WebSocket/部署 |
-| [Agno](docs/agno/index.md) | 27 章 | Agno 2.9 | Agent/工具/RAG/Team/Workflow/AgentOS · **三实战：数据分析助手 / 多源研究 Team / 客服知识库上线** |
+| [Agno](docs/agno/index.md) | 28 章 | Agno 3.x | Agent/工具/RAG/Team/Workflow/AgentOS/Skills · **三实战：数据分析助手 / 多源研究 Team / 客服知识库上线** |
 | [CrewAI](docs/crewai/index.md) | 26 章 | CrewAI 1.15 | Agent/Task/Crew/Flow/记忆/MCP/评估 · **三实战：内容营销 / 数据分析 / 竞品监控** |
 | [Agent 工程](docs/agent/index.md) | 32 章 | — | PromptingGuide/Harness/MCP/Skills/AGENTS.md/Loop 六大基石 |
 | [Claude Code](docs/claude-code/index.md) | 21 章 | Claude Code 2.1.x | CLAUDE.md/MCP/Skills/Hooks/SDK + 近期新特性 |
@@ -25,11 +25,11 @@
 | [Flue](docs/flue/index.md) | 19 章 | @flue/runtime | 函数式 Harness/Tools/Skills/Sandboxes/Durability/Channels · **三实战：GitHub 分诊 / Slack 值班 / 代码审查** |
 | [Mastra](docs/mastra/index.md) | 21 章 | @mastra/core (TS) | Workflow 图引擎/Memory/RAG/MCP/Evals/部署 · **三实战：智能客服 / 全栈 AI 应用 / 数据问答 BI** |
 | [Agent 工程实战](docs/agent-prod/index.md) | 23 章 | LangGraph 1.2 + Deep Agents + AWS | StateGraph/ToolNode/中断恢复/Skills/Langfuse/ECS/SQS · 含 3 章综合实战 + 文档解析/音视频扩展 |
-| [Vercel AI SDK](docs/ai-sdk/index.md) | 22 章 | ai-sdk.dev（v6 最新） | Provider 管理/文本生成/结构化输出/工具调用/MCP/RAG/useChat/ToolLoopAgent · 示例兼容 AI Gateway 与自定义 Provider |
+| [Vercel AI SDK](docs/ai-sdk/index.md) | 22 章 | ai-sdk.dev（v7 最新） | Provider 管理/文本生成/结构化输出/工具调用/MCP/RAG/useChat/ToolLoopAgent · 示例兼容 AI Gateway 与自定义 Provider |
 | [Hands-On LLM](docs/hands-on-llm/index.md) | 12 章 + 扩展 | O'Reilly 图书配套（main） | 语言模型/Token/LLM 内部/分类/聚类/提示工程/语义搜索/多模态/嵌入/微调 · 章节代码图片与仓库一致 |
 | [FirstMate](docs/firstmate/index.md) | 18 章 | firstmate（最新 main） | Agent Distro/五条硬规则/FM_HOME/tmux 等后端/ship·scout 任务/watcher 监督/Skills/Secondmate/Relay · **三实战：个人舰队 / 并行交付流水线 / 远程规模化运营** |
 
-**共 369 章。**
+**共 370 章。**
 
 每章包含：文字讲解 + 可运行示例代码 + **4 道交互式随堂测验**（答错展示正确答案与原因）+ **3 道动手实践题**。
 
