@@ -519,6 +519,8 @@ export default defineConfig({
   description: '从零基础到生产实践：HTTP · pytest · Playwright · Locust · FastAPI · Agno · CrewAI · Agent 工程 · Claude Code · Pi · Flue · Mastra',
   // localhost 示例地址（如 Mastra Studio :4111）不算死链
   ignoreDeadLinks: [/^https?:\/\/localhost/,
+    /^\/agent-prod\/ch/,
+    /^\/en\//,
     /^\/agent-prod\/ch/],
   // 锁定 GitHub Light 浅色主题：禁用深色模式与右上角主题切换开关
   appearance: false,
@@ -645,6 +647,7 @@ export default defineConfig({
           {
             text: '🌐 Web & Testing',
             items: [
+              { text: 'pytest', link: '/en/pytest/ch01.html' },
               { text: 'HTTP Requests', link: '/en/http/' }
             ]
           },
@@ -653,6 +656,7 @@ export default defineConfig({
         // EN-NAV-END
         // EN-SIDEBAR-START
         sidebar: {
+      '/pytest/': [{ text: 'pytest', items: [{ text: '01 Getting Started with Automated Testing and pytest', link: '/en/pytest/ch01.html' }, { text: '02 Test Discovery Rules and Run Control', link: '/en/pytest/ch02.html' }, { text: '03 The Art of Assertions', link: '/en/pytest/ch03.html' }, { text: '04 Organizing Tests and Markers (mark)', link: '/en/pytest/ch04.html' }, { text: '05 Parametrized Testing', link: '/en/pytest/ch05.html' }, { text: '06 fixture Basics', link: '/en/pytest/ch06.html' }, { text: '07 Advanced fixtures: Scopes and conftest', link: '/en/pytest/ch07.html' }, { text: '08 Advanced fixture Patterns', link: '/en/pytest/ch08.html' }, { text: '09 Built-in fixture Toolbox', link: '/en/pytest/ch09.html' }, { text: '10 Mock Testing and monkeypatch', link: '/en/pytest/ch10.html' }, { text: '11 Configuration Files In Depth', link: '/en/pytest/ch11.html' }, { text: '12 The Plugin System and Common Plugins', link: '/en/pytest/ch12.html' }, { text: '13 Coverage and Quality Gates', link: '/en/pytest/ch13.html' }, { text: '14 Parallel and Distributed Execution', link: '/en/pytest/ch14.html' }, { text: '15 Advanced Parametrization Techniques', link: '/en/pytest/ch15.html' }, { text: '16 Custom Plugins and Hook Development', link: '/en/pytest/ch16.html' }, { text: '17 Testing Async Code', link: '/en/pytest/ch17.html' }, { text: '18 Property-Based Testing with Hypothesis', link: '/en/pytest/ch18.html' }, { text: '19 Testing Web Services and Integration Tests', link: '/en/pytest/ch19.html' }, { text: '20 Production Practice: CI and Test Governance', link: '/en/pytest/ch20.html' }] }],
       '/http/': [{ text: 'HTTP Requests', items: [{ text: '0. Course Guide', link: '/en/http/' }, { text: '01 The HTTP Client Ecosystem: An Overview', link: '/en/http/ch01.html' }, { text: '02 GET Requests and Response Handling', link: '/en/http/ch02.html' }, { text: '03 POST and Request Body Construction', link: '/en/http/ch03.html' }, { text: '04 Request Parameters: Headers, Cookies, Auth', link: '/en/http/ch04.html' }, { text: '05 Responses In Depth: Status Codes, JSON, Files', link: '/en/http/ch05.html' }, { text: '06 Sessions and Persistent Connections', link: '/en/http/ch06.html' }, { text: '07 Timeouts and Retry Mechanisms', link: '/en/http/ch07.html' }, { text: '08 Proxies and SSL/TLS Configuration', link: '/en/http/ch08.html' }, { text: '09 Exception Handling and Best Practices', link: '/en/http/ch09.html' }, { text: '10 httpx Introduction and Sync API', link: '/en/http/ch10.html' }, { text: '11 The AsyncClient', link: '/en/http/ch11.html' }, { text: '12 Concurrent Requests and Concurrency Control', link: '/en/http/ch12.html' }, { text: '13 HTTP/2 and WebSocket', link: '/en/http/ch13.html' }, { text: '14 Middleware and Event Hooks', link: '/en/http/ch14.html' }, { text: '15 pytest Integration Testing', link: '/en/http/ch15.html' }, { text: '16 Performance Optimization and Resource Management', link: '/en/http/ch16.html' }, { text: '17 API Client Wrapping Patterns', link: '/en/http/ch17.html' }, { text: '18 Security Best Practices', link: '/en/http/ch18.html' }, { text: '19 Production Deployment and Monitoring', link: '/en/http/ch19.html' }, { text: '20 Capstone: GitHub API Client', link: '/en/http/ch20.html' }] }],
         },
         // EN-SIDEBAR-END
