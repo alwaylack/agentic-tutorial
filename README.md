@@ -22,7 +22,7 @@
 | [Claude Code](docs/claude-code/index.md) | 21 章 | Claude Code 2.1.x | CLAUDE.md/MCP/Skills/Hooks/SDK + 近期新特性 |
 | [Pi](docs/pi/index.md) | 21 章 | pi 0.84.x | 会话管理/技能扩展/SDK/RPC/pi-intercom 与 pi-messenger 多会话协作 |
 | [Pi Agent 开发](docs/pi-agent/index.md) | 23 章 | pi-agent-core / pi-ai | 统一 LLM API/工具调用/事件流/Provider/会话持久化 · **三实战：测试智能体全流程 / CI 集成 / 报告** · Telemetry / TUI |
-| [Flue](docs/flue/index.md) | 19 章 | @flue/runtime | 函数式 Harness/Tools/Skills/Sandboxes/Durability/Channels · **三实战：GitHub 分诊 / Slack 值班 / 代码审查** |
+| [Flue](docs/flue/index.md) | 19 章 | @flue/runtime 2.0.3 | 函数式 Harness/Tools/Skills/Sandboxes/Durability/Channels · **三实战：GitHub 分诊 / Slack 值班 / 代码审查** |
 | [Mastra](docs/mastra/index.md) | 21 章 | @mastra/core (TS) | Workflow 图引擎/Memory/RAG/MCP/Evals/部署 · **三实战：智能客服 / 全栈 AI 应用 / 数据问答 BI** |
 | [Agent 工程实战](docs/agent-prod/index.md) | 23 章 | LangGraph 1.2 + Deep Agents + AWS | StateGraph/ToolNode/中断恢复/Skills/Langfuse/ECS/SQS · 含 3 章综合实战 + 文档解析/音视频扩展 |
 | [Vercel AI SDK](docs/ai-sdk/index.md) | 22 章 | ai-sdk.dev（v7 最新） | Provider 管理/文本生成/结构化输出/工具调用/MCP/RAG/useChat/ToolLoopAgent · 示例兼容 AI Gateway 与自定义 Provider |

@@ -8,8 +8,8 @@
 |---|---|---|
 | 入门 | 01–05 | Harness 理念、项目搭建、'use agent' 函数式 Agent、模型与指令 |
 | 进阶 | 06–10 | Tools、Skills、MCP、Subagents、Channels |
-| 高级 | 11–14 | Sandboxes、Durability、Sessions、Observability |
-| 生产 | 15–18 | CLI 运行、Node/Cloudflare 部署、综合实战 |
+| 高级 | 11–14 | Sandboxes 安全沙箱、Durability 持久化与恢复、Observability 可观测性、CLI 与本地运行 |
+| 生产 | 15–19 | Node/Cloudflare 部署、CI 与托管平台 · 三实战：GitHub 自动分诊 / Slack 值班助手 / 代码审查 Agent |
 
 ## 官方参考源
 

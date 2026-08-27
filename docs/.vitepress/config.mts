@@ -614,10 +614,10 @@ export default defineConfig({
       '/pytest/': [{ text: 'pytest 9 教程（20 章）', items: pytest }],
       '/playwright/': [{ text: 'Playwright 教程（22 章）', items: playwright }],
       '/fastapi/': [{ text: 'FastAPI 教程（22 章）', items: fastapi }],
-      '/agno/': [{ text: 'Agno 2 教程（24 章）', items: agno }],
+      '/agno/': [{ text: 'Agno 3 教程（28 章）', items: agno }],
       '/crewai/': [{ text: 'CrewAI 教程（26 章）', items: crewai }],
       '/locust/': [{ text: 'Locust 性能测试教程（20 章）', items: locust }],
-      '/claude-code/': [{ text: 'Claude Code 教程（20 章）', items: claudeCode }],
+      '/claude-code/': [{ text: 'Claude Code 教程（21 章）', items: claudeCode }],
       '/pi-agent/': [{ text: 'Pi Agent 开发教程（23 章）', items: piAgent }],
       '/flue/': [{ text: 'Flue 教程（19 章）', items: flue }],
       '/firstmate/': [{ text: 'FirstMate 舰队编排教程（18 章）', items: firstmate }],
@@ -632,6 +632,48 @@ export default defineConfig({
     outline: { level: [2, 3], label: '本页目录' },
     docFooter: { prev: '上一章', next: '下一章' },
     lastUpdated: { text: '最后更新于' }
+  },
+  locales: {
+    root: { label: '简体中文', lang: 'zh-CN' },
+    en: {
+      label: 'English',
+      lang: 'en-US',
+      themeConfig: {
+        nav: [
+          { text: 'Home', link: '/en/' },
+          {
+            text: '📚 Courses',
+            items: [
+              { text: '— Web & Testing —', link: '/http/' },
+              { text: 'HTTP Requests', link: '/http/' },
+              { text: 'pytest', link: '/pytest/' },
+              { text: 'Playwright', link: '/playwright/' },
+              { text: 'Locust', link: '/locust/' },
+              { text: 'FastAPI', link: '/fastapi/' },
+              { text: '— Agent Frameworks —', link: '/agno/' },
+              { text: 'Agno', link: '/agno/' },
+              { text: 'CrewAI', link: '/crewai/' },
+              { text: 'Vercel AI SDK', link: '/ai-sdk/' },
+              { text: 'Agent Engineering in Production', link: '/agent-prod/' },
+              { text: 'Mastra', link: '/mastra/' },
+              { text: 'Flue', link: '/flue/' },
+              { text: 'FirstMate', link: '/firstmate/' },
+              { text: 'Pi Agent Development', link: '/pi-agent/' },
+              { text: '— AI Assistants & Engineering —', link: '/hands-on-llm/' },
+              { text: 'Hands-On LLM', link: '/hands-on-llm/' },
+              { text: 'Agent Engineering', link: '/agent/' },
+              { text: 'Claude Code', link: '/claude-code/' },
+              { text: 'Pi Coding Agent', link: '/pi/' }
+            ]
+          },
+          { text: 'About', link: '/en/about/' }
+        ],
+        sidebar: {},
+        outline: { level: [2, 3], label: 'On this page' },
+        docFooter: { prev: 'Previous', next: 'Next' },
+        lastUpdated: { text: 'Last updated' }
+      }
+    }
   },
   markdown: { lineNumbers: true }
 })
