@@ -647,18 +647,18 @@ export default defineConfig({
           {
             text: '🌐 Web & Testing',
             items: [
-              { text: 'pytest', link: '/en/pytest/' },
-              { text: 'HTTP Requests', link: '/en/http/' }
+              { text: 'HTTP Requests', link: '/en/http/' },
+              { text: 'pytest', link: '/en/pytest/' }
             ]
           },
           {
             text: '🤖 Agent Frameworks',
             items: [
-              { text: 'Agno 3', link: '/en/agno/' },
-              { text: 'Agent Engineering in Production', link: '/en/agent-prod/ch01.html' }
+              { text: 'Agno', link: '/en/agno/' },
+              { text: 'Agent Engineering', link: '/en/agent-prod/ch01.html' }
             ]
           },
-          { text: 'About', link: '/en/about.html' }
+          { text: 'About', link: '/en/about/' }
         ],
         // EN-NAV-END
         // EN-SIDEBAR-START
