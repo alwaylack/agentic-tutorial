@@ -119,3 +119,10 @@ body {
 .VPNavBar .VPNavBarSocialLinks {
   display: none;
 }
+
+/* ===== 语言切换开关 ===== */
+/* 生产环境：默认隐藏语言切换按钮 */
+html.lang-toggle-hidden .VPNavBarTranslations,
+html.lang-toggle-hidden .VPNavBarExtra .group.translations {
+  display: none !important;
+}
