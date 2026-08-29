@@ -1,35 +1,48 @@
-# 📚 编程进阶教程站
+# 📚 AI 工程与智能体教程站
 
 [![Cloudflare Pages](https://img.shields.io/badge/☁️_Cloudflare_Pages-agentic--tutorial.pages.dev-F38020?style=for-the-badge)](https://agentic-tutorial.pages.dev)
 [![Vercel](https://img.shields.io/badge/▲_Vercel-agentic--tutorial.vercel.app-000000?style=for-the-badge)](https://agentic-tutorial.vercel.app)
 
-从 0 基础到生产实践的**十七套系统教程**（中文），基于各项目**最新官方文档**编写。
+从 0 基础到生产实践的 **十七套系统教程**，中英双语同步更新，基于各项目**最新官方文档**编写。
 
 仓库：[alwaylack/agentic-tutorial](https://github.com/alwaylack/agentic-tutorial)
+
+---
+
+## 双语访问
+
+| 语言 | 前缀 | 说明 |
+|---|---|---|
+| 简体中文 | `/zh/` | 全部 17 套教程原文 |
+| English | `/en/` | 逐章翻译，侧边栏由英文 H1 自动生成 |
+
+根路径 `/` 自动跳转 `/zh/`。右上角语言切换器可一键在中文 ↔ 英文之间切换，页面自动映射到对应语言的同章节。
+
+---
 
 ## 课程总览
 
 | 课程 | 章节数 | 版本基准 | 说明 |
 |---|---|---|---|
-| [HTTP 请求](docs/http/index.md) | 20 章 | requests 2.34 / httpx 0.28 | 同步/异步、HTTP/2、认证、测试集成 |
-| [pytest](docs/pytest/index.md) | 20 章 | pytest 9.x | 断言/fixture/参数化/插件开发/CI 治理 |
-| [Playwright](docs/playwright/index.md) | 22 章 | Playwright 1.62 (Python) | 定位器/自动等待/网络 Mock/POM/Sharding/无障碍 |
-| [Locust](docs/locust/index.md) | 20 章 | Locust 2.46 | HttpUser/TaskSet/分布式/Docker/K8s/asyncio 压测 |
-| [FastAPI](docs/fastapi/index.md) | 22 章 | FastAPI 0.141+ | 依赖注入/OAuth2/数据库/WebSocket/部署 |
-| [Agno](docs/agno/index.md) | 28 章 | Agno 3.x | Agent/工具/RAG/Team/Workflow/AgentOS/Skills · **三实战：数据分析助手 / 多源研究 Team / 客服知识库上线** |
-| [CrewAI](docs/crewai/index.md) | 26 章 | CrewAI 1.15 | Agent/Task/Crew/Flow/记忆/MCP/评估 · **三实战：内容营销 / 数据分析 / 竞品监控** |
-| [Agent 工程](docs/agent/index.md) | 32 章 | — | PromptingGuide/Harness/MCP/Skills/AGENTS.md/Loop 六大基石 |
-| [Claude Code](docs/claude-code/index.md) | 21 章 | Claude Code 2.1.x | CLAUDE.md/MCP/Skills/Hooks/SDK + 近期新特性 |
-| [Pi](docs/pi/index.md) | 21 章 | pi 0.84.x | 会话管理/技能扩展/SDK/RPC/pi-intercom 与 pi-messenger 多会话协作 |
-| [Pi Agent 开发](docs/pi-agent/index.md) | 23 章 | pi-agent-core / pi-ai | 统一 LLM API/工具调用/事件流/Provider/会话持久化 · **三实战：测试智能体全流程 / CI 集成 / 报告** · Telemetry / TUI |
-| [Flue](docs/flue/index.md) | 19 章 | @flue/runtime 2.0.3 | 函数式 Harness/Tools/Skills/Sandboxes/Durability/Channels · **三实战：GitHub 分诊 / Slack 值班 / 代码审查** |
-| [Mastra](docs/mastra/index.md) | 21 章 | @mastra/core (TS) | Workflow 图引擎/Memory/RAG/MCP/Evals/部署 · **三实战：智能客服 / 全栈 AI 应用 / 数据问答 BI** |
-| [Agent 工程实战](docs/agent-prod/index.md) | 23 章 | LangGraph 1.2 + Deep Agents + AWS | StateGraph/ToolNode/中断恢复/Skills/Langfuse/ECS/SQS · 含 3 章综合实战 + 文档解析/音视频扩展 |
-| [Vercel AI SDK](docs/ai-sdk/index.md) | 22 章 | ai-sdk.dev（v7 最新） | Provider 管理/文本生成/结构化输出/工具调用/MCP/RAG/useChat/ToolLoopAgent · 示例兼容 AI Gateway 与自定义 Provider |
-| [Hands-On LLM](docs/hands-on-llm/index.md) | 12 章 + 扩展 | O'Reilly 图书配套（main） | 语言模型/Token/LLM 内部/分类/聚类/提示工程/语义搜索/多模态/嵌入/微调 · 章节代码图片与仓库一致 |
-| [FirstMate](docs/firstmate/index.md) | 18 章 | firstmate（最新 main） | Agent Distro/五条硬规则/FM_HOME/tmux 等后端/ship·scout 任务/watcher 监督/Skills/Secondmate/Relay · **三实战：个人舰队 / 并行交付流水线 / 远程规模化运营** |
+| [HTTP 请求](docs/zh/http/index.md) | 20 章 | requests 2.34 / httpx 0.28 | 同步/异步、HTTP/2、认证、测试集成 |
+| [pytest](docs/zh/pytest/index.md) | 20 章 | pytest 9.x | 断言/fixture/参数化/插件开发/CI 治理 |
+| [Playwright](docs/zh/playwright/index.md) | 22 章 | Playwright 1.62 (Python) | 定位器/自动等待/网络 Mock/POM/Sharding/无障碍 |
+| [Locust](docs/zh/locust/index.md) | 20 章 | Locust 2.46 | HttpUser/TaskSet/分布式/Docker/K8s/asyncio 压测 |
+| [FastAPI](docs/zh/fastapi/index.md) | 22 章 | FastAPI 0.141+ | 依赖注入/OAuth2/数据库/WebSocket/部署 |
+| [Agno](docs/zh/agno/index.md) | 28 章 | Agno 3.x | Agent/工具/RAG/Team/Workflow/AgentOS/Skills · **三实战：数据分析助手 / 多源研究 Team / 客服知识库上线** |
+| [CrewAI](docs/zh/crewai/index.md) | 26 章 | CrewAI 1.15 | Agent/Task/Crew/Flow/记忆/MCP/评估 · **三实战：内容营销 / 数据分析 / 竞品监控** |
+| [Agent 工程](docs/zh/agent/index.md) | 32 章 | — | PromptingGuide/Harness/MCP/Skills/AGENTS.md/Loop 六大基石 |
+| [Claude Code](docs/zh/claude-code/index.md) | 21 章 | Claude Code 2.1.x | CLAUDE.md/MCP/Skills/Hooks/SDK + 近期新特性 |
+| [Pi](docs/zh/pi/index.md) | 21 章 | pi 0.84.x | 会话管理/技能扩展/SDK/RPC/pi-intercom 与 pi-messenger 多会话协作 |
+| [Pi Agent 开发](docs/zh/pi-agent/index.md) | 23 章 | pi-agent-core / pi-ai | 统一 LLM API/工具调用/事件流/Provider/会话持久化 · **三实战：测试智能体全流程 / CI 集成 / 报告** · Telemetry / TUI |
+| [Flue](docs/zh/flue/index.md) | 19 章 | @flue/runtime 2.0.3 | 函数式 Harness/Tools/Skills/Sandboxes/Durability/Channels · **三实战：GitHub 分诊 / Slack 值班 / 代码审查** |
+| [Mastra](docs/zh/mastra/index.md) | 21 章 | @mastra/core (TS) | Workflow 图引擎/Memory/RAG/MCP/Evals/部署 · **三实战：智能客服 / 全栈 AI 应用 / 数据问答 BI** |
+| [Agent 工程实战](docs/zh/agent-prod/index.md) | 23 章 | LangGraph 1.2 + Deep Agents + AWS | StateGraph/ToolNode/中断恢复/Skills/Langfuse/ECS/SQS · 含 3 章综合实战 + 文档解析/音视频扩展 |
+| [Vercel AI SDK](docs/zh/ai-sdk/index.md) | 22 章 | ai-sdk.dev（v7 最新） | Provider 管理/文本生成/结构化输出/工具调用/MCP/RAG/useChat/ToolLoopAgent · 示例兼容 AI Gateway 与自定义 Provider |
+| [Hands-On LLM](docs/zh/hands-on-llm/index.md) | 12 章 + 扩展 | O'Reilly 图书配套（main） | 语言模型/Token/LLM 内部/分类/聚类/提示工程/语义搜索/多模态/嵌入/微调 · 章节代码图片与仓库一致 |
+| [FirstMate](docs/zh/firstmate/index.md) | 18 章 | firstmate（最新 main） | Agent Distro/五条硬规则/FM_HOME/tmux 等后端/ship·scout 任务/watcher 监督/Skills/Secondmate/Relay · **三实战：个人舰队 / 并行交付流水线 / 远程规模化运营** |
 
-**共 370 章。**
+**共 371 章。**
 
 每章包含：文字讲解 + 可运行示例代码 + **4 道交互式随堂测验**（答错展示正确答案与原因）+ **3 道动手实践题**。
 
@@ -52,13 +65,13 @@
 
 | 课程 | 实战一 | 实战二 | 实战三 |
 |---|---|---|---|
-| [Pi Agent 开发](docs/pi-agent/index.md) | 测试智能体——从需求到用例 | 测试智能体——自动化执行与报告 | 测试智能体——CI 集成与定时回归巡检 |
-| [Mastra](docs/mastra/index.md) | 生产级智能客服 Agent | 全栈 AI 应用 | 数据问答 BI Agent |
-| [Flue](docs/flue/index.md) | GitHub 自动分诊 Agent | Slack 值班助手 | 代码审查 Agent |
-| [CrewAI](docs/crewai/index.md) | 内容营销流水线 | 数据分析流水线 | 竞品监控情报 Crew |
-| [Agno](docs/agno/index.md) | 智能数据分析助手 | 多源研究助手 Team | 客服知识库 Agent 上线 AgentOS |
-| [FirstMate](docs/firstmate/index.md) | 搭建个人开发舰队 | 多项目并行交付流水线 | Secondmate 远程舰队规模化运营 |
-| [Agent 工程实战](docs/agent-prod/index.md) | RAG 知识库 Agent | 多代理工单处理系统 | 全栈 Agent 服务（FastAPI + LangGraph + Fargate） |
+| [Pi Agent 开发](docs/zh/pi-agent/index.md) | 测试智能体——从需求到用例 | 测试智能体——自动化执行与报告 | 测试智能体——CI 集成与定时回归巡检 |
+| [Mastra](docs/zh/mastra/index.md) | 生产级智能客服 Agent | 全栈 AI 应用 | 数据问答 BI Agent |
+| [Flue](docs/zh/flue/index.md) | GitHub 自动分诊 Agent | Slack 值班助手 | 代码审查 Agent |
+| [CrewAI](docs/zh/crewai/index.md) | 内容营销流水线 | 数据分析流水线 | 竞品监控情报 Crew |
+| [Agno](docs/zh/agno/index.md) | 智能数据分析助手 | 多源研究助手 Team | 客服知识库 Agent 上线 AgentOS |
+| [FirstMate](docs/zh/firstmate/index.md) | 搭建个人开发舰队 | 多项目并行交付流水线 | Secondmate 远程舰队规模化运营 |
+| [Agent 工程实战](docs/zh/agent-prod/index.md) | RAG 知识库 Agent | 多代理工单处理系统 | 全栈 Agent 服务（FastAPI + LangGraph + Fargate） |
 
 ## 本地开发
 
@@ -76,7 +89,7 @@ npm run preview
 | ☁️ Cloudflare Pages | [https://agentic-tutorial.pages.dev](https://agentic-tutorial.pages.dev) | [![Cloudflare Pages](https://img.shields.io/website?url=https%3A%2F%2Fagentic-tutorial.pages.dev&label=pages.dev)](https://agentic-tutorial.pages.dev) |
 | ▲ Vercel | [https://agentic-tutorial.vercel.app](https://agentic-tutorial.vercel.app) | [![Vercel](https://img.shields.io/website?url=https%3A%2F%2Fagentic-tutorial.vercel.app&label=vercel.app)](https://agentic-tutorial.vercel.app) |
 
-两个地址内容完全一致，任选其一访问。
+两个地址内容完全一致，任选其一访问。支持中英文双语切换。
 
 ## 部署
 
@@ -100,3 +113,4 @@ npm run preview
 - [VitePress](https://vitepress.dev) 静态站点 + 自定义 **GitHub Light** 主题
 - 交互测验组件 `Quiz.vue`、响应式课程轮播 `CourseCards.vue`
 - 右上角实时 GitHub Star 徽章 `NavGitHubStars.vue`
+- `locales` 配置双语导航；EN 侧边栏从英文页 H1 自动生成

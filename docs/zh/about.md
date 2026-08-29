@@ -1,11 +1,11 @@
 ---
 title: 关于本教程站
-description: 十七套系统教程、370 章内容，覆盖 Web 基础到 AI 智能体生产部署
+description: 十七套系统教程、371 章内容，覆盖 Web 基础到 AI 智能体生产部署
 ---
 
 # 关于 AI 工程与智能体教程站
 
-本教程站提供 <Badge type="warning" text="17 套系统教程" /> <Badge type="info" text="370 章" /> 内容，覆盖从 Web 基础到 AI 智能体生产部署的完整学习路径。每章配有可运行示例代码、4 道随堂测验和 3 道动手实践题。
+本教程站提供 <Badge type="warning" text="17 套系统教程" /> <Badge type="info" text="371 章" /> 内容，覆盖从 Web 基础到 AI 智能体生产部署的完整学习路径。每章配有可运行示例代码、4 道随堂测验和 3 道动手实践题。
 
 ## 各课程版本基准
 

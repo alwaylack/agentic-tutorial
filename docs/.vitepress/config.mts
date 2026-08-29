@@ -751,8 +751,7 @@ const enAgentProd = [
   { text: "20. Chapter 20", link: "/en/agent-prod/ch20.html" },
   { text: "21. Chapter 21", link: "/en/agent-prod/ch21.html" },
   { text: "22. Chapter 22", link: "/en/agent-prod/ch22.html" },
-  { text: "23. Chapter 23", link: "/en/agent-prod/ch23.html" },
-  { text: "24. Chapter 24", link: "/en/agent-prod/ch24.html" }
+  { text: "23. Chapter 23", link: "/en/agent-prod/ch23.html" }
 ]
 
 const enMastra = [

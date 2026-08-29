@@ -1,13 +1,13 @@
 ---
 title: About
-description: Seventeen systematic tutorials, 370 chapters — from web fundamentals to production AI agents
+description: Seventeen systematic tutorials, 371 chapters — from web fundamentals to production AI agents
 ---
 
 # About This Tutorial Site
 
-This site provides <Badge type="warning" text="17 tutorials" /> <Badge type="info" text="370 chapters" /> covering the full learning path from web fundamentals to production AI agent deployment. Every chapter ships runnable code, 4 quiz questions, and 3 hands-on exercises.
+This site provides <Badge type="warning" text="17 tutorials" /> <Badge type="info" text="371 chapters" /> covering the full learning path from web fundamentals to production AI agent deployment. Every chapter ships runnable code, 4 quiz questions, and 3 hands-on exercises.
 
-> 🌐 Chapter pages are currently in Simplified Chinese; English translation is in progress.
+> 🌐 Bilingual: every chapter is available in both English (`/en/`) and Simplified Chinese (`/zh/`). Use the language switcher in the top-right corner to toggle.
 
 ## Version Baselines
 
