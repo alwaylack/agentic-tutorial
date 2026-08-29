@@ -39,7 +39,7 @@ Content version baseline: **CrewAI 1.15+**
 
 ## Prerequisites
 
-- Python basics; recommended to complete chapters 1–6 of this site's [Agno tutorial](/agno/) first for a solid Agent concept foundation;
+- Python basics; recommended to complete chapters 1–6 of this site's [Agno tutorial](/en/agno/) first for a solid Agent concept foundation;
 - Python 3.10–3.13 environment (CrewAI official requirement).
 
 👉 Start with [Chapter 1](./ch01).

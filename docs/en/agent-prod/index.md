@@ -6,12 +6,12 @@
 
 | 阶段 | 章节 | 内容 | 前置链接 |
 |---|---|---|---|
-| 异步基础 | 01–03 | asyncio 深入、消息队列 Redis/Celery、分布式协调与 Docker | [FastAPI](/fastapi/) ch01-22 |
-| LangGraph 核心 | 04–08 | StateGraph、工具调用、子图、持久化、流式输出与中断恢复 | [Agent 工程](/agent/) ch01-12 |
+| 异步基础 | 01–03 | asyncio 深入、消息队列 Redis/Celery、分布式协调与 Docker | [FastAPI](/en/fastapi/) ch01-22 |
+| LangGraph 核心 | 04–08 | StateGraph、工具调用、子图、持久化、流式输出与中断恢复 | [Agent 工程](/en/agent/) ch01-12 |
 | Deep Agents | 09–11 | create_deep_agent、Skills/Memory、上下文工程 | [LangGraph](./ch04) |
-| 评估与可观测 | 12–15 | LLM-as-judge、A/B 测试、Langfuse/OpenTelemetry、多网关成本优化 | [Vercel AI SDK](/ai-sdk/) ch03 |
-| 生产部署 | 16–18 | AWS ECS/Fargate、SQS/DynamoDB、CloudWatch/CI-CD | [FastAPI](/fastapi/) ch22 |
-| 多模态扩展 | 19–20 | 文档解析管线（PDF/PPT/OCR/转录）、音视频处理与无头渲染 | [Playwright](/playwright/) 全课 |
+| 评估与可观测 | 12–15 | LLM-as-judge、A/B 测试、Langfuse/OpenTelemetry、多网关成本优化 | [Vercel AI SDK](/en/ai-sdk/) ch03 |
+| 生产部署 | 16–18 | AWS ECS/Fargate、SQS/DynamoDB、CloudWatch/CI-CD | [FastAPI](/en/fastapi/) ch22 |
+| 多模态扩展 | 19–20 | 文档解析管线（PDF/PPT/OCR/转录）、音视频处理与无头渲染 | [Playwright](/en/playwright/) 全课 |
 | 综合实战 | 21–23 | RAG Agent → 多代理工单系统 → 全栈 Agent 服务（课程终点） | 无 |
 
 > 📌 课程中涉及已有课程覆盖的基础知识时，直接链接到对应章节，避免重复内容。
@@ -40,6 +40,6 @@ Langfuse      ·  OpenTelemetry
 - **阶段一不要跳**：异步编程和消息队列是生产 Agent 服务的基石；
 - **LangGraph 是核心**：第 4–8 章构成了整个课程的骨架；
 - **实战三章可独立运行**：每章都是完整项目，可直接用于求职作品集；
-- 建议配合 [Vercel AI SDK](/ai-sdk/) 课程学习 Provider 管理部分。
+- 建议配合 [Vercel AI SDK](/en/ai-sdk/) 课程学习 Provider 管理部分。
 
 👉 从 [第 1 章](./ch01) 开始。

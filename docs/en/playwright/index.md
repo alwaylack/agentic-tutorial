@@ -13,8 +13,8 @@ This course is based on the **Playwright 1.6x Official Documentation (Python edi
 
 ## How It Connects to Other Courses
 
-- The pytest fixture usage from Chapter 6 onward seamlessly connects to the [pytest course](/pytest/);
-- Chapter 18 complements the testing chapters of the [FastAPI course](/fastapi/) to form a complete web testing skill stack.
+- The pytest fixture usage from Chapter 6 onward seamlessly connects to the [pytest course](/en/pytest/);
+- Chapter 18 complements the testing chapters of the [FastAPI course](/en/fastapi/) to form a complete web testing skill stack.
 
 ## Official Reference Sources
 

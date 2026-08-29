@@ -20,7 +20,7 @@ This course covers **20 chapters** based on the **Locust 2.46.x Official Documen
 
 ## Prerequisites
 
-- Python basics; recommended to complete the first 6 chapters of the [pytest course](/pytest/) first;
+- Python basics; recommended to complete the first 6 chapters of the [pytest course](/en/pytest/) first;
 - Familiarity with HTTP fundamentals.
 
 👉 Start with [Chapter 1](./ch01).

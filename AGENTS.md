@@ -16,7 +16,7 @@
 
 ## 二、多语言内容同步（Sync）
 
-项目有 `docs/`（中文）和 `docs/en/`（英文）两套目录。**新增或修改内容时必须同步维护两份**，除非该课程明确只更新中文版。
+项目有 `docs/zh/`（中文）和 `docs/en/`（英文）两套目录，URL 前缀分别为 `/zh/` 与 `/en/`，根路径 `/` 自动跳转 `/zh/`。**新增或修改内容时必须同步维护两份**，除非该课程明确只更新中文版。
 
 | 课程 | 中文 | 英文 | 状态 |
 |---|---|---|---|
@@ -24,12 +24,13 @@
 | pytest | 21 章 | 21 章 | ✅ 已完成 |
 | http | 21 章 | 21 章 | ✅ 已完成 |
 | agent-prod | 24 章 | 24 章 | ✅ 已完成 |
-| agent / ai-sdk / claude-code / crewai / fastapi / firstmate / flue / hands-on-llm / locust / mastra / pi / pi-agent / playwright | 若干 | 无 | 🔄 待翻译 |
+| agent / ai-sdk / claude-code / crewai / fastapi / firstmate / flue / hands-on-llm / locust / mastra / pi / pi-agent / playwright | 若干 | 已全部翻译 | ✅ 已完成 |
 
 修改已有课程时：
-1. 先改中文原文（`docs/<课程>/`）；
+1. 先改中文原文（`docs/zh/<课程>/`）；
 2. 再将改动同步到英文版（`docs/en/<课程>/`）；
-3. 若英文版尚无该文件，标注为"待翻译"而非跳过——在 commit 信息中说明。
+3. 若英文版尚无该文件，标注为“待翻译”而非跳过——在 commit 信息中说明。
+4. 新增/删除章节时，同步更新 `docs/.vitepress/config.mts` 中对应语言的 nav 与 sidebar（zh 链接前缀 `/zh/`，en 链接前缀 `/en/`，sidebar 键同样需要语言前缀）。
 
 ---
 

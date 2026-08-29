@@ -24,7 +24,7 @@ This course has **23 chapters**, based on the official source documentation for 
 
 ## Prerequisites
 
-- TypeScript/Node.js basics; it is recommended to complete the [Pi Coding Agent Course](/pi/) on this site first;
+- TypeScript/Node.js basics; it is recommended to complete the [Pi Coding Agent Course](/en/pi/) on this site first;
 - At least one LLM Provider API Key (Anthropic/OpenAI/DeepSeek, etc.).
 
 👉 Start with [Chapter 1](./ch01).

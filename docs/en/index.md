@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Start Learning →
-      link: /http/
+      link: /en/http/
     - theme: alt
       text: ☁️ Cloudflare Mirror
       link: https://agentic-tutorial.pages.dev
@@ -20,7 +20,7 @@ hero:
 ## Why These Tutorials
 
 <div class="notice">
-  🌐 <strong>Note:</strong> Landing pages are bilingual. The 370 chapter pages are currently written in Simplified Chinese — English translation is in progress. Course links below and in the menu take you to the Chinese pages.
+  🌐 <strong>Bilingual:</strong> Every course is available in both English (<code>/en/</code>) and Simplified Chinese (<code>/zh/</code>). Use the language switcher in the top-right corner to toggle — the current page maps to its counterpart automatically.
 </div>
 
 ## Highlights
@@ -35,13 +35,13 @@ hero:
 
 | Course | Projects |
 |---|---|
-| [Agent Engineering in Production](/agent-prod/) | RAG knowledge base agent · multi-agent ticketing system · full-stack agent service (AWS ECS/SQS) |
-| [Vercel AI SDK](/ai-sdk/) | Semantic search RAG · multi-agent support tickets · full-stack streaming chat |
-| [Pi Agent Development](/pi-agent/) | Test agent end-to-end: requirements → cases → automation → CI regression |
-| [Mastra](/mastra/) | Production support agent · full-stack AI app · BI data Q&A agent |
-| [Agno](/agno/) | Data analysis assistant · multi-source research team · customer-service KB on AgentOS |
+| [Agent Engineering in Production](/en/agent-prod/) | RAG knowledge base agent · multi-agent ticketing system · full-stack agent service (AWS ECS/SQS) |
+| [Vercel AI SDK](/en/ai-sdk/) | Semantic search RAG · multi-agent support tickets · full-stack streaming chat |
+| [Pi Agent Development](/en/pi-agent/) | Test agent end-to-end: requirements → cases → automation → CI regression |
+| [Mastra](/en/mastra/) | Production support agent · full-stack AI app · BI data Q&A agent |
+| [Agno](/en/agno/) | Data analysis assistant · multi-source research team · customer-service KB on AgentOS |
 
-👉 Browse all seventeen courses in the **📚 Courses** menu above.
+👉 Browse all seventeen courses in the **🌐 / 🤖 / 🧠 menus** above.
 
 <style scoped>
 .notice {

@@ -13,7 +13,7 @@ This course covers **22 chapters** based on the **FastAPI 0.14x Official Documen
 
 ## How It Connects to Other Courses
 
-- Chapter 20's testing chapter pairs with the [pytest course](/pytest/);
+- Chapter 20's testing chapter pairs with the [pytest course](/en/pytest/);
 - Chapter 18's template rendering complements frontend framework courses.
 
 ## Official Reference Sources
@@ -30,6 +30,6 @@ Content version baseline: **FastAPI 0.141+**
 ## Prerequisites
 
 - Python basics + familiarity with type annotations (`def f(x: int) -> str`);
-- Recommended to complete the first 10 chapters of the [pytest course](/pytest/) — Chapter 20 references them.
+- Recommended to complete the first 10 chapters of the [pytest course](/en/pytest/) — Chapter 20 references them.
 
 👉 Start with [Chapter 1](./ch01).

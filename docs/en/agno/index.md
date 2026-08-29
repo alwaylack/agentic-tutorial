@@ -50,7 +50,7 @@ Version baseline: **Agno 3.x** (agno 3.0.1)
 
 ## Prerequisites
 
-- Basic Python + familiarity with Pydantic (our [FastAPI course](/fastapi/) Chapter 4 can quickly bring you up to speed);
+- Basic Python + familiarity with Pydantic (our [FastAPI course](/en/fastapi/) Chapter 4 can quickly bring you up to speed);
 - A third-party model API Key.
 
 👉 Start with [Chapter 1](./ch01).

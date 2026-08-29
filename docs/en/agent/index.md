@@ -40,10 +40,10 @@ Content version baseline: **Multi-source integrated**
 ## Prerequisites
 
 - Basic Python proficiency; MCP hands-on chapters require Python 3.10+;
-- An LLM API Key (pairs well with this site's [FastAPI](/fastapi/) / [Agno](/agno/) courses).
+- An LLM API Key (pairs well with this site's [FastAPI](/en/fastapi/) / [Agno](/en/agno/) courses).
 
 ## Relationship to Other Courses
 
-This course covers the "principles and protocol layer." It complements the framework courses on this site: [Agno](/agno/) and [CrewAI](/crewai/) teach you to build agents with frameworks; this course teaches the underlying prompt design, tool protocols, capability packaging, and runtime loops.
+This course covers the "principles and protocol layer." It complements the framework courses on this site: [Agno](/en/agno/) and [CrewAI](/en/crewai/) teach you to build agents with frameworks; this course teaches the underlying prompt design, tool protocols, capability packaging, and runtime loops.
 
 👉 Start with [Chapter 1](./ch01).
