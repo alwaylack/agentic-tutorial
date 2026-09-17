@@ -1,6 +1,6 @@
 # LangGraph 教程 · 课程导学
 
-本课程共 **12 章**，基于 2026-09-17 核验的 Python 官方文档编写，是原创教学整理而非官方文档的完整镜像。
+本课程共 **14 章**，基于 2026-09-17 核验的 Python 官方文档编写，是原创教学整理而非官方文档的完整镜像。
 
 LangGraph 负责显式状态与执行控制；Deep Agents 在其上提供文件工具、上下文管理和委派能力。基础机制先在本课程学习，再到 [Agent 工程实战](/zh/agent-prod/) 组合成生产服务。
 
@@ -29,6 +29,8 @@ LangGraph 的 v2 流式格式要求 1.1+；当前文档另推荐 1.2 引入的�
 10. [容错、重试与幂等性](./ch10)
 11. [测试状态转移与回归边界](./ch11)
 12. [综合实战：有证据的本地问答图](./ch12)
+13. [综合实战二：多智能体工单路由](./ch13)
+14. [综合实战三：容错、审批与恢复](./ch14)
 
 - [官方 LangGraph 概览](https://docs.langchain.com/oss/python/langgraph/overview)
 - [官方 Deep Agents 概览](https://docs.langchain.com/oss/python/deepagents/overview)

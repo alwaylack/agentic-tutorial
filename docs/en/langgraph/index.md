@@ -1,6 +1,6 @@
 # LangGraph Tutorial · Course Guide
 
-本课程共 **12 章**，基于 2026-09-17 核验的 Python 官方文档编写，是原创教学整理而非官方文档的完整镜像。
+本课程共 **14 章**，基于 2026-09-17 核验的 Python 官方文档编写，是原创教学整理而非官方文档的完整镜像。
 
 LangGraph provides explicit state and execution control; Deep Agents adds filesystem tools, context management, and delegation on top of it. Learn the mechanisms here, then combine them into production services in [Agent Engineering in Production](/en/agent-prod/).
 
@@ -29,6 +29,8 @@ LangGraph v2 streaming requires 1.1+; current docs also recommend the event stre
 10. [Fault tolerance, retries, and idempotency](./ch10)
 11. [Test transitions and regression boundaries](./ch11)
 12. [Capstone: evidence-grounded local QA](./ch12)
+13. [Capstone 2: multi-agent ticket routing](./ch13)
+14. [Capstone 3: fault tolerance, approval, and resume](./ch14)
 
 - [官方 LangGraph 概览](https://docs.langchain.com/oss/python/langgraph/overview)
 - [官方 Deep Agents 概览](https://docs.langchain.com/oss/python/deepagents/overview)

@@ -138,13 +138,13 @@ hero:
 <div class="project-card">
   <span class="project-tag agent">🤖 智能体框架</span>
   <div class="project-name">LangGraph</div>
-  <p class="project-desc">综合实战：有证据的本地问答图（检索 → 路由 → 回答/拒答，带来源引用）</p>
+  <p class="project-desc">三实战：有证据的本地问答图（检索→路由→回答/拒答）· 多智能体工单路由 · 容错、审批与恢复流水线</p>
 </div>
 
 <div class="project-card">
   <span class="project-tag agent">🤖 智能体框架</span>
   <div class="project-name">Deep Agents</div>
-  <p class="project-desc">综合实战：文件 + Skills + 子任务委派 + 人工审批的端到端闭环</p>
+  <p class="project-desc">三实战：文件 + Skills + 子任务 + 审批闭环 · 代码库只读审查助手 · 规划/委派/审批研究流水线</p>
 </div>
 
 </div>

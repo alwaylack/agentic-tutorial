@@ -138,13 +138,13 @@ hero:
 <div class="project-card">
   <span class="project-tag agent">🤖 Agent Frameworks</span>
   <div class="project-name">LangGraph</div>
-  <p class="project-desc">Capstone: evidence-grounded local QA graph (retrieve → route → answer/refuse, with source citations)</p>
+  <p class="project-desc">Three capstones: evidence-grounded local QA graph · multi-agent ticket routing · fault-tolerant approval &amp; resume pipeline</p>
 </div>
 
 <div class="project-card">
   <span class="project-tag agent">🤖 Agent Frameworks</span>
   <div class="project-name">Deep Agents</div>
-  <p class="project-desc">Capstone: end-to-end loop combining files + skills + subagent delegation + human approval</p>
+  <p class="project-desc">Three capstones: files + skills + delegation + approval loop · read-only codebase audit assistant · planning/delegation/approval research pipeline</p>
 </div>
 
 </div>

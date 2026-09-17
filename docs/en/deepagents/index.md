@@ -1,6 +1,6 @@
 # Deep Agents Tutorial · Course Guide
 
-本课程共 **12 章**，基于 2026-09-17 核验的 Python 官方文档编写，是原创教学整理而非官方文档的完整镜像。
+本课程共 **14 章**，基于 2026-09-17 核验的 Python 官方文档编写，是原创教学整理而非官方文档的完整镜像。
 
 Deep Agents is an agent harness built on LangGraph: built-in filesystem tools, skills, memory, subagent delegation, and human-in-the-loop approval. The course goes from your first agent to production-grade composition (approval + idempotency + sandboxes).
 
@@ -29,6 +29,8 @@ Since Deep Agents 0.7, task planning (write_todos) is opt-in; the `delete` file 
 10. [Human-in-the-loop and conditional interrupts](./ch10)
 11. [Streaming and subagent events](./ch11)
 12. [Capstone: files + skills + delegation + approval](./ch12)
+13. [Capstone 2: read-only codebase audit assistant](./ch13)
+14. [Capstone 3: planning, delegation, and approval research pipeline](./ch14)
 
 - [官方 Deep Agents 概览](https://docs.langchain.com/oss/python/deepagents/overview)
 - [官方 LangGraph 概览](https://docs.langchain.com/oss/python/langgraph/overview)

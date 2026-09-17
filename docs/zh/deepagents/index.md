@@ -1,6 +1,6 @@
 # Deep Agents 教程 · 课程导学
 
-本课程共 **12 章**，基于 2026-09-17 核验的 Python 官方文档编写，是原创教学整理而非官方文档的完整镜像。
+本课程共 **14 章**，基于 2026-09-17 核验的 Python 官方文档编写，是原创教学整理而非官方文档的完整镜像。
 
 Deep Agents 是构建在 LangGraph 之上的“agent harness”：内置文件系统工具、Skills、Memory、子智能体委派与人工审批。课程从第一个 agent 讲到生产级组合（审批 + 幂等 + 沙箱）。
 
@@ -29,6 +29,8 @@ Deep Agents 0.7 起任务规划（write_todos）为显式启用；`delete` 文�
 10. [人工审批与条件中断](./ch10)
 11. [流式输出与子智能体事件](./ch11)
 12. [综合实战：文件 + Skills + 子任务 + 审批](./ch12)
+13. [综合实战二：代码库只读审查助手](./ch13)
+14. [综合实战三：规划、委派与审批的研究流水线](./ch14)
 
 - [官方 Deep Agents 概览](https://docs.langchain.com/oss/python/deepagents/overview)
 - [官方 LangGraph 概览](https://docs.langchain.com/oss/python/langgraph/overview)
