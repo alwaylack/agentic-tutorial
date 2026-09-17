@@ -4,7 +4,7 @@ layout: home
 hero:
   name: 'AI 工程与智能体教程站'
   text: 'LangGraph · FastAPI · AWS · Agent · LLM'
-  tagline: 从 0 基础到生产实践的十七套系统教程，每章配有随堂测验与动手实践
+  tagline: 从 0 基础到生产实践的十九套系统教程，每章配有随堂测验与动手实践
   actions:
     - theme: brand
       text: 开始学习 →
@@ -48,7 +48,7 @@ hero:
 <div class="feature-card">
   <div class="feature-icon">🛠️</div>
   <div class="feature-title">实战贯穿</div>
-  <p class="feature-desc">十三门课程均配备完整项目实战，可直接用作求职作品集，覆盖 RAG、多 Agent 协作、全栈服务与云部署。</p>
+  <p class="feature-desc">十五门课程配备完整项目实战，可直接用作求职作品集，覆盖 RAG、多 Agent 协作、全栈服务与云部署。</p>
 </div>
 
 </div>
@@ -133,6 +133,18 @@ hero:
   <span class="project-tag prod">🧠 AI生产部署</span>
   <div class="project-name">Agent 工程实战</div>
   <p class="project-desc">三实战：RAG 知识库 Agent · 多代理工单处理系统 · 全栈 Agent 服务（端到端部署 AWS ECS/SQS）</p>
+</div>
+
+<div class="project-card">
+  <span class="project-tag agent">🤖 智能体框架</span>
+  <div class="project-name">LangGraph</div>
+  <p class="project-desc">综合实战：有证据的本地问答图（检索 → 路由 → 回答/拒答，带来源引用）</p>
+</div>
+
+<div class="project-card">
+  <span class="project-tag agent">🤖 智能体框架</span>
+  <div class="project-name">Deep Agents</div>
+  <p class="project-desc">综合实战：文件 + Skills + 子任务委派 + 人工审批的端到端闭环</p>
 </div>
 
 </div>

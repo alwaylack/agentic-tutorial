@@ -3,7 +3,7 @@
 [![Cloudflare Pages](https://img.shields.io/badge/☁️_Cloudflare_Pages-agentic--tutorial.pages.dev-F38020?style=for-the-badge)](https://agentic-tutorial.pages.dev)
 [![Vercel](https://img.shields.io/badge/▲_Vercel-agentic--tutorial.vercel.app-000000?style=for-the-badge)](https://agentic-tutorial.vercel.app)
 
-从 0 基础到生产实践的 **十七套系统教程**，中英双语同步更新，基于各项目**最新官方文档**编写。
+从 0 基础到生产实践的 **十九套系统教程**，中英双语同步更新，基于各项目**最新官方文档**编写。
 
 仓库：[alwaylack/agentic-tutorial](https://github.com/alwaylack/agentic-tutorial)
 
@@ -13,7 +13,7 @@
 
 | 语言 | 前缀 | 说明 |
 |---|---|---|
-| 简体中文 | `/zh/` | 全部 17 套教程原文 |
+| 简体中文 | `/zh/` | 全部 19 套教程原文 |
 | English | `/en/` | 逐章翻译，侧边栏由英文 H1 自动生成 |
 
 根路径 `/` 自动跳转 `/zh/`。右上角语言切换器可一键在中文 ↔ 英文之间切换，页面自动映射到对应语言的同章节。
@@ -38,11 +38,13 @@
 | [Flue](docs/zh/flue/index.md) | 19 章 | @flue/runtime 2.0.3 | 函数式 Harness/Tools/Skills/Sandboxes/Durability/Channels · **三实战：GitHub 分诊 / Slack 值班 / 代码审查** |
 | [Mastra](docs/zh/mastra/index.md) | 21 章 | @mastra/core (TS) | Workflow 图引擎/Memory/RAG/MCP/Evals/部署 · **三实战：智能客服 / 全栈 AI 应用 / 数据问答 BI** |
 | [Agent 工程实战](docs/zh/agent-prod/index.md) | 23 章 | LangGraph 1.2 + Deep Agents + AWS | StateGraph/ToolNode/中断恢复/Skills/Langfuse/ECS/SQS · 含 3 章综合实战 + 文档解析/音视频扩展 |
+| [LangGraph](docs/zh/langgraph/index.md) | 12 章 | LangGraph 1.2（2026-09-17 官方文档核验） | 状态/Reducer/条件路由/工具调用/检查点/中断审批/流式/子图/Functional API/容错 · 综合实战：有证据的本地问答图 |
+| [Deep Agents](docs/zh/deepagents/index.md) | 12 章 | Deep Agents 0.7.x（本地核验 0.7.15） | 文件工具/权限/沙箱/Skills/Memory/任务规划/子智能体/人工审批/流式 · 综合实战：文件+Skills+子任务+审批闭环 |
 | [Vercel AI SDK](docs/zh/ai-sdk/index.md) | 22 章 | ai-sdk.dev（v7 最新） | Provider 管理/文本生成/结构化输出/工具调用/MCP/RAG/useChat/ToolLoopAgent · 示例兼容 AI Gateway 与自定义 Provider |
 | [Hands-On LLM](docs/zh/hands-on-llm/index.md) | 12 章 + 扩展 | O'Reilly 图书配套（main） | 语言模型/Token/LLM 内部/分类/聚类/提示工程/语义搜索/多模态/嵌入/微调 · 章节代码图片与仓库一致 |
 | [FirstMate](docs/zh/firstmate/index.md) | 18 章 | firstmate（最新 main） | Agent Distro/五条硬规则/FM_HOME/tmux 等后端/ship·scout 任务/watcher 监督/Skills/Secondmate/Relay · **三实战：个人舰队 / 并行交付流水线 / 远程规模化运营** |
 
-**共 371 章。**
+**共 395 章。**
 
 每章包含：文字讲解 + 可运行示例代码 + **4 道交互式随堂测验**（答错展示正确答案与原因）+ **3 道动手实践题**。
 
@@ -61,7 +63,7 @@
 
 ## 实战项目
 
-七门智能体框架课程均配备 **三章贯穿式实战**，覆盖不同场景与复杂度：
+九门智能体框架课程均配备**综合实战**（其中七门为三章贯穿式，LangGraph 与 Deep Agents 为单章综合实战），覆盖不同场景与复杂度：
 
 | 课程 | 实战一 | 实战二 | 实战三 |
 |---|---|---|---|
@@ -72,6 +74,8 @@
 | [Agno](docs/zh/agno/index.md) | 智能数据分析助手 | 多源研究助手 Team | 客服知识库 Agent 上线 AgentOS |
 | [FirstMate](docs/zh/firstmate/index.md) | 搭建个人开发舰队 | 多项目并行交付流水线 | Secondmate 远程舰队规模化运营 |
 | [Agent 工程实战](docs/zh/agent-prod/index.md) | RAG 知识库 Agent | 多代理工单处理系统 | 全栈 Agent 服务（FastAPI + LangGraph + Fargate） |
+| [LangGraph](docs/zh/langgraph/index.md) | 综合实战：有证据的本地问答图 | — | — |
+| [Deep Agents](docs/zh/deepagents/index.md) | 综合实战：文件 + Skills + 子任务 + 审批闭环 | — | — |
 
 ## 本地开发
 

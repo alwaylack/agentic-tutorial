@@ -1,11 +1,11 @@
 ---
 title: 关于本教程站
-description: 十七套系统教程、371 章内容，覆盖 Web 基础到 AI 智能体生产部署
+description: 十九套系统教程、395 章内容，覆盖 Web 基础到 AI 智能体生产部署
 ---
 
 # 关于 AI 工程与智能体教程站
 
-本教程站提供 <Badge type="warning" text="17 套系统教程" /> <Badge type="info" text="371 章" /> 内容，覆盖从 Web 基础到 AI 智能体生产部署的完整学习路径。每章配有可运行示例代码、4 道随堂测验和 3 道动手实践题。
+本教程站提供 <Badge type="warning" text="19 套系统教程" /> <Badge type="info" text="395 章" /> 内容，覆盖从 Web 基础到 AI 智能体生产部署的完整学习路径。每章配有可运行示例代码、4 道随堂测验和 3 道动手实践题。
 
 ## 各课程版本基准
 
@@ -30,6 +30,8 @@ description: 十七套系统教程、371 章内容，覆盖 Web 基础到 AI 智
 <tr><td>Hands-On LLM</td><td>O'Reilly《Hands-On Large Language Models》配套仓库 main</td></tr>
 <tr><td>Vercel AI SDK</td><td>ai-sdk.dev v7 最新文档 + Cookbook</td></tr>
 <tr><td>Agent 工程实战</td><td>LangGraph 1.2 + Deep Agents + AWS ECS/SQS/DynamoDB</td></tr>
+<tr><td>LangGraph</td><td>LangGraph 1.2（2026-09-17 官方文档核验）</td></tr>
+<tr><td>Deep Agents</td><td>Deep Agents 0.7.x（本地核验 0.7.15）</td></tr>
 </tbody>
 </table>
 </div>

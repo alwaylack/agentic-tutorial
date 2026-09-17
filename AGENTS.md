@@ -25,6 +25,8 @@
 | http | 21 章 | 21 章 | ✅ 已完成 |
 | agent-prod | 24 章 | 24 章 | ✅ 已完成 |
 | agent / ai-sdk / claude-code / crewai / fastapi / firstmate / flue / hands-on-llm / locust / mastra / pi / pi-agent / playwright | 若干 | 已全部翻译 | ✅ 已完成 |
+| langgraph | 12 章 | 12 章 | ✅ 已完成 |
+| deepagents | 12 章 | 12 章 | ✅ 已完成 |
 
 修改已有课程时：
 1. 先改中文原文（`docs/zh/<课程>/`）；

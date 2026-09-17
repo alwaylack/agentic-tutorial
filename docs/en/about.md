@@ -1,11 +1,11 @@
 ---
 title: About
-description: Seventeen systematic tutorials, 371 chapters — from web fundamentals to production AI agents
+description: Nineteen systematic tutorials, 395 chapters — from web fundamentals to production AI agents
 ---
 
 # About This Tutorial Site
 
-This site provides <Badge type="warning" text="17 tutorials" /> <Badge type="info" text="371 chapters" /> covering the full learning path from web fundamentals to production AI agent deployment. Every chapter ships runnable code, 4 quiz questions, and 3 hands-on exercises.
+This site provides <Badge type="warning" text="19 tutorials" /> <Badge type="info" text="395 chapters" /> covering the full learning path from web fundamentals to production AI agent deployment. Every chapter ships runnable code, 4 quiz questions, and 3 hands-on exercises.
 
 > 🌐 Bilingual: every chapter is available in both English (`/en/`) and Simplified Chinese (`/zh/`). Use the language switcher in the top-right corner to toggle.
 
@@ -32,6 +32,8 @@ This site provides <Badge type="warning" text="17 tutorials" /> <Badge type="inf
 <tr><td>Hands-On LLM</td><td>O'Reilly "Hands-On Large Language Models" companion repo main</td></tr>
 <tr><td>Vercel AI SDK</td><td>ai-sdk.dev v7 latest docs + Cookbook</td></tr>
 <tr><td>Agent Engineering in Production</td><td>LangGraph 1.2 + Deep Agents + AWS ECS/SQS/DynamoDB</td></tr>
+<tr><td>LangGraph</td><td>LangGraph 1.2 (docs verified 2026-09-17)</td></tr>
+<tr><td>Deep Agents</td><td>Deep Agents 0.7.x (verified locally at 0.7.15)</td></tr>
 </tbody>
 </table>
 </div>

@@ -4,7 +4,7 @@ layout: home
 hero:
   name: 'AI Engineering & Agents'
   text: 'LangGraph · FastAPI · AWS · Agent · LLM'
-  tagline: Seventeen systematic tutorials from zero to production — every chapter ships quizzes and hands-on exercises
+  tagline: Nineteen systematic tutorials from zero to production — every chapter ships quizzes and hands-on exercises
   actions:
     - theme: brand
       text: Start Learning →
@@ -48,7 +48,7 @@ hero:
 <div class="feature-card">
   <div class="feature-icon">🛠️</div>
   <div class="feature-title">Capstones Throughout</div>
-  <p class="feature-desc">Thirteen courses include complete portfolio-ready projects covering RAG, multi-agent collaboration, full-stack services, and cloud deployment.</p>
+  <p class="feature-desc">Fifteen courses include complete portfolio-ready projects covering RAG, multi-agent collaboration, full-stack services, and cloud deployment.</p>
 </div>
 
 </div>
@@ -133,6 +133,18 @@ hero:
   <span class="project-tag prod">🧠 AI Production</span>
   <div class="project-name">Agent Engineering in Production</div>
   <p class="project-desc">Three capstones: RAG knowledge base agent · multi-agent ticketing system · full-stack agent service (end-to-end on AWS ECS/SQS)</p>
+</div>
+
+<div class="project-card">
+  <span class="project-tag agent">🤖 Agent Frameworks</span>
+  <div class="project-name">LangGraph</div>
+  <p class="project-desc">Capstone: evidence-grounded local QA graph (retrieve → route → answer/refuse, with source citations)</p>
+</div>
+
+<div class="project-card">
+  <span class="project-tag agent">🤖 Agent Frameworks</span>
+  <div class="project-name">Deep Agents</div>
+  <p class="project-desc">Capstone: end-to-end loop combining files + skills + subagent delegation + human approval</p>
 </div>
 
 </div>
